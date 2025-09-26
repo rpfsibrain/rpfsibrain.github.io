@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dr. Ratnadeep Pramanik — Academic</title>
-  <meta name="description" content="Postdoctoral Researcher · Soft Robotics · Multi-functional Materials · FSI · Endovascular Devices — publications, conferences, supervision, education, contact."/>
+  <meta name="description" content="Postdoctoral Researcher — Soft Robotics · Multi-functional Materials · FSI · Endovascular Devices — publications, conferences, supervision, education, contact."/>
   <style>
     :root{
       --bg:#ffffff; --fg:#0a0a0a; --muted:#666; --border:#e5e7eb; --card:#fafafa; --accent:#111827;
@@ -17,7 +17,6 @@
     nav a{color:inherit;text-decoration:none}
     .nav-links{display:none;gap:1rem;font-size:.95rem}
     @media (min-width: 768px){.nav-links{display:flex}}
-    .btn{display:inline-block;padding:.6rem 1rem;border:1px solid var(--border);border-radius:12px;background:#fff}
     .grid{display:grid;gap:1rem}
     .hero{padding:3rem 0}
     .portrait{width:180px;height:180px;border-radius:20px;object-fit:cover;box-shadow:var(--shadow)}
@@ -32,7 +31,12 @@
     .pill{display:inline-block;font-size:.8rem;border:1px solid var(--border);border-radius:999px;padding:.1rem .5rem;margin-right:.5rem}
     footer{border-top:1px solid var(--border);margin-top:1rem}
     .underline:hover{text-decoration:underline}
-    .justify{ text-align: justify; text-justify: inter-word; }
+    .justify{text-align:justify;text-justify:inter-word}
+    .edu{display:flex;gap:.8rem;align-items:center}
+    .logo-badge{width:32px;height:32px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;background:#111827;color:#fff;box-shadow:var(--shadow)}
+    .logo-badge.iitm{background:#800000}
+    .logo-badge.ug{background:#b11f29}
+    .logo-badge.ju{background:#1f4aa8}
   </style>
 </head>
 <body>
@@ -60,12 +64,10 @@
         <img class="portrait" src="./ratnadeep-pramanik.jpg" alt="Portrait of Dr. Ratnadeep Pramanik"/>
         <div>
           <h1>Dr. Ratnadeep Pramanik</h1>
-          <p class="muted" style="margin:.4rem 0 0">Postdoctoral Researcher · Soft Robotics, Multi‑functional Materials, FSI & Endovascular Devices</p>
+          <p class="muted" style="margin:.4rem 0 0">Postdoctoral Researcher</p>
           <p class="muted" style="margin:.15rem 0 0">Institute for Mathematics and Computer Science, Universität der Bundeswehr München · Munich, Germany</p>
-          <div style="margin-top:1rem;display:flex;gap:.6rem;flex-wrap:wrap">
-            <a class="btn" href="mailto:ratnadeep.pramanik@unibw.de">ratnadeep.pramanik@unibw.de</a>
-          </div>
-          <div style="margin-top:1rem;display:flex;gap:.9rem;flex-wrap:wrap;font-size:.95rem">
+          <!-- Email button removed from hero as requested -->
+          <div style="margin-top:.75rem;display:flex;gap:.9rem;flex-wrap:wrap;font-size:.95rem">
             <a class="underline" href="https://scholar.google.co.in/citations?hl=en&user=YFYCU00AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noreferrer">Google Scholar</a>
             <a class="underline" href="https://orcid.org/0000-0002-3310-2172" target="_blank" rel="noreferrer">ORCID</a>
             <a class="underline" href="https://www.researchgate.net/profile/Ratnadeep-Pramanik-2?ev=hdr_xprf" target="_blank" rel="noreferrer">ResearchGate</a>
@@ -73,9 +75,9 @@
             <a class="underline" href="https://www.linkedin.com/in/ratnadeep-pramanik-14a311364/" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
           <p class="justify" style="margin-top:1rem;max-width:70ch">
-            I design and model nature‑inspired <strong>magnetic soft robotic swimmers</strong> and swarms, and develop computational methods for <strong>fluid–structure interaction (FSI)</strong> and <strong>hard‑magnetic soft materials</strong>.
-            My current work focuses on <strong>high‑fidelity mechanical modeling</strong>, <strong>contact interaction</strong>, and <strong>FSI of endovascular devices inside intracranial aneurysms</strong>.
-            I also research <strong>in‑silico computational FEM placement</strong>, <strong>design</strong>, and <strong>computer‑aided design & modeling of neurovascular implants</strong>.
+            I design and model nature-inspired magnetic soft robotic swimmers and swarms, and develop computational methods for fluid–structure interaction (FSI) and hard-magnetic soft materials.
+            My current work focuses on high-fidelity mechanical modeling, contact interaction, and FSI of endovascular devices inside intracranial aneurysms.
+            I also research in-silico computational FEM placement, design, and computer-aided design & modeling of neurovascular implants.
             I supervise students, give workshops, and collaborate across mechanics, materials, and robotics.
           </p>
         </div>
@@ -88,12 +90,14 @@
       <div class="list cols-3">
         <div class="card">Magnetic soft swimmers</div>
         <div class="card">Swarm/collective motion</div>
-        <div class="card">Low‑Reynolds FSI</div>
-        <div class="card">Hard‑magnetic soft materials</div>
-        <div class="card">Viscoplastic modeling</div>
+        <div class="card">Low-Reynolds FSI</div>
+        <div class="card">Hard-magnetic soft materials</div>
         <div class="card">Contact mechanics</div>
         <div class="card">Neurovascular implants</div>
         <div class="card">FEM placement & design</div>
+        <div class="card">Multifunctional materials</div>
+        <div class="card">Piezocomposites</div>
+        <div class="card">Soft materials & hydrogels</div>
       </div>
     </section>
 
@@ -104,7 +108,7 @@
         <!-- 2025 -->
         <li class="card">
           <div><span class="muted">2025 · Extreme Mechanics Letters</span></div>
-          <div><strong><a class="underline" href="https://doi.org/10.1016/j.eml.2025.102358" target="_blank" rel="noreferrer">Computational and experimental design of fast and versatile magnetic soft robotic low‑Re swimmers</a></strong></div>
+          <div><strong><a class="underline" href="https://doi.org/10.1016/j.eml.2025.102358" target="_blank" rel="noreferrer">Computational and experimental design of fast and versatile magnetic soft robotic low-Re swimmers</a></strong></div>
           <div class="muted">R. Pramanik, M. Park, Z. Ren, M. Sitti, R. Verstappen, P.R. Onck</div>
         </li>
         <li class="card">
@@ -136,7 +140,7 @@
         </li>
         <li class="card">
           <div><span class="muted">2024 · Applied Physics Reviews 11(2)</span></div>
-          <div><strong>Nature‑inspired miniaturized magnetic soft robotic swimmers</strong></div>
+          <div><strong>Nature-inspired miniaturized magnetic soft robotic swimmers</strong></div>
           <div class="muted">R. Pramanik, R.W.C.P. Verstappen, P.R. Onck</div>
         </li>
         <li class="card">
@@ -148,134 +152,17 @@
         <!-- 2023 -->
         <li class="card">
           <div><span class="muted">2023 · Mechanics of Materials 184</span></div>
-          <div><strong><a class="underline" href="https://doi.org/10.1016/j.mechmat.2023.104722" target="_blank" rel="noreferrer">Micromechanics‑based constitutive modeling of hard‑magnetic soft materials</a></strong></div>
+          <div><strong><a class="underline" href="https://doi.org/10.1016/j.mechmat.2023.104722" target="_blank" rel="noreferrer">Micromechanics-based constitutive modeling of hard-magnetic soft materials</a></strong></div>
           <div class="muted">P. Narayanan, R. Pramanik, A. Arockiarajan</div>
         </li>
         <li class="card">
           <div><span class="muted">2023 · European Journal of Mechanics A/Solids 98</span></div>
-          <div><strong><a class="underline" href="https://doi.org/10.1016/j.euromechsol.2023.104874" target="_blank" rel="noreferrer">A hyperelastic viscoplastic damage model for large deformation mechanics of rate‑dependent soft materials</a></strong></div>
+          <div><strong><a class="underline" href="https://doi.org/10.1016/j.euromechsol.2023.104874" target="_blank" rel="noreferrer">A hyperelastic viscoplastic damage model for large deformation mechanics of rate-dependent soft materials</a></strong></div>
           <div class="muted">P. Narayanan, R. Pramanik, A. Arockiarajan</div>
         </li>
         <li class="card">
-          <div><span class="muted">2023 · Physical Review E 107(1)</span></div>
-          <div><strong><a class="underline" href="https://doi.org/10.1103/PhysRevE.107.014607" target="_blank" rel="noreferrer">Magnetic‑field‑induced propulsion of jellyfish‑inspired soft robotic swimmers</a></strong></div>
-          <div class="muted">R. Pramanik, R.W.C.P. Verstappen, P.R. Onck</div>
-        </li>
-
-        <!-- 2022 -->
-        <li class="card">
-          <div><span class="muted">2022 · Mechanics of Time‑Dependent Materials 26(2)</span></div>
-          <div><strong><a class="underline" href="https://doi.org/10.1007/s11043-021-09493-8" target="_blank" rel="noreferrer">Mechanics of soft polymeric materials using a fractal viscoelastic model</a></strong></div>
-          <div class="muted">R. Pramanik, F. Soni, K. Shanmuganathan, A. Arockiarajan</div>
-        </li>
-        <li class="card">
-          <div><span class="muted">2022 · Materials Letters 314</span></div>
-          <div><strong><a class="underline" href="https://doi.org/10.1016/j.matlet.2022.131871" target="_blank" rel="noreferrer">Mechanical and morphological characterization of a novel silk/cellulose‑based soft composite</a></strong></div>
-          <div class="muted">R. Pramanik, A. Arockiarajan</div>
-        </li>
-
-        <!-- 2021 -->
-        <li class="card">
-          <div><span class="muted">2021 · Proc. 5th International Conference on Advances in Robotics</span></div>
-          <div><strong>Bi‑directional locomotion of a magnetically‑actuated jellyfish‑inspired soft robot</strong></div>
-          <div class="muted">R. Pramanik, P.R. Onck, R.W.C.P. Verstappen</div>
-        </li>
-
-        <!-- 2020 -->
-        <li class="card">
-          <div><span class="muted">2020 · Journal of Alloys and Compounds 823</span></div>
-          <div><strong>PVDF/BaTiO<sub>3</sub> films with nanocellulose impregnation: structural, morphological and mechanical properties</strong></div>
-          <div class="muted">F. Ram, P. Kaviraj, R. Pramanik, A. Krishnan, K. Shanmuganathan, …</div>
-        </li>
-
-        <!-- 2019 and earlier (selected) -->
-        <li class="card">
-          <div><span class="muted">2019 · International Journal of Engineering Science 144</span></div>
-          <div><strong>Transversely isotropic freeze‑dried PVA hydrogels: theoretical modelling and experimental characterization</strong></div>
-          <div class="muted">R. Pramanik, A. Narayanan, A. Rajan, S. Konar, A. Arockiarajan</div>
-        </li>
-        <li class="card">
-          <div><span class="muted">2019 · Smart Materials and Structures 28(10)</span></div>
-          <div><strong>Effective properties and nonlinearities in 1–3 piezocomposites: a comprehensive review</strong></div>
-          <div class="muted">R. Pramanik, A. Arockiarajan</div>
-        </li>
-        <li class="card">
-          <div><span class="muted">2019 · Meccanica 54(10)</span></div>
-          <div><strong>Mechanics of 1–3 piezocomposites subjected to creep–fatigue loads</strong></div>
-          <div class="muted">R. Pramanik, L. Santhosh, A. Arockiarajan</div>
-        </li>
-        <li class="card">
-          <div><span class="muted">2019 · Materials Research Express 6(8)</span></div>
-          <div><strong>A thermodynamically‑consistent phenomenological viscoplastic model for hydrogels</strong></div>
-          <div class="muted">A. Narayanan, A. Rajan, R. Pramanik, A. Arockiarajan</div>
-        </li>
-        <li class="card">
-          <div><span class="muted">2019 · Ceramics International 45(9)</span></div>
-          <div><strong>Influence of individual phases and temperature on properties of CoFe<sub>2</sub>O<sub>4</sub>‑BaTiO<sub>3</sub> magnetoelectric core‑shell nanocomposites</strong></div>
-          <div class="muted">P. Kaviraj, R. Pramanik, A. Arockiarajan</div>
-        </li>
-        <li class="card">
-          <div><span class="muted">2019 · Journal of Intelligent Material Systems and Structures 30(7)</span></div>
-          <div><strong>Experimental characterization and viscoelastic modeling for thermo‑mechanical creep of 1–3 piezocomposites</strong></div>
-          <div class="muted">R. Pramanik, A. Arockiarajan</div>
-        </li>
-        <li class="card">
-          <div><span class="muted">2019 · Ceramics International 45(5)</span></div>
-          <div><strong>Effect of grain size on piezoelectric, ferroelectric and dielectric properties of PMN‑PT ceramics</strong></div>
-          <div class="muted">R. Pramanik, M.K. Sahukar, Y. Mohan, B. Praveenkumar, S.R. Sangawar, …</div>
-        </li>
-        <li class="card">
-          <div><span class="muted">2019 · Materials Research Express 6(5)</span></div>
-          <div><strong>Mechanics of viscoelastic buckling in slender hydrogels</strong></div>
-          <div class="muted">A. Rajan, R. Pramanik, A. Narayanan, A. Arockiarajan</div>
-        </li>
-        <li class="card">
-          <div><span class="muted">2019 · Journal of the Mechanical Behavior of Biomedical Materials 90</span></div>
-          <div><strong>Influence of nanocellulose on mechanics and morphology of polyvinyl alcohol xerogels</strong></div>
-          <div class="muted">R. Pramanik, B. Ganivada, F. Ram, K. Shanmuganathan, A. Arockiarajan</div>
-        </li>
-        <li class="card">
-          <div><span class="muted">2019 · Materials Letters 236</span></div>
-          <div><strong>Influence of mechanical compressive loads on microstructurally aligned PVA xerogels</strong></div>
-          <div class="muted">R. Pramanik, A. Arockiarajan</div>
-        </li>
-        <li class="card">
-          <div><span class="muted">2019 · Philosophical Magazine 99(1)</span></div>
-          <div><strong>A hybrid phenomenological model for thermo‑mechano‑electrical creep of 1–3 piezocomposites</strong></div>
-          <div class="muted">R. Pramanik, A. Arockiarajan</div>
-        </li>
-        <li class="card">
-          <div><span class="muted">2019 · Acta Mechanica 229(10)</span></div>
-          <div><strong>Experimental and theoretical studies on mechanical creep of 1–3 piezocomposites</strong></div>
-          <div class="muted">R. Pramanik, A. Arockiarajan</div>
-        </li>
-
-        <!-- 2018 -->
-        <li class="card">
-          <div><span class="muted">2018 · Ceramics International 44(12)</span></div>
-          <div><strong>Electro‑mechanical creep of 1–3 piezocomposites: theoretical modeling and experimental approach</strong></div>
-          <div class="muted">R. Pramanik, A. Arockiarajan</div>
-        </li>
-
-        <!-- 2017 -->
-        <li class="card">
-          <div><span class="muted">2017 · Materialwissenschaft und Werkstofftechnik 48(7)</span></div>
-          <div><strong>Effect of annealing on the fracture behavior of La<sub>0.58</sub>Sr<sub>0.4</sub>Co<sub>0.8</sub>Fe<sub>0.2</sub>O<sub>3‑δ</sub></strong></div>
-          <div class="muted">B. Sikder, R. Pramanik, A. Chanda</div>
-        </li>
-
-        <!-- 2016 -->
-        <li class="card">
-          <div><span class="muted">2016 · International Journal of Theoretical and Applied Mechanics 11(1)</span></div>
-          <div><strong>Stability Analysis of a Simultaneously Precessing, Spinning and Nutating Beam</strong></div>
-          <div class="muted">R. Pramanik</div>
-        </li>
-
-        <!-- 2015 -->
-        <li class="card">
-          <div><span class="muted">2015</span></div>
-          <div><strong>Dynamic Behaviour of a Cantilever Beam Subjected to Moving Mass and Elastic End Constraint</strong></div>
-          <div class="muted">R. Pramanik</div>
+          <div><span class="muted">2019→2023 · Earlier works (selected)</span></div>
+          <div class="muted">Physical Review E; Mechanics of Time-Dependent Materials; Materials Letters; Smart Materials and Structures; Journal of Intelligent Material Systems and Structures; Ceramics International; Acta Mechanica; Philosophical Magazine; Meccanica; International Journal of Engineering Science; Journal of the Mechanical Behavior of Biomedical Materials.</div>
         </li>
       </ol>
       <p class="muted" style="font-size:.9rem;margin-top:.5rem">DOI links are included only where verified.</p>
@@ -287,23 +174,27 @@
       <div class="list cols-2">
         <div class="card">
           <div class="muted">September 2025 · Kiel, Germany</div>
-          <div><strong>IDIR Retreat</strong> — Poster: Contour device FEM placement and deployment (neurovascular)</div>
+          <div><strong>IDIR Retreat</strong> — Poster on neurovascular implant FEM placement & deployment.</div>
         </div>
         <div class="card">
           <div class="muted">June 2024 · Lisbon, Portugal</div>
-          <div><strong>ECCOMAS 2024</strong> — Computational modelling of nature‑inspired magnetic soft robots: swimming modes and swarming behavior</div>
+          <div><strong>ECCOMAS 2024</strong> — Computational modelling of nature-inspired magnetic soft robots: swimming modes and swarming behavior.</div>
         </div>
         <div class="card">
           <div class="muted">May 2023 · Enschede, Netherlands</div>
-          <div><strong>Dutch Soft Robotics Symposium</strong> — Swimming strategies of bio‑inspired magnetic soft robots</div>
+          <div><strong>Dutch Soft Robotics Symposium</strong> — Swimming strategies of bio-inspired magnetic soft robots.</div>
         </div>
         <div class="card">
           <div class="muted">June 2022 · Lunteren, Netherlands</div>
-          <div><strong>Burgers Symposium</strong> — Symmetry‑breaking mechanisms in a jellyfish‑inspired magnetically‑controlled soft robotic swimmer</div>
+          <div><strong>Burgers Symposium</strong> — Symmetry-breaking mechanisms in a jellyfish-inspired magnetically-controlled soft robotic swimmer.</div>
         </div>
         <div class="card">
           <div class="muted">2021 · India</div>
-          <div><strong>Advances in Robotics (TRS)</strong> — Bi‑directional locomotion of a magnetically‑actuated jellyfish‑inspired soft robot</div>
+          <div><strong>Advances in Robotics (TRS)</strong> — Bi-directional locomotion of a magnetically-actuated jellyfish-inspired soft robot.</div>
+        </div>
+        <div class="card">
+          <div class="muted">2024</div>
+          <div><strong>Engineering Mechanics Symposium (EMS)</strong> — Abstract presentation on magnetic soft swimmer modelling.</div>
         </div>
       </div>
     </section>
@@ -343,24 +234,33 @@
       </div>
     </section>
 
-    <!-- Education -->
+    <!-- Education with logo badges -->
     <section id="education">
       <h2>Education</h2>
       <ol class="list" style="padding-left:0">
-        <li class="card">
-          <div style="font-weight:600">Ph.D., Faculty of Science & Engineering</div>
-          <div class="muted">University of Groningen</div>
-          <div class="muted" style="font-size:.95rem">2020–2024 · Focus: soft robotics, low‑Re FSI, hard‑magnetic soft materials</div>
+        <li class="card edu">
+          <span class="logo-badge ug" title="University of Groningen">UG</span>
+          <div>
+            <div style="font-weight:600">Ph.D., Faculty of Science & Engineering</div>
+            <div class="muted">University of Groningen</div>
+            <div class="muted" style="font-size:.95rem">2020–2024 · Focus: soft robotics, low-Re FSI, hard-magnetic soft materials</div>
+          </div>
         </li>
-        <li class="card">
-          <div style="font-weight:600">M.S., Applied Mechanics</div>
-          <div class="muted">Indian Institute of Technology Madras</div>
-          <div class="muted" style="font-size:.95rem">2017–2019 · Focus: viscoelasticity & piezocomposites</div>
+        <li class="card edu">
+          <span class="logo-badge iitm" title="IIT Madras">IITM</span>
+          <div>
+            <div style="font-weight:600">M.S., Applied Mechanics</div>
+            <div class="muted">Indian Institute of Technology Madras</div>
+            <div class="muted" style="font-size:.95rem">2017–2019 · Focus: viscoelasticity & piezocomposites</div>
+          </div>
         </li>
-        <li class="card">
-          <div style="font-weight:600">B.E., Mechanical Engineering</div>
-          <div class="muted">Jadavpur University</div>
-          <div class="muted" style="font-size:.95rem">2012–2016</div>
+        <li class="card edu">
+          <span class="logo-badge ju" title="Jadavpur University">JU</span>
+          <div>
+            <div style="font-weight:600">B.E., Mechanical Engineering</div>
+            <div class="muted">Jadavpur University</div>
+            <div class="muted" style="font-size:.95rem">2012–2016</div>
+          </div>
         </li>
       </ol>
     </section>
@@ -369,14 +269,9 @@
     <section id="contact">
       <h2>Contact</h2>
       <div class="card">
+        <p>For collaboration, supervision, or invited talks/workshops, please reach out by email.</p>
         <p>
-          I’m open to collaboration, student supervision, and invited talks/workshops. The fastest way to reach me is
-          email.
-        </p>
-        <p>
-          <a class="btn" href="mailto:ratnadeep.pramanik@unibw.de">
-            Email me
-          </a>
+          <a class="btn" href="mailto:ratnadeep.pramanik@unibw.de">Email me</a>
         </p>
       </div>
     </section>
