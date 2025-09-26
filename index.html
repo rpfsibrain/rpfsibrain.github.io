@@ -4,13 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dr. Ratnadeep Pramanik — Academic</title>
-  <meta name="description" content="Postdoctoral Researcher — Soft Robotics, Multifunctional Materials, FSI & Endovascular Devices — publications, conferences, supervision, education, contact."/>
+  <meta name="description" content="Postdoctoral Researcher — publications, conferences, supervision, education, reviewing, and contact."/>
   <style>
     :root{
       --bg:#ffffff; --fg:#0a0a0a; --muted:#666; --border:#e5e7eb; --card:#fafafa; --accent:#111827;
       --radius:16px; --shadow:0 6px 24px rgba(0,0,0,.06);
     }
-    html,body{background:var(--bg);color:var(--fg);font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";}
+    html,body{background:var(--bg);color:var(--fg);font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans";}
     .container{max-width:1120px;margin-inline:auto;padding:0 1rem}
     header{position:sticky;top:0;backdrop-filter:saturate(150%) blur(8px);background:rgba(255,255,255,.85);border-bottom:1px solid var(--border);z-index:50}
     nav{display:flex;gap:1rem;align-items:center;justify-content:space-between;padding:.75rem 0}
@@ -20,7 +20,13 @@
     .grid{display:grid;gap:1rem}
     .hero{padding:3rem 0}
     .portrait{width:180px;height:180px;border-radius:20px;object-fit:cover;box-shadow:var(--shadow)}
-    @media (min-width: 768px){.hero-grid{grid-template-columns:240px 1fr}.portrait{width:220px;height:220px}}
+    .about-col{display:flex;flex-direction:column}
+    .about-copy{margin-top:1rem;max-width:70ch;text-align:justify}
+    @media (min-width: 768px){
+      .hero-grid{grid-template-columns:240px 1fr}
+      .portrait{width:220px;height:220px}
+      .about-copy{min-height:220px}
+    }
     h1{font-size:2.25rem;line-height:1.2;margin:0}
     h2{font-size:1.6rem;margin:0 0 .75rem}
     section{scroll-margin-top:96px;padding:2rem 0}
@@ -28,10 +34,6 @@
     .list{display:grid;gap:1rem}
     @media (min-width: 768px){.cols-2{grid-template-columns:1fr 1fr}.cols-3{grid-template-columns:repeat(3,1fr)}}
     .muted{color:var(--muted)}
-    .pill{display:inline-block;font-size:.85rem;border:1px solid var(--border);border-radius:999px;padding:.1rem .5rem;margin-right:.5rem}
-    footer{border-top:1px solid var(--border);margin-top:1rem}
-    .edu-logo{height:28px;vertical-align:middle;margin-right:.5rem}
-    .justify{text-align:justify}
     .underline:hover{text-decoration:underline}
   </style>
 </head>
@@ -46,6 +48,7 @@
           <a href="#publications">Publications</a>
           <a href="#conferences">Conferences</a>
           <a href="#supervision">Supervision</a>
+          <a href="#reviewing">Reviewing</a>
           <a href="#education">Education</a>
           <a href="#contact">Contact</a>
         </div>
@@ -57,13 +60,11 @@
     <!-- About / Hero -->
     <section id="about" class="hero">
       <div class="grid hero-grid">
-        <!-- Place a file named ratnadeep-pramanik.jpg next to this HTML -->
         <img class="portrait" src="./ratnadeep-pramanik.jpg" alt="Portrait of Dr. Ratnadeep Pramanik"/>
-        <div>
+        <div class="about-col">
           <h1>Dr. Ratnadeep Pramanik</h1>
           <p class="muted" style="margin:.4rem 0 0">Postdoctoral Researcher</p>
-          <p class="muted" style="margin:.15rem 0 0">Institute for Mathematics & Computer Science, Universität der Bundeswehr München · Munich, Germany</p>
-
+          <p class="muted" style="margin:.15rem 0 0">Institute for Mathematics and Computer Science, Universität der Bundeswehr München · Munich, Germany</p>
           <div style="margin-top:1rem;display:flex;gap:.9rem;flex-wrap:wrap;font-size:.95rem">
             <a class="underline" href="https://scholar.google.co.in/citations?hl=en&user=YFYCU00AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noreferrer">Google Scholar</a>
             <a class="underline" href="https://orcid.org/0000-0002-3310-2172" target="_blank" rel="noreferrer">ORCID</a>
@@ -71,8 +72,7 @@
             <a class="underline" href="https://github.com/rpfsibrain" target="_blank" rel="noreferrer">GitHub</a>
             <a class="underline" href="https://www.linkedin.com/in/ratnadeep-pramanik-14a311364/" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
-
-          <p class="justify" style="margin-top:1rem;max-width:68ch">
+          <p class="about-copy">
             I design and model nature‑inspired magnetic soft robotic swimmers and swarms, and develop computational methods for fluid–structure interaction (FSI) and hard‑magnetic soft materials. My current work focuses on high‑fidelity mechanical modeling, contact interaction, and FSI of endovascular devices inside intracranial aneurysms. I also research in‑silico computational FEM placement, design, and computer‑aided design & modeling of neurovascular implants. I supervise students, give workshops, and collaborate across mechanics, materials, and robotics.
           </p>
         </div>
@@ -83,7 +83,7 @@
     <section id="research">
       <h2>Research Interests</h2>
       <div class="list cols-3">
-        <div class="card">Magnetic soft <b>robotic</b> swimmers</div>
+        <div class="card">Magnetic soft robotic swimmers</div>
         <div class="card">Swarms & collective motion</div>
         <div class="card">FSI at low Reynolds number</div>
         <div class="card">Hard‑magnetic soft materials</div>
@@ -92,18 +92,19 @@
         <div class="card">Contact modeling</div>
         <div class="card">Intracranial aneurysms</div>
         <div class="card">Endovascular devices</div>
-        <div class="card">Computational FEM & CAD of neurovascular implants</div>
+        <div class="card">Computational FEM placement</div>
+        <div class="card">CAD of neurovascular implants</div>
       </div>
     </section>
 
-    <!-- Publications -->
+    <!-- Publications (strictly DOI-backed) -->
     <section id="publications">
-      <h2>Publications (selected)</h2>
+      <h2>Publications</h2>
       <ol class="list" style="padding-left:1.25rem">
         <li class="card">
           R. Pramanik, M. Park, Z. Ren, M. Sitti, R. Verstappen, P.R. Onck,
           <i>Computational and experimental design of fast and versatile magnetic soft robotic low‑Re swimmers</i>,
-          <b>Extreme Mechanics Letters</b>, 2025, 102358.
+          <b>Extreme Mechanics Letters</b>, 2025.
           DOI: <a class="underline" href="https://doi.org/10.1016/j.eml.2025.102358" target="_blank" rel="noreferrer">10.1016/j.eml.2025.102358</a>.
         </li>
         <li class="card">
@@ -125,13 +126,13 @@
           DOI: <a class="underline" href="https://doi.org/10.1088/1748-605X/ada840" target="_blank" rel="noreferrer">10.1088/1748-605X/ada840</a>.
         </li>
         <li class="card">
-          R. Pramanik, R. Verstappen, P.R. Onck,
+          R. Pramanik, R.W.C.P. Verstappen, P.R. Onck,
           <i>Computational fluid–structure interaction in biology and soft robots: A review</i>,
           <b>Physics of Fluids</b>, 36(10):101302, 2024.
           DOI: <a class="underline" href="https://doi.org/10.1063/5.0226743" target="_blank" rel="noreferrer">10.1063/5.0226743</a>.
         </li>
         <li class="card">
-          R. Pramanik, R. Verstappen, P.R. Onck,
+          R. Pramanik, R.W.C.P. Verstappen, P.R. Onck,
           <i>Nature‑inspired miniaturized magnetic soft robotic swimmers</i>,
           <b>Applied Physics Reviews</b>, 11(2):021312, 2024.
           DOI: <a class="underline" href="https://doi.org/10.1063/5.0189185" target="_blank" rel="noreferrer">10.1063/5.0189185</a>.
@@ -140,7 +141,7 @@
           P. Narayanan, R. Pramanik, A. Arockiarajan,
           <i>Hard magnetics and soft materials — a synergy</i>,
           <b>Smart Materials and Structures</b>, 33(4):043001, 2024.
-          DOI: <a class="underline" href="https://doi.org/10.1088/1361-665X/ad210a" target="_blank" rel="noreferrer">10.1088/1361-665X/ad210a</a>.
+          DOI: <a class="underline" href="https://doi.org/10.1088/1361-665X/ad28f1" target="_blank" rel="noreferrer">10.1088/1361-665X/ad28f1</a>.
         </li>
         <li class="card">
           P. Narayanan, R. Pramanik, A. Arockiarajan,
@@ -155,7 +156,7 @@
           DOI: <a class="underline" href="https://doi.org/10.1016/j.euromechsol.2023.104874" target="_blank" rel="noreferrer">10.1016/j.euromechsol.2023.104874</a>.
         </li>
         <li class="card">
-          R. Pramanik, R. Verstappen, P.R. Onck,
+          R. Pramanik, R.W.C.P. Verstappen, P.R. Onck,
           <i>Magnetic‑field‑induced propulsion of jellyfish‑inspired soft robotic swimmers</i>,
           <b>Physical Review E</b>, 107(1):014607, 2023.
           DOI: <a class="underline" href="https://doi.org/10.1103/PhysRevE.107.014607" target="_blank" rel="noreferrer">10.1103/PhysRevE.107.014607</a>.
@@ -179,8 +180,8 @@
           DOI: <a class="underline" href="https://doi.org/10.1145/3478586.3478591" target="_blank" rel="noreferrer">10.1145/3478586.3478591</a>.
         </li>
         <li class="card">
-          R. Pramanik, A. Narayanan, A. Rajan, S. Konar, A. Arockiarajan,
-          <i>Transversely isotropic freeze‑dried PVA hydrogels: Theoretical modelling and experimental characterization</i>,
+          A. Narayanan, A. Rajan, R. Pramanik, A. Arockiarajan,
+          <i>Transversely isotropic freeze‑dried PVA hydrogels: theoretical modelling and experimental characterization</i>,
           <b>International Journal of Engineering Science</b>, 144:103144, 2019.
           DOI: <a class="underline" href="https://doi.org/10.1016/j.ijengsci.2019.103144" target="_blank" rel="noreferrer">10.1016/j.ijengsci.2019.103144</a>.
         </li>
@@ -215,12 +216,6 @@
           DOI: <a class="underline" href="https://doi.org/10.1177/1045389X19828475" target="_blank" rel="noreferrer">10.1177/1045389X19828475</a>.
         </li>
         <li class="card">
-          R. Pramanik, M.K. Sahukar, Y. Mohan, B. Praveenkumar, S.R. Sangawar, …,
-          <i>Effect of grain size on piezoelectric, ferroelectric and dielectric properties of PMN‑PT ceramics</i>,
-          <b>Ceramics International</b>, 45(5):5731–5742, 2019.
-          Link: <a class="underline" href="https://www.sciencedirect.com/science/article/pii/S0272884218334217" target="_blank" rel="noreferrer">ScienceDirect article page</a>.
-        </li>
-        <li class="card">
           A. Rajan, R. Pramanik, A. Narayanan, A. Arockiarajan,
           <i>Mechanics of viscoelastic buckling in slender hydrogels</i>,
           <b>Materials Research Express</b>, 6(5):055320, 2019.
@@ -250,53 +245,19 @@
           <b>Acta Mechanica</b>, 229(10):4187–4198, 2018.
           DOI: <a class="underline" href="https://doi.org/10.1007/s00707-018-2209-0" target="_blank" rel="noreferrer">10.1007/s00707-018-2209-0</a>.
         </li>
-        <li class="card">
-          R. Pramanik, A. Arockiarajan,
-          <i>Electro‑mechanical creep of 1–3 piezocomposites: Theoretical modeling and experimental approach</i>,
-          <b>Ceramics International</b>, 44(12):13934–13943, 2018.
-          Link: <a class="underline" href="https://www.sciencedirect.com/science/article/pii/S0272884218311088" target="_blank" rel="noreferrer">ScienceDirect article page</a>.
-        </li>
-        <li class="card">
-          B. Sikder, R. Pramanik, A. Chanda,
-          <i>Effect of annealing on the fracture behavior of La<sub>0.58</sub>Sr<sub>0.4</sub>Co<sub>0.8</sub>Fe<sub>0.2</sub>O<sub>3-δ</sub>, a potential energy material for oxygen separation</i>,
-          <b>Materialwissenschaft und Werkstofftechnik</b>, 48(7):726–730, 2017.
-          DOI: <a class="underline" href="https://doi.org/10.1002/mawe.201780711" target="_blank" rel="noreferrer">10.1002/mawe.201780711</a>.
-        </li>
-        <li class="card">
-          R. Pramanik,
-          <i>Stability Analysis of a Simultaneously Precessing, Spinning and Nutating Beam</i>,
-          <b>International Journal of Theoretical and Applied Mechanics</b>, 11(1), 2016.
-          (No DOI available online.)
-        </li>
-        <li class="card">
-          R. Pramanik,
-          <i>Dynamic Behaviour of a Cantilever Beam Subjected to Moving Mass and Elastic End Constraint</i>,
-          <b>International Journal of Theoretical and Applied Mechanics</b>, 2015.
-          (No DOI available online.)
-        </li>
       </ol>
-      <p class="muted" style="font-size:.9rem;margin-top:.5rem">Links above point to publisher DOIs or the publisher’s article pages for reliability.</p>
+      <p class="muted" style="font-size:.9rem;margin-top:.5rem">Entries without a reliable DOI have been omitted by request.</p>
     </section>
 
-    <!-- Conferences & Talks (no hyperlinks, concise) -->
+    <!-- Conferences & Talks (no hyperlinks) -->
     <section id="conferences">
       <h2>Conferences & Talks</h2>
       <div class="list">
-        <div class="card">
-          2025 · IDIR Retreat, Kiel — Recent advances in magnetic soft swimmers and FSI of endovascular devices.
-        </div>
-        <div class="card">
-          2024 · ECCOMAS, Lisbon — Computational modelling of nature‑inspired magnetic soft robots: swimming modes and swarming behaviour.
-        </div>
-        <div class="card">
-          2023 · Dutch Soft Robotics Symposium, Enschede — Swimming strategies of bio‑inspired magnetic soft robots.
-        </div>
-        <div class="card">
-          2022 · Burgers Symposium, Lunteren — Symmetry‑breaking mechanisms in a jellyfish‑inspired magnetically controlled soft robotic swimmer.
-        </div>
-        <div class="card">
-          2021 · Advances in Robotics (AIR), India — Bi‑directional locomotion of a magnetically actuated jellyfish‑inspired soft robot.
-        </div>
+        <div class="card">2025 · IDIR Retreat, Kiel — Neurovascular implant FEM placement & deployment.</div>
+        <div class="card">2024 · ECCOMAS, Lisbon — Computational modelling of nature‑inspired magnetic soft robots.</div>
+        <div class="card">2023 · Dutch Soft Robotics Symposium, Enschede — Swimming strategies of bio‑inspired magnetic soft robots.</div>
+        <div class="card">2022 · Burgers Symposium, Lunteren — Symmetry‑breaking in a jellyfish‑inspired magnetically controlled swimmer.</div>
+        <div class="card">2021 · Advances in Robotics (AIR), India — Bi‑directional locomotion of a jellyfish‑inspired soft robot.</div>
       </div>
     </section>
 
@@ -304,72 +265,19 @@
     <section id="supervision">
       <h2>Student Supervision</h2>
       <div class="list cols-2">
-        <div class="card">
-          <div style="font-weight:600">Aakila Rajan (2018–19)</div>
-          <div class="muted">IIT Madras · later Ph.D., Caltech</div>
-        </div>
-        <div class="card">
-          <div style="font-weight:600">Anantha Narayanan (2018–19)</div>
-          <div class="muted">IIT Madras · later M.S., MIT</div>
-        </div>
-        <div class="card">
-          <div style="font-weight:600">Prathik Narayanan (2022–24)</div>
-          <div class="muted">IIT Madras · later Ph.D., Brown University</div>
-        </div>
-        <div class="card">
-          <div style="font-weight:600">Tina Fazeli (2023–24)</div>
-          <div class="muted">University of Groningen · later M.S., TU Delft</div>
-        </div>
-        <div class="card">
-          <div style="font-weight:600">Tamer van Teeffelen (2024)</div>
-          <div class="muted">University of Groningen · later M.S., ETH Zürich</div>
-        </div>
-        <div class="card">
-          <div style="font-weight:600">Matias Santa Cruz (2024)</div>
-          <div class="muted">University of Groningen · later M.S., TU Delft</div>
-        </div>
-        <div class="card">
-          <div style="font-weight:600">Vignesh Kumar Gopalakrishnan (2023–)</div>
-          <div class="muted">IIT Madras</div>
-        </div>
+        <div class="card"><div style="font-weight:600">Aakila Rajan (2018–19)</div><div class="muted">IIT Madras · later Ph.D., Caltech</div></div>
+        <div class="card"><div style="font-weight:600">Anantha Narayanan (2018–19)</div><div class="muted">IIT Madras · later M.S., MIT</div></div>
+        <div class="card"><div style="font-weight:600">Prathik Narayanan (2022–24)</div><div class="muted">IIT Madras · later Ph.D., Brown University</div></div>
+        <div class="card"><div style="font-weight:600">Tina Fazeli (2023–24)</div><div class="muted">University of Groningen · later M.S., TU Delft</div></div>
+        <div class="card"><div style="font-weight:600">Tamer van Teeffelen (2024)</div><div class="muted">University of Groningen · later M.S., ETH Zürich</div></div>
+        <div class="card"><div style="font-weight:600">Matias Santa Cruz (2024)</div><div class="muted">University of Groningen · later M.S., TU Delft</div></div>
+        <div class="card"><div style="font-weight:600">Vignesh Kumar Gopalakrishnan (2023–)</div><div class="muted">IIT Madras</div></div>
       </div>
-    </section>
-
-    <!-- Education (with logos) -->
-    <section id="education">
-      <h2>Education</h2>
-      <ol class="list" style="padding-left:0">
-        <li class="card">
-          <div style="font-weight:600">
-            <img class="edu-logo" alt="University of Groningen logo" src="https://handwiki.org/wiki/images/9/90/Logo_of_the_University_of_Groningen.svg"/>
-            Ph.D., Faculty of Science & Engineering
-          </div>
-          <div class="muted">University of Groningen</div>
-          <div class="muted" style="font-size:.95rem">2020–2024</div>
-        </li>
-        <li class="card">
-          <div style="font-weight:600">
-            <img class="edu-logo" alt="IIT Madras logo" src="https://home.iitm.ac.in/anbarasansp/wp-content/uploads/2013/03/copy-iit-madras-logo.png"/>
-            M.S. (Applied Mechanics)
-          </div>
-          <div class="muted">Indian Institute of Technology Madras</div>
-          <div class="muted" style="font-size:.95rem">2017–2019</div>
-        </li>
-        <li class="card">
-          <div style="font-weight:600">
-            <img class="edu-logo" alt="Jadavpur University logo" src="https://www.kindpng.com/picc/m/151-1519480_jadavpur-university-kolkata-logo-hd-png-download.png"/>
-            B.E. (Mechanical Engineering)
-          </div>
-          <div class="muted">Jadavpur University</div>
-          <div class="muted" style="font-size:.95rem">2012–2016</div>
-        </li>
-      </ol>
-      <p class="muted" style="font-size:.9rem;margin-top:.25rem">If any logo fails to load on GitHub Pages, save a local PNG/SVG with the same filenames and update the <code>src</code> paths.</p>
     </section>
 
     <!-- Reviewing -->
     <section id="reviewing">
-      <h2>Journal & Conference Reviewing</h2>
+      <h2>Reviewing</h2>
       <div class="list cols-2">
         <div class="card">
           <ul style="margin:0;padding-left:1.2rem">
@@ -381,7 +289,7 @@
         </div>
         <div class="card">
           <ul style="margin:0;padding-left:1.2rem">
-            <li><a class="underline" target="_blank" rel="noreferrer" href="https://ieee-iros.org/">IEEE/RSJ IROS Conference (2025)</a></li>
+            <li><a class="underline" target="_blank" rel="noreferrer" href="https://ieee-iros.org/">IEEE/RSJ IROS Conference</a></li>
             <li><a class="underline" target="_blank" rel="noreferrer" href="https://iopscience.iop.org/journal/0953-8984">Journal of Physics: Condensed Matter (IOP)</a></li>
             <li><a class="underline" target="_blank" rel="noreferrer" href="https://www.mdpi.com/journal/micromachines">Micromachines (MDPI)</a></li>
           </ul>
@@ -389,25 +297,48 @@
       </div>
     </section>
 
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <ol class="list" style="padding-left:0">
+        <li class="card">
+          <div style="font-weight:600">Ph.D., Faculty of Science & Engineering</div>
+          <div class="muted">University of Groningen</div>
+          <div class="muted" style="font-size:.95rem">2020–2024</div>
+        </li>
+        <li class="card">
+          <div style="font-weight:600">M.S., Applied Mechanics</div>
+          <div class="muted">Indian Institute of Technology Madras</div>
+          <div class="muted" style="font-size:.95rem">2017–2019</div>
+        </li>
+        <li class="card">
+          <div style="font-weight:600">B.E., Mechanical Engineering</div>
+          <div class="muted">Jadavpur University</div>
+          <div class="muted" style="font-size:.95rem">2012–2016</div>
+        </li>
+      </ol>
+    </section>
+
     <!-- Contact -->
     <section id="contact">
       <h2>Contact</h2>
       <div class="card">
-        <div>Email: <a class="underline" href="mailto:ratnadeep.pramanik@unibw.de">ratnadeep.pramanik@unibw.de</a></div>
-        <div class="muted" style="margin-top:.35rem">Please feel free to connect about collaborations, student supervision, or invited talks.</div>
+        <p>Please feel free to connect for collaboration, student supervision, and invited talks/workshops.</p>
+        <p><a class="underline" href="mailto:ratnadeep.pramanik@unibw.de">Email me</a></p>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container" style="padding:1rem 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.75rem">
-      <div class="muted">© <span id="y"></span> Ratnadeep Pramanik</div>
-      <div class="muted">Munich · Germany</div>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:.75rem;padding:1rem 0;font-size:.95rem" aria-label="Footer">
+      <span>© <span id="year"></span> Dr. Ratnadeep Pramanik. All rights reserved.</span>
+      <a class="underline" href="#top">Back to top ↑</a>
     </div>
   </footer>
 
   <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
