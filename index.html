@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dr. Ratnadeep Pramanik — Academic</title>
-  <meta name="description" content="Postdoctoral Researcher · Soft Robotics & Soft Materials — publications, conferences, supervision, workshops, teaching, education, awards, contact."/>
+  <meta name="description" content="Postdoctoral Researcher · Soft Robotics & Soft Materials — publications, conferences, supervision, education, contact."/>
   <style>
     :root{
       --bg:#ffffff; --fg:#0a0a0a; --muted:#666; --border:#e5e7eb; --card:#fafafa; --accent:#111827;
@@ -49,11 +49,7 @@
           <a href="#publications">Publications</a>
           <a href="#conferences">Conferences</a>
           <a href="#supervision">Supervision</a>
-          <a href="#workshops">Workshops</a>
-          <a href="#teaching">Teaching</a>
           <a href="#education">Education</a>
-          <a href="#courses">Courses</a>
-          <a href="#awards">Awards</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -79,7 +75,12 @@
             <a class="underline" href="https://github.com/rpfsibrain" target="_blank" rel="noreferrer">GitHub</a>
             <a class="underline" href="https://www.linkedin.com/in/ratnadeep-pramanik-14a311364/" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
-          <p style="margin-top:1rem;max-width:60ch">I design and model nature‑inspired magnetic soft robotic swimmers and swarms, and develop computational methods for fluid–structure interaction and hard‑magnetic soft materials. I supervise students, give workshops, and collaborate across mechanics, materials and robotics.</p>
+          <p style="margin-top:1rem;max-width:60ch">
+            I design and model nature-inspired <strong>magnetic soft robotic swimmers</strong> and swarms, and develop computational methods for <strong>fluid–structure interaction (FSI)</strong> and <strong>hard-magnetic soft materials</strong>.
+            My current work focuses on <strong>high-fidelity mechanical modeling</strong>, <strong>contact interaction</strong>, and <strong>FSI of endovascular devices inside intracranial aneurysms</strong>.
+            I also research <strong>in-silico computational FEM placement</strong>, <strong>design</strong>, and <strong>computer-aided design &amp; modeling of neurovascular implants</strong>.
+            I supervise students, give workshops, and collaborate across mechanics, materials, and robotics.
+          </p>
         </div>
       </div>
     </section>
@@ -88,12 +89,12 @@
     <section id="research">
       <h2>Research Interests</h2>
       <div class="list cols-3">
-        <div class="card">Magnetic soft robotic swimmers (nature‑inspired)</div>
+        <div class="card">Magnetic soft robotic swimmers (nature-inspired)</div>
         <div class="card">Collective behavior & swarms</div>
         <div class="card">Computational FSI at low Reynolds number</div>
-        <div class="card">Hard‑magnetic soft materials (constitutive models)</div>
+        <div class="card">Hard-magnetic soft materials (constitutive models)</div>
         <div class="card">Damage & viscoplastic modeling of soft materials</div>
-        <div class="card">Data‑driven/ML for fluids & materials</div>
+        <div class="card">Data-driven/ML for fluids & materials</div>
       </div>
     </section>
 
@@ -103,7 +104,7 @@
       <div class="list cols-3">
         <div class="card">
           <div class="muted" style="font-size:.95rem">2025 · Extreme Mechanics Letters</div>
-          <h3 style="margin:.2rem 0"><a class="underline" href="#" target="_blank" rel="noreferrer">Fast & versatile magnetic soft swimmers</a></h3>
+          <h3 style="margin:.2rem 0"><a class="underline" href="https://doi.org/10.1016/j.eml.2025.102358" target="_blank" rel="noreferrer">Fast & versatile magnetic soft swimmers</a></h3>
           <p class="muted" style="margin:0">Design framework + experiments showing rapid, maneuverable swimming at low Re.</p>
         </div>
         <div class="card">
@@ -196,29 +197,6 @@
       </div>
     </section>
 
-    <!-- Workshops -->
-    <section id="workshops">
-      <h2>Workshops & Training</h2>
-      <div class="list cols-2">
-        <div class="card">
-          <div class="muted" style="font-size:.95rem">Mar 2025 · Grad workshop</div>
-          <h3 style="margin:.2rem 0"><a class="underline" href="#" target="_blank" rel="noreferrer">Hands‑on MeshPy → Abaqus: end‑to‑end beam models</a></h3>
-        </div>
-      </div>
-    </section>
-
-    <!-- Teaching -->
-    <section id="teaching">
-      <h2>Teaching</h2>
-      <div class="list cols-2">
-        <div class="card">
-          <div style="font-weight:600">Computational Mechanics (ME 503)</div>
-          <div class="muted">Lecturer</div>
-          <div class="muted" style="font-size:.95rem">SS 2025</div>
-        </div>
-      </div>
-    </section>
-
     <!-- Education -->
     <section id="education">
       <h2>Education</h2>
@@ -241,12 +219,170 @@
       </ol>
     </section>
 
-    <!-- Courses -->
-    <section id="courses">
-      <h2>Courses & Certificates</h2>
-      <div class="list cols-2">
-        <div class="card">
-          <div style="font-weight:600">Active Hydrodynamics</div>
-          <div class="muted">VLAG Graduate School / JMBC · 7–11 Oct 2024 · 1.0 ECTS</div>
-        </div>
-       
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>
+          I’m open to collaboration, student supervision, and invited talks/workshops. The fastest way to reach me is
+          email.
+        </p>
+        <p>
+          <a class="btn btn-primary" href="mailto:ratnadeep.pramanik@unibw.de">
+            Email me
+          </a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:.75rem;padding:1rem 0;font-size:.95rem" aria-label="Footer">
+      <span>© <span id="year"></span> Dr. Ratnadeep Pramanik. All rights reserved.</span>
+      <div style="display:flex;gap:1rem;align-items:center">
+        <span class="muted">Page views: <strong id="views-count">—</strong></span>
+        <span class="muted">Visitors: <strong id="visitors-count">—</strong></span>
+        <a class="underline" href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // === PUBLICATIONS (Auto from ORCID + manual seed + citations) ===
+    var ORCID_ID = '0000-0002-3310-2172';
+
+    // Seed items with rich metadata (keeps working even if ORCID is slow)
+    var SEED_PUBLICATIONS = [
+      {title:'Computational and experimental design of fast and versatile magnetic soft robotic low-Re swimmers', authors:'R. Pramanik, M. Park, Z. Ren, M. Sitti, R. Verstappen, P.R. Onck', venue:'Extreme Mechanics Letters', year:2025, doi:'10.1016/j.eml.2025.102358'},
+      {title:'Emergent spatiotemporal patterns and collective swimming of magnetically actuated soft robots', authors:'R. Pramanik, R.W.C.P. Verstappen, P.R. Onck', venue:'Nonlinear Dynamics', year:2025},
+      {title:'Leveraging Instabilities in Multifunctional Soft Materials: A Cutting Edge Review', authors:'P. Narayanan, R. Pramanik, A. Arockiarajan', venue:'Advanced Engineering Materials', year:2025, doi:'10.1002/adem.202500125'},
+      {title:'Harnessing machine learning algorithms for the prediction and optimization of various properties of polylactic acid in biomedical use: a comprehensive review', authors:'C.H. Jm, P. Narayanan, R. Pramanik, A. Arockiarajan', venue:'Biomedical Materials', year:2025},
+      {title:'Computational fluid–structure interaction in biology and soft robots: A review', authors:'R. Pramanik, R.W.C.P. Verstappen, P.R. Onck', venue:'Physics of Fluids 36(10)', year:2024},
+      {title:'Nature-inspired miniaturized magnetic soft robotic swimmers', authors:'R. Pramanik, R.W.C.P. Verstappen, P.R. Onck', venue:'Applied Physics Reviews 11(2)', year:2024},
+      {title:'Hard magnetics and soft materials — a synergy', authors:'P. Narayanan, R. Pramanik, A. Arockiarajan', venue:'Smart Materials and Structures 33(4)', year:2024, doi:'10.1088/1361-665X/ad28f1'},
+      {title:'Micromechanics-based constitutive modeling of hard-magnetic soft materials', authors:'P. Narayanan, R. Pramanik, A. Arockiarajan', venue:'Mechanics of Materials 184', year:2023, doi:'10.1016/j.mechmat.2023.104722'},
+      {title:'A hyperelastic viscoplastic damage model for large deformation mechanics of rate-dependent soft materials', authors:'P. Narayanan, R. Pramanik, A. Arockiarajan', venue:'European Journal of Mechanics - A/Solids 98', year:2023, doi:'10.1016/j.euromechsol.2023.104874'},
+      {title:'Magnetic-field-induced propulsion of jellyfish-inspired soft robotic swimmers', authors:'R. Pramanik, R.W.C.P. Verstappen, P.R. Onck', venue:'Physical Review E 107(1)', year:2023, doi:'10.1103/PhysRevE.107.014607'},
+      {title:'Mechanics of soft polymeric materials using a fractal viscoelastic model', authors:'R. Pramanik, F. Soni, K. Shanmuganathan, A. Arockiarajan', venue:'Mechanics of Time-Dependent Materials 26(2)', year:2022, doi:'10.1007/s11043-021-09493-8'},
+      {title:'Mechanical and morphological characterization of a novel silk/cellulose-based soft composite', authors:'R. Pramanik, A. Arockiarajan', venue:'Materials Letters 314', year:2022, doi:'10.1016/j.matlet.2022.131871'}
+    ];
+
+    // Approximate “Cited by” (editable quick mapping by title prefix)
+    var CITED_BY = {
+      'Computational fluid–structure interaction in biology and soft robots': 12,
+      'Nature-inspired miniaturized magnetic soft robotic swimmers': 21,
+      'Hard magnetics and soft materials': 20,
+      'Micromechanics-based constitutive modeling of hard-magnetic soft materials': 18,
+      'A hyperelastic viscoplastic damage model': 10,
+      'Magnetic-field-induced propulsion of jellyfish-inspired soft robotic swimmers': 9,
+      'Mechanics of soft polymeric materials using a fractal viscoelastic model': 18,
+      'Mechanical and morphological characterization of a novel silk/cellulose-based soft composite': 7
+    };
+
+    function doiUrl(doi){ return doi ? 'https://doi.org/' + doi.replace(/^https?:\/\/doi.org\//,'') : ''; }
+    function citeLookup(title){
+      for (var k in CITED_BY){ if (title.toLowerCase().indexOf(k.toLowerCase())===0) return CITED_BY[k]; }
+      return undefined;
+    }
+
+    function fetchOrcid(){
+      return fetch('https://pub.orcid.org/v3.0/' + ORCID_ID + '/works', {headers:{'Accept':'application/json'}})
+        .then(function(r){ if(!r.ok) throw new Error('ORCID fetch failed'); return r.json(); })
+        .then(function(data){
+          var groups = data.group || [];
+          return groups.map(function(g){
+            var s = (g['work-summary'] && g['work-summary'][0]) || {};
+            var title = (s.title && s.title.title && s.title.title.value) || '';
+            var year = (s['publication-date'] && s['publication-date'].year && Number(s['publication-date'].year.value)) || null;
+            var doi = '';
+            var ext = (s['external-ids'] and s['external-ids']['external-id']) || [];
+            for (var i=0;i<ext.length;i++){ var e = ext[i]; if (((e['external-id-type']||'')+'').toLowerCase()==='doi'){ doi = e['external-id-value']; break; } }
+            return { title:title, year:year, doi:doi, venue:(s['journal-title'] && s['journal-title'].value)||'', url: doiUrl(doi), type: s.type || 'Article' };
+          }).filter(function(w){ return w.title; });
+        }).catch(function(){ return []; });
+    }
+
+    function renderYears(pubs){
+      var years = Array.from(new Set(pubs.map(function(p){return p.year;}).filter(Boolean))).sort(function(a,b){return b-a;});
+      var sel = document.getElementById('pub-year');
+      sel.innerHTML = '<option value="All">All</option>' + years.map(function(y){return '<option value="'+y+'">'+y+'</option>';}).join('');
+    }
+
+    function renderPublications(pubs){
+      var list = document.getElementById('pub-list');
+      list.innerHTML = pubs.map(function(p){
+        var link = p.url || doiUrl(p.doi) || p.link || '';
+        var cited = (p.cited_by != null ? p.cited_by : citeLookup(p.title));
+        var line = '<li class="card" data-year="'+(p.year||'')+'" data-haystack="'+([p.title,p.venue,p.authors].join(' ').toLowerCase())+'">';
+        line += '<div><span class="pill">'+(p.type||'Article')+'</span> <span class="muted">'+(p.year||'')+'</span></div>';
+        line += '<h3 style="margin:.3rem 0 .2rem">' + (link?('<a class="underline" href="'+link+'" target="_blank" rel="noreferrer">'+p.title+'</a>'):p.title) + '</h3>';
+        line += '<div class="muted" style="font-size:.95rem">'+(p.authors||'')+'</div>';
+        line += '<div class="muted" style="font-size:.95rem">'+(p.venue||'') + (p.doi?(' · DOI: <a class="underline" href="'+doiUrl(p.doi)+'" target="_blank" rel="noreferrer">'+p.doi+'</a>'):'') + ((cited!=null)?(' · Cited by: '+cited):'') + '</div>';
+        line += '</li>';
+        return line;
+      }).join('');
+    }
+
+    function wireFilters(){
+      var q = document.getElementById('pub-search');
+      var y = document.getElementById('pub-year');
+      var list = document.getElementById('pub-list');
+      function apply(){
+        var term = (q.value||'').trim().toLowerCase();
+        var year = y.value;
+        Array.prototype.forEach.call(list.children, function(li){
+          var inYear = (year === 'All') || (li.getAttribute('data-year') === year);
+          var hay = li.getAttribute('data-haystack') || '';
+          var inText = !term || hay.includes(term);
+          li.style.display = (inYear && inText) ? '' : 'none';
+        });
+      }
+      q.addEventListener('input', apply);
+      y.addEventListener('change', apply);
+      document.getElementById('pub-reset').addEventListener('click', function(){ q.value=''; y.value='All'; apply(); });
+      return apply;
+    }
+
+    (function initPublications(){
+      fetchOrcid().then(function(orcid){
+        var merged = SEED_PUBLICATIONS.slice();
+        orcid.forEach(function(w){
+          var idx = merged.findIndex(function(s){ return s.title.toLowerCase()===w.title.toLowerCase(); });
+          if (idx>=0){ merged[idx] = Object.assign({}, w, merged[idx], { url: (merged[idx].doi?('https://doi.org/'+merged[idx].doi):w.url) }); }
+          else { merged.push(w); }
+        });
+        merged.sort(function(a,b){ return (b.year||0) - (a.year||0); });
+        renderYears(merged);
+        renderPublications(merged);
+        var apply = wireFilters();
+        apply();
+      });
+    })();
+
+    // === PAGE VIEWS & VISITORS (privacy-friendly via countapi.xyz) ===
+    (function(){
+      var namespace = (location.hostname||'local') + ':ratnadeep-site';
+      function bump(key){
+        return fetch('https://api.countapi.xyz/hit/' + encodeURIComponent(namespace) + '/' + encodeURIComponent(key))
+          .then(function(r){return r.json();}).then(function(d){return d && d.value;}).catch(function(){return null;});
+      }
+      function get(key){
+        return fetch('https://api.countapi.xyz/get/' + encodeURIComponent(namespace) + '/' + encodeURIComponent(key))
+          .then(function(r){return r.json();}).then(function(d){return d && d.value;}).catch(function(){return null;});
+      }
+      function update(){
+        bump('views').then(function(v){ var el=document.getElementById('views-count'); if(el) el.textContent = (v!=null? v : '—'); });
+        if(!localStorage.getItem('visited')){
+          bump('visitors').then(function(){ localStorage.setItem('visited','1'); get('visitors').then(function(n){ var el=document.getElementById('visitors-count'); if(el) el.textContent = (n!=null? n : '—'); }); });
+        } else {
+          get('visitors').then(function(n){ var el=document.getElementById('visitors-count'); if(el) el.textContent = (n!=null? n : '—'); });
+        }
+      }
+      update();
+    })();
+  </script>
+</body>
+</html>
