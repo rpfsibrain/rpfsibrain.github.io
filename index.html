@@ -6,25 +6,16 @@
   <meta name="keywords" content="Ratnadeep Pramanik, Soft Robotics, Endovascular Devices, Intracranial Aneurysms, FSI, Multifunctional Materials, IIT Madras, University of Groningen, Bundeswehr München">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dr. Ratnadeep Pramanik — Academic</title>
+  <meta name="description" content="Postdoctoral Researcher — publications, conferences, supervision, teaching, education, and contact."/>
 
   <style>
     :root{
       --bg:#ffffff; --fg:#0a0a0a; --muted:#666; --border:#e5e7eb; --card:#fafafa; --accent:#111827;
       --radius:16px; --shadow:0 6px 24px rgba(0,0,0,.06);
     }
-    html,body{
-      background:var(--bg);
-      color:var(--fg);
-      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji";
-    }
+    html,body{background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji";}
     .container{max-width:1120px;margin-inline:auto;padding:0 1rem}
-    header{
-      position:sticky;top:0;
-      backdrop-filter:saturate(150%) blur(8px);
-      background:rgba(255,255,255,.85);
-      border-bottom:1px solid var(--border);
-      z-index:50
-    }
+    header{position:sticky;top:0;backdrop-filter:saturate(150%) blur(8px);background:rgba(255,255,255,.85);border-bottom:1px solid var(--border);z-index:50}
     nav{display:flex;gap:1rem;align-items:center;justify-content:space-between;padding:.75rem 0}
     nav a{color:inherit;text-decoration:none}
     .nav-links{display:none;gap:1rem;font-size:.95rem}
@@ -32,21 +23,14 @@
     .grid{display:grid;gap:1rem}
     .hero{padding:3rem 0}
     .portrait{width:180px;height:220px;border-radius:20px;object-fit:cover;box-shadow:var(--shadow)}
-    @media (min-width: 768px){
-      .hero-grid{grid-template-columns:240px 1fr}
-      .portrait{width:220px;height:260px}
-    }
+    @media (min-width: 768px){.hero-grid{grid-template-columns:240px 1fr}.portrait{width:220px;height:260px}}
     h1{font-size:2.25rem;line-height:1.2;margin:0}
     h2{font-size:1.6rem;margin:0 0 .75rem}
     section{scroll-margin-top:96px;padding:2.25rem 0}
     .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:1rem}
     .list{display:grid;gap:1rem}
-    @media (min-width: 768px){
-      .cols-2{grid-template-columns:1fr 1fr}
-      .cols-3{grid-template-columns:repeat(3,1fr)}
-    }
+    @media (min-width: 768px){.cols-2{grid-template-columns:1fr 1fr}.cols-3{grid-template-columns:repeat(3,1fr)}}
     .muted{color:var(--muted)}
-    .pill{display:inline-block;font-size:.9rem;border:1px solid var(--border);border-radius:999px;padding:.1rem .6rem;margin-right:.5rem}
     footer{border-top:1px solid var(--border);margin-top:1rem}
     .underline:hover{text-decoration:underline}
     .bio-box{min-height:260px; display:flex; align-items:flex-start}
@@ -55,45 +39,65 @@
     .pub{margin:0}
     .pub a{word-break:break-all}
 
-    /* Link blocks (cute rectangular cards) */
+    /* Cute profile link blocks */
     .profile-links{
-      margin-top:1rem;
+      margin-top:1.1rem;
       display:grid;
-      gap:.75rem;
+      gap:.9rem;
       grid-template-columns:repeat(2, minmax(0, 1fr));
-      max-width:520px;
+      max-width:640px;
     }
     @media (min-width: 520px){
       .profile-links{grid-template-columns:repeat(3, minmax(0, 1fr));}
     }
     @media (min-width: 900px){
-      .profile-links{grid-template-columns:repeat(5, minmax(0, 1fr)); max-width:860px;}
+      .profile-links{grid-template-columns:repeat(5, minmax(0, 1fr)); max-width:920px;}
     }
     .link-card{
       display:flex;
       align-items:center;
       justify-content:center;
+      gap:.55rem;
       text-align:center;
-      padding:.65rem .8rem;
+      padding:.85rem .95rem;            /* bigger */
       border:1px solid var(--border);
-      border-radius:14px;
-      background:#fff;
-      box-shadow:0 2px 10px rgba(0,0,0,.04);
+      border-radius:18px;               /* rounder */
+      background:linear-gradient(180deg, #ffffff, #fbfbfb);
+      box-shadow:0 3px 14px rgba(0,0,0,.06);
       transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
-      font-size:.95rem;
-      font-weight:600;
+      font-size:1rem;                   /* slightly bigger */
+      font-weight:650;
       color:inherit;
       text-decoration:none;
-      min-height:44px;
+      min-height:52px;                  /* bigger */
+      position:relative;
+      overflow:hidden;
+    }
+    /* subtle "cute" highlight */
+    .link-card::before{
+      content:"";
+      position:absolute;
+      inset:-40% -40% auto auto;
+      width:140px;height:140px;
+      background:radial-gradient(circle, rgba(17,24,39,.08), transparent 60%);
+      transform:rotate(15deg);
+      pointer-events:none;
     }
     .link-card:hover{
-      transform:translateY(-1px);
-      box-shadow:0 10px 26px rgba(0,0,0,.08);
+      transform:translateY(-2px);
+      box-shadow:0 14px 32px rgba(0,0,0,.10);
       border-color:#d1d5db;
     }
     .link-card:focus{
       outline:3px solid rgba(17,24,39,.15);
       outline-offset:2px;
+    }
+    .link-icon{
+      width:18px;
+      height:18px;
+      flex:0 0 18px;
+      color:var(--accent);
+      opacity:.9;
     }
 
     /* Simple button style used for email link */
@@ -112,26 +116,6 @@
       box-shadow:0 10px 26px rgba(0,0,0,.08);
       transform:translateY(-1px);
     }
-
-    /* Visitor counter widget (bottom-right) */
-    .visitor-widget{
-      position:fixed;
-      right:16px;
-      bottom:16px;
-      z-index:999;
-      background:rgba(255,255,255,.92);
-      backdrop-filter:saturate(150%) blur(8px);
-      border:1px solid var(--border);
-      border-radius:14px;
-      box-shadow:var(--shadow);
-      padding:.6rem .75rem;
-      display:flex;
-      align-items:baseline;
-      gap:.5rem;
-      user-select:none;
-    }
-    .visitor-widget .label{font-size:.85rem;color:var(--muted)}
-    .visitor-widget .value{font-size:1rem;font-weight:700;color:var(--accent)}
   </style>
 </head>
 
@@ -165,16 +149,50 @@
             <p class="muted" style="margin:.4rem 0 0">Postdoctoral Researcher</p>
             <p class="muted" style="margin:.15rem 0 0">Institut für Mathematik und Computergestützte Simulation, Universität der Bundeswehr München · Munich, Germany</p>
 
-            <!-- Replaced inline links with rectangular blocks -->
+            <!-- Cute rectangular link blocks with icons -->
             <div class="profile-links" aria-label="Profile links">
-              <a class="link-card" href="https://scholar.google.com/citations?hl=en&user=YFYCU00AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noreferrer">Google Scholar</a>
-              <a class="link-card" href="https://orcid.org/0000-0002-3310-2172" target="_blank" rel="noreferrer">ORCID</a>
-              <a class="link-card" href="https://www.researchgate.net/profile/Ratnadeep-Pramanik-2?ev=hdr_xprf" target="_blank" rel="noreferrer">ResearchGate</a>
-              <a class="link-card" href="https://github.com/rpfsibrain" target="_blank" rel="noreferrer">GitHub</a>
-              <a class="link-card" href="https://www.linkedin.com/in/ratnadeep-pramanik-14a311364/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="link-card" href="https://scholar.google.com/citations?hl=en&user=YFYCU00AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noreferrer">
+                <!-- Graduation cap -->
+                <svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm0 14L4.24 12.6 12 8.4l7.76 4.2L12 17Zm-6 1.8V14l6 3.27L18 14v4.8L12 22l-6-3.2Z"/>
+                </svg>
+                <span>Google Scholar</span>
+              </a>
+
+              <a class="link-card" href="https://orcid.org/0000-0002-3310-2172" target="_blank" rel="noreferrer">
+                <!-- ID card -->
+                <svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 2v12h16V6H4Zm3 2h6v2H7V8Zm0 4h10v2H7v-2Zm0 4h8v2H7v-2Z"/>
+                </svg>
+                <span>ORCID</span>
+              </a>
+
+              <a class="link-card" href="https://www.researchgate.net/profile/Ratnadeep-Pramanik-2?ev=hdr_xprf" target="_blank" rel="noreferrer">
+                <!-- Network -->
+                <svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M12 2a4 4 0 0 1 4 4c0 .7-.18 1.36-.5 1.94l3.22 2.15A4 4 0 1 1 18 15.5l-3.13 2.09c.08.3.13.62.13.95A4 4 0 1 1 9 15.5l-3.13-2.09A4 4 0 1 1 8.5 7.94l3.22-2.15C11.18 5.36 11 4.7 11 4a4 4 0 0 1 1-2Zm0 2a2 2 0 1 0 .001 4.001A2 2 0 0 0 12 4Zm6 8a2 2 0 1 0 .001 4.001A2 2 0 0 0 18 12ZM6 12a2 2 0 1 0 .001 4.001A2 2 0 0 0 6 12Zm6 6a2 2 0 1 0 .001 4.001A2 2 0 0 0 12 18Z"/>
+                </svg>
+                <span>ResearchGate</span>
+              </a>
+
+              <a class="link-card" href="https://github.com/rpfsibrain" target="_blank" rel="noreferrer">
+                <!-- Code brackets -->
+                <svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M8.7 16.3 4.4 12l4.3-4.3L7.3 6.3 1.6 12l5.7 5.7 1.4-1.4Zm6.6 0 4.3-4.3-4.3-4.3 1.4-1.4 5.7 5.7-5.7 5.7-1.4-1.4Zm-7.1 5.5 6-20 1.9.6-6 20-1.9-.6Z"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+
+              <a class="link-card" href="https://www.linkedin.com/in/ratnadeep-pramanik-14a311364/" target="_blank" rel="noreferrer">
+                <!-- Briefcase -->
+                <svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M10 4h4a2 2 0 0 1 2 2v2h4a2 2 0 0 1 2 2v3a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4v-3a2 2 0 0 1 2-2h4V6a2 2 0 0 1 2-2Zm4 4V6h-4v2h4Zm8 6v-3H2v3a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2Z"/>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
             </div>
 
-            <!-- Removed: the long research paragraph (as requested) -->
+            <!-- (Intentionally removed the long research paragraph) -->
           </div>
         </div>
       </div>
@@ -302,13 +320,7 @@
           <p class="pub">B. Sikder, <strong>R. Pramanik</strong>, A. Chanda (2017). <em>Effect of annealing on the fracture behavior of LSCFO, a potential energy material for oxygen separation.</em> <span class="muted">Materialwissenschaft und Werkstofftechnik 48, 726–730</span>. <a href="https://doi.org/10.1002/mawe.201600739" target="_blank" rel="noreferrer">https://doi.org/10.1002/mawe.201600739</a></p>
         </li>
       </ul>
-
-      <p class="muted" style="font-size:.9rem;margin-top:.5rem">
-        For a complete list, see
-        <a class="underline" href="https://scholar.google.com/citations?hl=en&user=YFYCU00AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noreferrer">Google Scholar</a>
-        or
-        <a class="underline" href="https://orcid.org/0000-0002-3310-2172" target="_blank" rel="noreferrer">ORCID</a>.
-      </p>
+      <p class="muted" style="font-size:.9rem;margin-top:.5rem">For a complete list, see <a class="underline" href="https://scholar.google.com/citations?hl=en&user=YFYCU00AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noreferrer">Google Scholar</a> or <a class="underline" href="https://orcid.org/0000-0002-3310-2172" target="_blank" rel="noreferrer">ORCID</a>.</p>
     </section>
 
     <!-- Conferences -->
@@ -468,49 +480,5 @@
       <span class="muted">© <script>document.write(new Date().getFullYear())</script> Ratnadeep Pramanik</span>
     </div>
   </footer>
-
-  <!-- Visitor counter widget -->
-  <div class="visitor-widget" aria-label="Visitor counter">
-    <span class="label">Visits</span>
-    <span class="value" id="visits">—</span>
-  </div>
-
-  <script>
-    /**
-     * Visitor counter for GitHub Pages (static hosting) via CountAPI.
-     * - First-time visit each day (per browser): increments the counter.
-     * - Additional reloads the same day: shows the current value without incrementing.
-     *
-     * Replace NAMESPACE and KEY with something unique to you.
-     */
-    (function () {
-      const NAMESPACE = "ratnadeep-pramanik-website";  // <-- change if you want
-      const KEY = "visits";                             // <-- change if you want
-
-      const el = document.getElementById("visits");
-      const today = new Date().toISOString().slice(0, 10);
-      const storageKey = `countapi-counted-${NAMESPACE}-${KEY}`;
-
-      const hitUrl = `https://api.countapi.xyz/hit/${encodeURIComponent(NAMESPACE)}/${encodeURIComponent(KEY)}`;
-      const getUrl = `https://api.countapi.xyz/get/${encodeURIComponent(NAMESPACE)}/${encodeURIComponent(KEY)}`;
-
-      const alreadyCountedToday = localStorage.getItem(storageKey) === today;
-      const url = alreadyCountedToday ? getUrl : hitUrl;
-
-      fetch(url)
-        .then(r => r.json())
-        .then(data => {
-          if (typeof data?.value === "number") {
-            el.textContent = data.value.toLocaleString();
-            if (!alreadyCountedToday) localStorage.setItem(storageKey, today);
-          } else {
-            el.textContent = "N/A";
-          }
-        })
-        .catch(() => {
-          el.textContent = "N/A";
-        });
-    })();
-  </script>
 </body>
 </html>
