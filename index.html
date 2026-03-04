@@ -6,35 +6,67 @@
   <meta name="keywords" content="Ratnadeep Pramanik, Soft Robotics, Endovascular Devices, Intracranial Aneurysms, FSI, Multifunctional Materials, IIT Madras, University of Groningen, Bundeswehr München">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dr. Ratnadeep Pramanik — Academic</title>
-  <meta name="description" content="Postdoctoral Researcher — publications, conferences, supervision, teaching, education, and contact."/>
 
   <style>
     :root{
-      --bg:#ffffff; --fg:#0a0a0a; --muted:#666; --border:#e5e7eb; --card:#fafafa; --accent:#111827;
+      /* background + palette */
+      --bg1:#eef6ff;     /* light bluish */
+      --bg2:#f6fbff;     /* near-white blue */
+      --bg3:#ffffff;     /* white */
+      --fg:#0a0a0a; --muted:#666; --border:#e5e7eb; --card:rgba(255,255,255,.78); --accent:#111827;
       --radius:16px; --shadow:0 6px 24px rgba(0,0,0,.06);
     }
-    html,body{background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji";}
+
+    html,body{
+      color:var(--fg);
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji";
+      /* subtle bluish gradient background */
+      background: linear-gradient(180deg, var(--bg1) 0%, var(--bg2) 38%, var(--bg3) 100%);
+      background-attachment: fixed;
+    }
+
     .container{max-width:1120px;margin-inline:auto;padding:0 1rem}
-    header{position:sticky;top:0;backdrop-filter:saturate(150%) blur(8px);background:rgba(255,255,255,.85);border-bottom:1px solid var(--border);z-index:50}
+
+    header{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter:saturate(150%) blur(10px);
+      background:rgba(246,251,255,.78);
+      border-bottom:1px solid var(--border);
+    }
+
     nav{display:flex;gap:1rem;align-items:center;justify-content:space-between;padding:.75rem 0}
     nav a{color:inherit;text-decoration:none}
     .nav-links{display:none;gap:1rem;font-size:.95rem}
     @media (min-width: 768px){.nav-links{display:flex}}
+
     .grid{display:grid;gap:1rem}
     .hero{padding:3rem 0}
     .portrait{width:180px;height:220px;border-radius:20px;object-fit:cover;box-shadow:var(--shadow)}
     @media (min-width: 768px){.hero-grid{grid-template-columns:240px 1fr}.portrait{width:220px;height:260px}}
+
     h1{font-size:2.25rem;line-height:1.2;margin:0}
     h2{font-size:1.6rem;margin:0 0 .75rem}
+
     section{scroll-margin-top:96px;padding:2.25rem 0}
-    .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:1rem}
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:1rem;
+      box-shadow:0 2px 14px rgba(0,0,0,.04);
+    }
+
     .list{display:grid;gap:1rem}
     @media (min-width: 768px){.cols-2{grid-template-columns:1fr 1fr}.cols-3{grid-template-columns:repeat(3,1fr)}}
+
     .muted{color:var(--muted)}
     footer{border-top:1px solid var(--border);margin-top:1rem}
+
     .underline:hover{text-decoration:underline}
     .bio-box{min-height:260px; display:flex; align-items:flex-start}
     .ri-item{font-weight:400}
+
     ul.clean{list-style:none;padding:0;margin:0}
     .pub{margin:0}
     .pub a{word-break:break-all}
@@ -59,21 +91,20 @@
       justify-content:center;
       gap:.55rem;
       text-align:center;
-      padding:.85rem .95rem;            /* bigger */
+      padding:.85rem .95rem;
       border:1px solid var(--border);
-      border-radius:18px;               /* rounder */
-      background:linear-gradient(180deg, #ffffff, #fbfbfb);
+      border-radius:18px;
+      background:linear-gradient(180deg, rgba(255,255,255,.92), rgba(251,251,251,.86));
       box-shadow:0 3px 14px rgba(0,0,0,.06);
       transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
-      font-size:1rem;                   /* slightly bigger */
+      font-size:1rem;
       font-weight:650;
       color:inherit;
       text-decoration:none;
-      min-height:52px;                  /* bigger */
+      min-height:52px;
       position:relative;
       overflow:hidden;
     }
-    /* subtle "cute" highlight */
     .link-card::before{
       content:"";
       position:absolute;
@@ -106,16 +137,35 @@
       padding:.65rem 1rem;
       border-radius:14px;
       border:1px solid var(--border);
-      background:#fff;
+      background:rgba(255,255,255,.88);
       color:inherit;
       text-decoration:none;
       font-weight:600;
       box-shadow:0 2px 10px rgba(0,0,0,.04);
+      transition:transform .12s ease, box-shadow .12s ease;
     }
     .btn:hover{
       box-shadow:0 10px 26px rgba(0,0,0,.08);
       transform:translateY(-1px);
     }
+
+    /* Research interest icon cards */
+    .ri-card{
+      display:flex;
+      gap:.85rem;
+      align-items:center;
+      padding:1rem 1rem;
+    }
+    .ri-icon{
+      width:46px;height:46px;flex:0 0 46px;
+      border-radius:14px;
+      background:linear-gradient(180deg, rgba(238,246,255,.9), rgba(255,255,255,.75));
+      border:1px solid rgba(229,231,235,.9);
+      box-shadow:0 3px 14px rgba(0,0,0,.06);
+      padding:7px;
+    }
+    .ri-icon svg{width:100%;height:100%}
+    .ri-label{font-weight:550}
   </style>
 </head>
 
@@ -191,8 +241,6 @@
                 <span>ResearchGate</span>
               </a>
             </div>
-
-            <!-- (Intentionally removed the long research paragraph) -->
           </div>
         </div>
       </div>
@@ -201,16 +249,143 @@
     <!-- Research Interests -->
     <section id="interests">
       <h2>Research Interests</h2>
+
       <div class="list cols-3">
-        <div class="card ri-item">Intracranial aneurysms</div>
-        <div class="card ri-item">Endovascular devices</div>
-        <div class="card ri-item">Contact interaction</div>
-        <div class="card ri-item">Magnetic soft robotic swimmers</div>
-        <div class="card ri-item">Collective behavior (swarming)</div>
-        <div class="card ri-item">Fluid-structure interaction</div>
-        <div class="card ri-item">Hard-magnetic soft materials</div>
-        <div class="card ri-item">Biomedical materials</div>
-        <div class="card ri-item">Multifunctional composites</div>
+        <!-- Intracranial aneurysms -->
+        <div class="card ri-card">
+          <div class="ri-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <defs>
+                <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0" stop-color="#bfe0ff"/>
+                  <stop offset="1" stop-color="#ffffff"/>
+                </linearGradient>
+              </defs>
+              <path d="M24 12c-6 1-10 5-11 11-1 6 2 12 8 15 1 6 6 11 12 12 6 1 12-2 15-8 6-1 11-6 12-12 1-6-2-12-8-15-1-6-6-11-12-12-6-1-12 2-16 9Z"
+                    fill="url(#g1)" stroke="#111827" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M18 34c5-8 13-11 22-9" fill="none" stroke="#111827" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="38" cy="27" r="6" fill="#ffd4e1" stroke="#111827" stroke-width="2"/>
+              <circle cx="40" cy="29" r="2.2" fill="#111827" opacity=".18"/>
+            </svg>
+          </div>
+          <div class="ri-label">Intracranial aneurysms</div>
+        </div>
+
+        <!-- Endovascular devices -->
+        <div class="card ri-card">
+          <div class="ri-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <path d="M14 20c10 0 12 24 22 24s12-24 22-24" fill="none" stroke="#111827" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M18 26h28" stroke="#111827" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+              <path d="M18 32h28" stroke="#111827" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+              <path d="M18 38h28" stroke="#111827" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+              <path d="M24 24l16 16M40 24 24 40" stroke="#111827" stroke-width="2" stroke-linecap="round" opacity=".35"/>
+              <circle cx="20" cy="20" r="4.5" fill="#c7f0ff" stroke="#111827" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="ri-label">Endovascular devices</div>
+        </div>
+
+        <!-- Contact interaction -->
+        <div class="card ri-card">
+          <div class="ri-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <rect x="10" y="18" width="22" height="28" rx="8" fill="#d6f5e8" stroke="#111827" stroke-width="2"/>
+              <rect x="32" y="18" width="22" height="28" rx="8" fill="#e7f0ff" stroke="#111827" stroke-width="2"/>
+              <circle cx="32" cy="32" r="3.5" fill="#ffd4a8" stroke="#111827" stroke-width="2"/>
+              <path d="M29 32h6" stroke="#111827" stroke-width="2" stroke-linecap="round" opacity=".6"/>
+            </svg>
+          </div>
+          <div class="ri-label">Contact interaction</div>
+        </div>
+
+        <!-- Magnetic soft robotic swimmers -->
+        <div class="card ri-card">
+          <div class="ri-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <path d="M18 36c8 6 18 6 26 0-2-5-6-8-13-8s-11 3-13 8Z" fill="#cfe9ff" stroke="#111827" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M44 36c4 2 8 6 10 10-6-2-10-2-14 0 2-4 2-7 4-10Z" fill="#cfe9ff" stroke="#111827" stroke-width="2" stroke-linejoin="round"/>
+              <circle cx="26" cy="32" r="2" fill="#111827"/>
+              <path d="M14 18h8v8h-8z" fill="#ffd4e1" stroke="#111827" stroke-width="2" rx="2"/>
+              <path d="M22 18h10v8H22" fill="#ffd4e1" stroke="#111827" stroke-width="2" rx="2"/>
+              <path d="M16 22h4" stroke="#111827" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="ri-label">Magnetic soft robotic swimmers</div>
+        </div>
+
+        <!-- Collective behavior (swarming) -->
+        <div class="card ri-card">
+          <div class="ri-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <g fill="#d7ecff" stroke="#111827" stroke-width="2" stroke-linejoin="round">
+                <path d="M16 34c4 3 9 3 13 0-1-3-3-5-6.5-5S17 31 16 34Z"/>
+                <path d="M28 26c4 3 9 3 13 0-1-3-3-5-6.5-5S29 23 28 26Z"/>
+                <path d="M26 44c4 3 9 3 13 0-1-3-3-5-6.5-5S27 41 26 44Z"/>
+                <path d="M40 36c4 3 9 3 13 0-1-3-3-5-6.5-5S41 33 40 36Z"/>
+              </g>
+              <path d="M12 22c3-2 7-3 10-2" stroke="#111827" stroke-width="2" stroke-linecap="round" opacity=".35"/>
+              <path d="M38 18c4-1 8 0 11 2" stroke="#111827" stroke-width="2" stroke-linecap="round" opacity=".35"/>
+            </svg>
+          </div>
+          <div class="ri-label">Collective behavior (swarming)</div>
+        </div>
+
+        <!-- Fluid-structure interaction -->
+        <div class="card ri-card">
+          <div class="ri-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <path d="M8 38c6 0 6-12 12-12s6 12 12 12 6-12 12-12 6 12 12 12" fill="none" stroke="#111827" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M8 46c6 0 6-12 12-12s6 12 12 12 6-12 12-12 6 12 12 12" fill="none" stroke="#111827" stroke-width="2.2" stroke-linecap="round" opacity=".55"/>
+              <rect x="28" y="18" width="8" height="28" rx="4" fill="#d6f5e8" stroke="#111827" stroke-width="2"/>
+              <path d="M36 26h10" stroke="#111827" stroke-width="2" stroke-linecap="round" opacity=".35"/>
+              <path d="M36 36h10" stroke="#111827" stroke-width="2" stroke-linecap="round" opacity=".35"/>
+            </svg>
+          </div>
+          <div class="ri-label">Fluid-structure interaction</div>
+        </div>
+
+        <!-- Hard-magnetic soft materials -->
+        <div class="card ri-card">
+          <div class="ri-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <path d="M14 16h14v14H14z" fill="#ffd4e1" stroke="#111827" stroke-width="2" rx="4"/>
+              <path d="M28 16h8v14h-8" fill="#ffd4e1" stroke="#111827" stroke-width="2" rx="4"/>
+              <path d="M16 23h6" stroke="#111827" stroke-width="2" stroke-linecap="round"/>
+              <path d="M18 44c8-10 20-10 28 0" fill="#cfe9ff" stroke="#111827" stroke-width="2" stroke-linecap="round"/>
+              <path d="M18 44c2 8 8 12 14 12s12-4 14-12" fill="#cfe9ff" stroke="#111827" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+              <circle cx="32" cy="46" r="3" fill="#111827" opacity=".18"/>
+            </svg>
+          </div>
+          <div class="ri-label">Hard-magnetic soft materials</div>
+        </div>
+
+        <!-- Biomedical materials -->
+        <div class="card ri-card">
+          <div class="ri-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <path d="M32 52s-16-9-16-22c0-6 4-10 10-10 3 0 5 1 6 3 1-2 3-3 6-3 6 0 10 4 10 10 0 13-16 22-16 22Z"
+                    fill="#ffd4e1" stroke="#111827" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M14 40c6-5 10-5 18 0s12 5 18 0" fill="none" stroke="#111827" stroke-width="2" stroke-linecap="round" opacity=".45"/>
+              <circle cx="18" cy="44" r="3" fill="#cfe9ff" stroke="#111827" stroke-width="2"/>
+              <circle cx="46" cy="44" r="3" fill="#cfe9ff" stroke="#111827" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="ri-label">Biomedical materials</div>
+        </div>
+
+        <!-- Multifunctional composites -->
+        <div class="card ri-card">
+          <div class="ri-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <path d="M16 18h32l-6 8H10l6-8Z" fill="#d7ecff" stroke="#111827" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M18 28h32l-6 8H12l6-8Z" fill="#d6f5e8" stroke="#111827" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M20 38h32l-6 8H14l6-8Z" fill="#ffe7b8" stroke="#111827" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M26 24l4 6M34 24l4 6M30 34l4 6M38 34l4 6" stroke="#111827" stroke-width="2" stroke-linecap="round" opacity=".35"/>
+            </svg>
+          </div>
+          <div class="ri-label">Multifunctional composites</div>
+        </div>
       </div>
     </section>
 
