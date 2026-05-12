@@ -39,7 +39,7 @@
     body{
       margin:0;
       color:var(--ink);
-      font:14.5px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+      font:14px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
       background:
         radial-gradient(circle at 8% -8%,rgba(15,118,110,.16),transparent 29rem),
         radial-gradient(circle at 92% 0%,rgba(29,78,216,.12),transparent 29rem),
@@ -80,11 +80,13 @@
     .eyebrow{display:inline-flex;align-items:center;gap:.45rem;border:1px solid rgba(15,118,110,.18);background:rgba(204,251,241,.72);color:var(--teal-dark);font-weight:800;font-size:.82rem;padding:.36rem .62rem;border-radius:999px}
     h1{font-size:clamp(2.1rem,4.8vw,4.05rem);line-height:1.04;letter-spacing:-.06em;margin:.9rem 0 .7rem;color:#071527;max-width:960px}
     h1 span{color:var(--teal-dark)}
-    .lead{font-size:clamp(.98rem,1.7vw,1.1rem);color:var(--text);max-width:880px;margin:0}
+    .lead{font-size:clamp(.94rem,1.55vw,1.04rem);color:var(--text);max-width:1040px;margin:0}
+    .single-line{max-width:none;white-space:nowrap}
+    @media(max-width:1180px){.single-line{white-space:normal}}
     .mini-strip{display:grid;grid-template-columns:1fr;gap:.85rem;margin-top:1.5rem}
     @media(min-width:760px){.mini-strip{grid-template-columns:repeat(3,minmax(0,1fr))}}
     .mini{border:1px solid rgba(220,229,235,.9);border-radius:18px;overflow:hidden;background:#fff;box-shadow:var(--shadow-soft)}
-    .mini img{width:100%;height:140px;object-fit:cover;background:white}
+    .mini img{width:100%;height:150px;object-fit:contain;background:white;padding:.35rem}
     .mini.contain img{object-fit:contain;padding:.45rem}
     .mini div{padding:.72rem .82rem;font-size:.82rem;color:var(--text)}
     .mini strong{display:block;color:var(--ink);font-size:.86rem;margin-bottom:.12rem}
@@ -101,16 +103,58 @@
     .card{background:rgba(255,255,255,.9);border:1px solid rgba(220,229,235,.92);border-radius:var(--radius);box-shadow:var(--shadow-soft);overflow:hidden}
     .pad{padding:1rem}.bigpad{padding:1.3rem}
     .tag{display:inline-flex;border-radius:999px;padding:.27rem .55rem;background:var(--soft-teal);color:var(--teal-dark);font-size:.7rem;font-weight:900;letter-spacing:.01em}
-    .tag.blue{background:var(--soft-blue);color:#1e3a8a}.tag.amber{background:var(--soft-amber);color:#78350f}.tag.rose{background:var(--soft-rose);color:#881337}.tag.violet{background:var(--soft-violet);color:#4c1d95}
-    h3{font-size:1.12rem;line-height:1.22;margin:.62rem 0 .35rem;letter-spacing:-.02em}.card p{color:var(--text);margin:.3rem 0}.caption{font-size:.76rem;color:var(--muted);line-height:1.42}.research img{height:220px;width:100%;object-fit:cover;background:white;border-bottom:1px solid var(--line)}.research.contain img{object-fit:contain;padding:.55rem}.research .body{padding:1rem}.research ul{padding-left:1rem;color:var(--text);margin:.62rem 0 0}.research li{margin:.24rem 0}.source{border-top:1px solid var(--line);padding-top:.68rem;margin-top:.78rem;color:var(--muted);font-size:.8rem}.source strong{color:var(--ink)}
+    .tag.blue{background:var(--soft-blue);color:#1e3a8a}
+    .tag.amber{background:var(--soft-amber);color:#78350f}
+    .tag.rose{background:var(--soft-rose);color:#881337}
+    .tag.violet{background:var(--soft-violet);color:#4c1d95}
+    h3{font-size:1.12rem;line-height:1.22;margin:.62rem 0 .35rem;letter-spacing:-.02em}
+    .card p{color:var(--text);margin:.3rem 0}
+    .caption{font-size:.76rem;color:var(--muted);line-height:1.42}
+    .research img{height:230px;width:100%;object-fit:contain;background:white;border-bottom:1px solid var(--line);padding:.55rem}
+    .research.contain img{object-fit:contain;padding:.55rem}
+    .research .body{padding:1rem}
+    .research ul{padding-left:1rem;color:var(--text);margin:.62rem 0 0}
+    .research li{margin:.24rem 0}
+    .source{border-top:1px solid var(--line);padding-top:.68rem;margin-top:.78rem;color:var(--muted);font-size:.8rem}
+    .source strong{color:var(--ink)}
+    .source a{color:var(--teal-dark);font-weight:760;text-decoration:none}
+    .source a:hover{text-decoration:underline}
 
     .strip{display:grid;grid-template-columns:1fr;gap:.95rem;align-items:stretch;margin-top:.95rem}
     @media(min-width:980px){.strip{grid-template-columns:.92fr 1.08fr}.strip.reverse{grid-template-columns:1.08fr .92fr}}
-    .strip figure{margin:0}.strip img{width:100%;height:100%;min-height:320px;object-fit:contain;background:white;padding:.6rem}.strip .story{padding:1.25rem}.story h3{font-size:1.45rem}.bullets{display:grid;gap:.52rem;margin-top:.8rem}.bullet{display:flex;gap:.58rem;color:var(--text)}.bullet::before{content:"";width:.46rem;height:.46rem;border-radius:50%;background:var(--teal);margin-top:.5rem;flex:0 0 .46rem}
+    .strip figure{margin:0}
+    .strip img{width:100%;height:100%;min-height:320px;object-fit:contain;background:white;padding:.6rem}
+    .strip .story{padding:1.25rem}
+    .story h3{font-size:1.45rem}
+    .bullets{display:grid;gap:.52rem;margin-top:.8rem}
+    .bullet{display:flex;gap:.58rem;color:var(--text)}
+    .bullet::before{content:"";width:.46rem;height:.46rem;border-radius:50%;background:var(--teal);margin-top:.5rem;flex:0 0 .46rem}
 
-    .pubyear{font-size:1.2rem;font-weight:900;letter-spacing:-.025em;margin:1.15rem 0 .55rem}.pub{padding:.88rem .98rem;border-left:4px solid var(--teal);border-radius:16px}.pub h3{font-size:.94rem;margin:0 0 .22rem}.pub p{font-size:.84rem}.pub .journal{color:var(--muted)}.pub.blue{border-left-color:var(--blue)}.pub.amber{border-left-color:var(--amber)}.pub.rose{border-left-color:var(--rose)}.pub.violet{border-left-color:var(--violet)}
+    .pubyear{font-size:1.2rem;font-weight:900;letter-spacing:-.025em;margin:1.15rem 0 .55rem}
+    .pub{padding:.88rem .98rem;border-left:4px solid var(--teal);border-radius:16px}
+    .pub h3{font-size:.94rem;margin:0 0 .22rem}
+    .pub p{font-size:.84rem}
+    .pub .journal{color:var(--muted)}
+    .pub.blue{border-left-color:var(--blue)}
+    .pub.amber{border-left-color:var(--amber)}
+    .pub.rose{border-left-color:var(--rose)}
+    .pub.violet{border-left-color:var(--violet)}
 
-    .profile{display:grid;gap:.95rem}@media(min-width:980px){.profile{grid-template-columns:.72fr 1.28fr}}.portrait{width:145px;height:172px;object-fit:cover;border-radius:22px;border:1px solid var(--line);box-shadow:var(--shadow-soft)}.profiletop{display:flex;gap:.9rem;align-items:center}.clean{list-style:none;padding:0;margin:0}.clean li{margin:.35rem 0;color:var(--text)}.list-card{padding:1rem}.list-card h3{margin-top:0}.timeline{display:grid;gap:.68rem;margin-top:.75rem}.titem{border-left:3px solid var(--teal);padding-left:.78rem}.titem strong{display:block}.titem span{color:var(--muted);font-size:.82rem}.service-grid{display:grid;grid-template-columns:1fr;gap:.65rem}@media(min-width:760px){.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}.service-item{border:1px solid var(--line);border-radius:14px;padding:.72rem .82rem;background:#fff;color:var(--text)}
+    .profile{display:grid;gap:.95rem}
+    @media(min-width:980px){.profile{grid-template-columns:.72fr 1.28fr}}
+    .portrait{width:145px;height:172px;object-fit:cover;border-radius:22px;border:1px solid var(--line);box-shadow:var(--shadow-soft)}
+    .profiletop{display:flex;gap:.9rem;align-items:center}
+    .clean{list-style:none;padding:0;margin:0}
+    .clean li{margin:.35rem 0;color:var(--text)}
+    .list-card{padding:1rem}
+    .list-card h3{margin-top:0}
+    .timeline{display:grid;gap:.68rem;margin-top:.75rem}
+    .titem{border-left:3px solid var(--teal);padding-left:.78rem}
+    .titem strong{display:block}
+    .titem span{color:var(--muted);font-size:.82rem}
+    .service-grid{display:grid;grid-template-columns:1fr;gap:.65rem}
+    @media(min-width:760px){.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    .service-item{border:1px solid var(--line);border-radius:14px;padding:.72rem .82rem;background:#fff;color:var(--text)}
     .contour-panels{margin-top:.95rem}
     .contour-panel img{width:100%;height:245px;object-fit:contain;background:#fff;padding:.55rem;border-bottom:1px solid var(--line)}
     .contour-panel div{padding:.75rem .85rem}
@@ -150,13 +194,7 @@
       <div class="hero-card">
         <div class="eyebrow">Computational mechanics · Soft robotics · Biomedical devices</div>
         <h1>Soft mechanics, <span>from materials to medicine</span>.</h1>
-        <p class="lead">I study how slender, soft, and multifunctional structures deform, move, and interact with their surroundings. My work has grown from piezoceramics, PVA hydrogels, xerogels, and smart composites at IIT Madras, to magnetic soft robotic swimmers and swarms at the University of Groningen, and now to mechanically resolved deployment of braided endovascular implants for brain aneurysms at Universität der Bundeswehr München. Across these systems, I combine finite-element modeling, contact mechanics, fluid-structure interaction, nonlinear material models, experiments, and design analysis.</p>
-        <div class="btnrow">
-          <a class="btn primary" href="#research">Research areas</a>
-          <a class="btn" href="#publications">Publications</a>
-          <a class="btn" href="mailto:ratnadeep.pramanik@unibw.de">Email</a>
-          <a class="btn" href="https://scholar.google.com/citations?hl=en&user=YFYCU00AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noreferrer">Google Scholar</a>
-        </div>
+        <p class="lead">Dr. Ratnadeep Pramanik studies how slender, soft, and multifunctional structures deform, move, and interact with their surroundings. His research connects piezoceramics, hydrogels, xerogels, smart composites, magnetic soft robotic swimmers, soft robotic swarms, and mechanically resolved deployment of braided endovascular implants for brain aneurysms through finite-element modeling, contact mechanics, fluid-structure interaction, nonlinear material models, experiments, and design analysis.</p>
         <div class="mini-strip" aria-label="Research snapshots">
           <article class="mini"><img src="assets/figures/finger-swimmer-cycle.jpg" alt="Finger-shaped magnetic soft robotic swimmer cycle"><div><strong>Magnetic soft robots</strong>Low-Re swimmers designed through experiments and CFD-informed modeling.</div></article>
           <article class="mini contain"><img src="assets/figures/hmsm-micromechanical-network.jpg" alt="Micromechanical network model for hard-magnetic soft materials"><div><strong>Smart soft materials</strong>Hard-magnetic soft composites, nonlinear response, and constitutive modeling.</div></article>
@@ -170,7 +208,7 @@
     <div class="container">
       <div class="kicker">Research areas</div>
       <h2>A connected research path across devices, robots, and materials.</h2>
-      <p class="sub">Each area is built around the same question: how can mechanics help us understand performance, failure, and design in complex deformable systems?</p>
+      <p class="sub single-line">Mechanics links performance, failure, and design across complex deformable systems.</p>
       <div class="grid cols4" style="margin-top:1.35rem">
         <article class="card research contain">
           <img src="assets/figures/contour-braid-microscopy-simulation.png" alt="Light microscopy and simulation views of the Contour braid">
@@ -179,7 +217,7 @@
             <h3>Patient-specific deployment of braided aneurysm implants</h3>
             <p>Mechanics-resolved modeling of the Contour device with wire architecture, frictional wire-wire and wire-wall contact, deformable aneurysm walls, and deployment-aware neck metrics.</p>
             <ul><li>braided beam models</li><li>catheter-style release</li><li>contact, friction, and wall apposition</li></ul>
-            <div class="source"><strong>Current work:</strong> Contour deployment in patient-specific intracranial aneurysms.</div>
+            <div class="source"><strong>Current work:</strong> Mechanical modeling and <em>in silico</em> deployment of the Contour device in patient-specific intracranial aneurysms.</div>
           </div>
         </article>
 
@@ -190,7 +228,7 @@
             <h3>Low-Re magnetic soft robotic swimmers</h3>
             <p>Design of miniaturized magnetically actuated swimmers using experiments, computational fluid dynamics, and mechanics-based performance maps.</p>
             <ul><li>helical swimmers</li><li>undulatory swimmers</li><li>speed, stability, and bi-directionality</li></ul>
-            <div class="source"><strong>Key papers:</strong> Extreme Mechanics Letters 2025; Applied Physics Reviews 2024.</div>
+            <div class="source"><strong>Key papers:</strong> <a href="https://doi.org/10.1016/j.eml.2025.102358" target="_blank" rel="noreferrer">Extreme Mechanics Letters 2025</a>; <a href="https://doi.org/10.1063/5.0189185" target="_blank" rel="noreferrer">Applied Physics Reviews 2024</a>.</div>
           </div>
         </article>
 
@@ -201,7 +239,7 @@
             <h3>Soft robotic swarms and spatiotemporal patterns</h3>
             <p>Hydrodynamic interaction between deformable magnetic swimmers produces attraction, repulsion, lateral drift, and three-dimensional collective trajectories.</p>
             <ul><li>two- and three-swimmer systems</li><li>emergent motion</li><li>active soft matter</li></ul>
-            <div class="source"><strong>Key paper:</strong> Nonlinear Dynamics 2025.</div>
+            <div class="source"><strong>Key paper:</strong> <a href="https://doi.org/10.1007/s11071-025-11353-3" target="_blank" rel="noreferrer">Nonlinear Dynamics 2025</a>.</div>
           </div>
         </article>
 
@@ -212,7 +250,7 @@
             <h3>Fluid-structure interaction in soft locomotion</h3>
             <p>Computational FSI for deformable swimmers and biological/robotic systems, including vortex-mediated propulsion and time-dependent shape actuation.</p>
             <ul><li>large deformation FSI</li><li>vortex dynamics</li><li>soft robotic propulsion</li></ul>
-            <div class="source"><strong>Key papers:</strong> Physical Review E 2023; Physics of Fluids 2024.</div>
+            <div class="source"><strong>Key papers:</strong> <a href="https://doi.org/10.1103/PhysRevE.107.014607" target="_blank" rel="noreferrer">Physical Review E 2023</a>; <a href="https://doi.org/10.1063/5.0226743" target="_blank" rel="noreferrer">Physics of Fluids 2024</a>.</div>
           </div>
         </article>
 
@@ -223,7 +261,7 @@
             <h3>Hard-magnetic soft materials and multifunctional composites</h3>
             <p>Micromechanics and constitutive modeling of magnetically active soft materials, with emphasis on coupling, instability, and material architecture.</p>
             <ul><li>hard-magnetic inclusions</li><li>soft matrices</li><li>magneto-mechanical response</li></ul>
-            <div class="source"><strong>Key papers:</strong> Mechanics of Materials 2023; Smart Materials and Structures 2024.</div>
+            <div class="source"><strong>Key papers:</strong> <a href="https://doi.org/10.1016/j.mechmat.2023.104722" target="_blank" rel="noreferrer">Mechanics of Materials 2023</a>; <a href="https://doi.org/10.1088/1361-665X/ad2bd8" target="_blank" rel="noreferrer">Smart Materials and Structures 2024</a>.</div>
           </div>
         </article>
 
@@ -234,7 +272,7 @@
             <h3>Hydrogels, xerogels, and soft polymeric materials</h3>
             <p>Experimental and theoretical characterization of soft polymeric systems, including nanocellulose-reinforced PVA xerogels and silk/cellulose soft composites.</p>
             <ul><li>morphology</li><li>large deformation</li><li>biomedical material response</li></ul>
-            <div class="source"><strong>Key papers:</strong> JMBBM 2019; Materials Letters 2022.</div>
+            <div class="source"><strong>Key papers:</strong> <a href="https://doi.org/10.1016/j.jmbbm.2018.10.024" target="_blank" rel="noreferrer">JMBBM 2019</a>; <a href="https://doi.org/10.1016/j.matlet.2022.131871" target="_blank" rel="noreferrer">Materials Letters 2022</a>.</div>
           </div>
         </article>
 
@@ -245,7 +283,7 @@
             <h3>Fractal and viscoelastic modeling of soft matter</h3>
             <p>Rheological modeling for time-dependent soft materials and biological matter using compact constitutive descriptions with fractional/fractal structure.</p>
             <ul><li>creep and relaxation</li><li>soft biological matter</li><li>time-dependent mechanics</li></ul>
-            <div class="source"><strong>Key papers:</strong> Mechanics of Time-Dependent Materials 2022; Materials &amp; Design 2025.</div>
+            <div class="source"><strong>Key papers:</strong> <a href="https://doi.org/10.1007/s11043-021-09486-0" target="_blank" rel="noreferrer">Mechanics of Time-Dependent Materials 2022</a>; <a href="https://doi.org/10.1016/j.matdes.2025.114572" target="_blank" rel="noreferrer">Materials &amp; Design 2025</a>.</div>
           </div>
         </article>
 
@@ -256,7 +294,7 @@
             <h3>Piezocomposites, piezoceramics, and electro-mechanical creep</h3>
             <p>Early work on 1-3 piezocomposites, PMN-PT ceramics, magnetoelectric nanocomposites, creep-fatigue loading, and thermo-mechano-electrical response.</p>
             <ul><li>creep-fatigue loads</li><li>electro-mechanical coupling</li><li>effective properties</li></ul>
-            <div class="source"><strong>Key papers:</strong> Acta Mechanica 2018; Ceramics International 2018/2019; Meccanica 2019.</div>
+            <div class="source"><strong>Key papers:</strong> <a href="https://doi.org/10.1007/s00707-018-2209-0" target="_blank" rel="noreferrer">Acta Mechanica 2018</a>; <a href="https://doi.org/10.1016/j.ceramint.2018.04.242" target="_blank" rel="noreferrer">Ceramics International 2018</a>; <a href="https://doi.org/10.1007/s11012-019-01035-x" target="_blank" rel="noreferrer">Meccanica 2019</a>.</div>
           </div>
         </article>
       </div>
@@ -273,7 +311,7 @@
         <article class="card story">
           <span class="tag">Endovascular mechanics</span>
           <h3>From prescribed implant shapes to mechanically deployed devices.</h3>
-          <p>My current work treats the Contour implant as a contact-dominated braided structure. The final configuration is obtained from release history, braid elasticity, wall compliance, and friction, rather than being imposed as a post-treatment geometry.</p>
+          <p>Current work treats the Contour implant as a contact-dominated braided structure. The final configuration is obtained from release history, braid elasticity, wall compliance, and friction, rather than being imposed as a post-treatment geometry.</p>
           <div class="bullets">
             <div class="bullet">Wire-resolved braid geometry with geometrically exact beam mechanics.</div>
             <div class="bullet">Frictional wire-wire and wire-wall contact during staged release.</div>
@@ -307,7 +345,7 @@
             <div class="bullet">Carangiform-like swimmers show stable and practical bi-directional locomotion.</div>
             <div class="bullet">Performance maps convert model parameters into design guidance.</div>
           </div>
-          <div class="btnrow"><a class="btn small" href="https://doi.org/10.1016/j.eml.2025.102358" target="_blank" rel="noreferrer">Extreme Mechanics Letters</a><a class="btn small" href="https://arxiv.org/abs/2409.11215" target="_blank" rel="noreferrer">arXiv</a></div>
+          <div class="btnrow"><a class="btn small" href="https://doi.org/10.1016/j.eml.2025.102358" target="_blank" rel="noreferrer">Extreme Mechanics Letters DOI</a></div>
         </article>
         <figure class="card"><img src="assets/figures/finger-swimmer-cycle.jpg" alt="Finger-shaped magnetic soft robotic swimmer experimental and computational cycle"></figure>
       </div>
@@ -323,7 +361,7 @@
             <div class="bullet">Laterally separated swimmers can drift apart as interaction weakens.</div>
             <div class="bullet">Three-swimmer cases show non-trivial spatial organization.</div>
           </div>
-          <div class="btnrow"><a class="btn small" href="https://doi.org/10.1007/s11071-025-11353-3" target="_blank" rel="noreferrer">Nonlinear Dynamics</a><a class="btn small" href="https://arxiv.org/abs/2409.20234" target="_blank" rel="noreferrer">arXiv</a></div>
+          <div class="btnrow"><a class="btn small" href="https://doi.org/10.1007/s11071-025-11353-3" target="_blank" rel="noreferrer">Nonlinear Dynamics DOI</a></div>
         </article>
       </div>
 
@@ -331,7 +369,7 @@
         <article class="card story">
           <span class="tag amber">Materials and constitutive modeling</span>
           <h3>A materials foundation before soft robotics and biomedical devices.</h3>
-          <p>My earlier work built a mechanics background in piezoceramics, piezocomposites, hydrogels, xerogels, nanocellulose composites, hard-magnetic soft materials, and soft-matter rheology.</p>
+          <p>Earlier work established a mechanics background in piezoceramics, piezocomposites, hydrogels, xerogels, nanocellulose composites, hard-magnetic soft materials, and soft-matter rheology.</p>
           <div class="bullets">
             <div class="bullet">PVA hydrogels/xerogels and nanocellulose-reinforced soft composites.</div>
             <div class="bullet">Creep, fatigue, viscoelasticity, and electro-mechanical response in piezocomposites.</div>
@@ -346,8 +384,7 @@
   <section id="publications">
     <div class="container">
       <div class="kicker">Publications</div>
-      <h2>Complete publication record.</h2>
-      <p class="sub">Grouped chronologically, with selected links to DOI records.</p>
+      <h2>Publications.</h2>
 
       <div class="pubyear">2025</div>
       <div class="grid cols2">
@@ -419,7 +456,7 @@
     <div class="container">
       <div class="kicker">Academic profile</div>
       <h2>Training, mentoring, talks, and service.</h2>
-      <p class="sub">The details below keep the complete academic record while keeping the main page centered on research.</p>
+      <p class="sub">Academic training, supervision, conference presentations, and reviewing activity.</p>
 
       <div class="profile" style="margin-top:1.35rem">
         <aside class="card bigpad">
@@ -430,13 +467,6 @@
               <p>Postdoctoral Researcher</p>
               <p class="caption">Institut für Mathematik und Computergestützte Simulation, Universität der Bundeswehr München · Munich, Germany.</p>
             </div>
-          </div>
-          <div class="btnrow">
-            <a class="btn small" href="mailto:ratnadeep.pramanik@unibw.de">Email</a>
-            <a class="btn small" href="https://scholar.google.com/citations?hl=en&user=YFYCU00AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noreferrer">Scholar</a>
-            <a class="btn small" href="https://github.com/rpfsibrain" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="btn small" href="https://www.linkedin.com/in/ratnadeep-pramanik-14a311364/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a class="btn small" href="https://www.researchgate.net/profile/Ratnadeep-Pramanik-2?ev=hdr_xprf" target="_blank" rel="noreferrer">ResearchGate</a>
           </div>
         </aside>
 
@@ -506,8 +536,8 @@
       <div class="card bigpad">
         <div class="kicker">Contact</div>
         <h2>Collaborations, invited talks, and supervision.</h2>
-        <p class="sub">Please feel free to reach out for collaborations in computational mechanics, endovascular devices, soft robotics, magnetic soft materials, biomedical materials, piezocomposites, and fluid-structure interaction.</p>
-        <div class="btnrow"><a class="btn primary" href="mailto:ratnadeep.pramanik@unibw.de">ratnadeep.pramanik@unibw.de</a></div>
+        <p class="sub single-line">Collaborations are welcome in computational mechanics, endovascular devices, soft robotics, magnetic soft materials, biomedical materials, piezocomposites, and fluid-structure interaction.</p>
+        <div class="btnrow"><a class="btn primary" href="mailto:ratnadeep.pramanik@unibw.de" title="ratnadeep.pramanik@unibw.de">Email me</a></div>
       </div>
     </div>
   </section>
@@ -517,7 +547,7 @@
   <div class="container">
     <div style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap">
       <span>© <script>document.write(new Date().getFullYear())</script> Ratnadeep Pramanik</span>
-      <span>Universität der Bundeswehr München</span>
+      <span>Computational mechanics · Soft robotics · Biomedical devices</span>
     </div>
   </div>
 </footer>
