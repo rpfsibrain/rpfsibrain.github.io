@@ -32,6 +32,7 @@
 
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
+
     body{
       margin:0;
       color:var(--ink);
@@ -87,11 +88,13 @@
     }
 
     .navlinks,.toplinks{display:none}
+
     .navlinks{
       gap:.95rem;
       font-size:.93rem;
       color:var(--text);
     }
+
     .navlinks a{text-decoration:none}
     .navlinks a:hover{color:var(--teal)}
 
@@ -156,7 +159,10 @@
     }
 
     .hero-title{white-space:nowrap}
-    @media(max-width:900px){.hero-title{white-space:normal}}
+
+    @media(max-width:900px){
+      .hero-title{white-space:normal}
+    }
 
     h1 span{color:var(--teal)}
 
@@ -202,153 +208,110 @@
       font-size:.98rem;
     }
 
-    .research-list{
+    .research-grid{
       display:grid;
+      grid-template-columns:1fr;
       gap:1rem;
     }
 
-    .research-item{
-      display:grid;
-      grid-template-columns:1fr;
-      gap:0;
+    @media(min-width:700px){
+      .research-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+
+    @media(min-width:1080px){
+      .research-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+    }
+
+    .research-card{
       border:1px solid var(--line);
       border-radius:22px;
-      background:rgba(255,255,255,.94);
+      background:rgba(255,255,255,.95);
       box-shadow:var(--shadow);
       overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      min-height:100%;
     }
 
-    @media(min-width:850px){
-      .research-item{
-        grid-template-columns:360px 1fr;
-      }
-    }
-
-    .research-figure{
+    .research-card figure{
       margin:0;
       background:linear-gradient(180deg,#fff,#f8fafc);
       border-bottom:1px solid var(--line);
     }
 
-    @media(min-width:850px){
-      .research-figure{
-        border-bottom:0;
-        border-right:1px solid var(--line);
-      }
-    }
-
-    .research-figure img{
+    .research-card img{
       width:100%;
-      height:100%;
-      min-height:245px;
-      max-height:330px;
+      height:190px;
       object-fit:contain;
-      padding:.75rem;
+      padding:.7rem;
       background:linear-gradient(180deg,#fff,#f8fafc);
     }
 
     .research-body{
-      padding:1.15rem 1.25rem;
+      padding:1rem;
+      display:flex;
+      flex-direction:column;
+      gap:.45rem;
+      flex:1;
     }
 
     .research-index{
-      display:inline-flex;
-      align-items:center;
+      align-self:flex-start;
       border-radius:999px;
       padding:.25rem .55rem;
-      font-size:.75rem;
+      font-size:.72rem;
       font-weight:900;
-      letter-spacing:.08em;
+      letter-spacing:.07em;
       text-transform:uppercase;
       background:var(--soft-teal);
       color:#115e59;
       border:1px solid rgba(15,118,110,.15);
-      margin-bottom:.45rem;
     }
 
-    .research-item:nth-child(2) .research-index{background:var(--soft-blue);color:#1e3a8a}
-    .research-item:nth-child(3) .research-index{background:var(--soft-violet);color:#4c1d95}
-    .research-item:nth-child(4) .research-index{background:var(--soft-rose);color:#881337}
-    .research-item:nth-child(5) .research-index{background:var(--soft-amber);color:#78350f}
-    .research-item:nth-child(6) .research-index{background:var(--soft-rose);color:#881337}
-    .research-item:nth-child(7) .research-index{background:var(--soft-teal);color:#115e59}
-    .research-item:nth-child(8) .research-index{background:var(--soft-blue);color:#1e3a8a}
+    .research-card:nth-child(2) .research-index{background:var(--soft-blue);color:#1e3a8a}
+    .research-card:nth-child(3) .research-index{background:var(--soft-violet);color:#4c1d95}
+    .research-card:nth-child(4) .research-index{background:var(--soft-rose);color:#881337}
+    .research-card:nth-child(5) .research-index{background:var(--soft-amber);color:#78350f}
+    .research-card:nth-child(6) .research-index{background:var(--soft-rose);color:#881337}
+    .research-card:nth-child(7) .research-index{background:var(--soft-teal);color:#115e59}
+    .research-card:nth-child(8) .research-index{background:var(--soft-blue);color:#1e3a8a}
 
     .research-body h3{
-      margin:.15rem 0 .38rem;
-      font-size:1.32rem;
+      margin:.1rem 0 0;
+      font-size:1.08rem;
       line-height:1.18;
-      letter-spacing:-.03em;
+      letter-spacing:-.02em;
       color:#071527;
     }
 
     .research-body p{
-      margin:.25rem 0 .8rem;
+      margin:0;
       color:var(--text);
-      text-align:justify;
-      text-justify:inter-word;
+      font-size:.91rem;
+      line-height:1.48;
+      text-align:left;
     }
 
-    .selected-papers{
-      display:grid;
-      gap:.45rem;
-      margin-top:.75rem;
-    }
-
-    .paper-link{
-      display:grid;
-      grid-template-columns:4.2rem 1fr;
-      gap:.7rem;
-      padding:.56rem .65rem;
-      border:1px solid var(--line);
-      border-radius:14px;
-      background:#fff;
-      text-decoration:none;
-      transition:.14s ease;
-    }
-
-    .paper-link:hover{
-      transform:translateY(-1px);
-      border-color:rgba(15,118,110,.3);
-      box-shadow:0 8px 20px rgba(15,23,42,.07);
-    }
-
-    .paper-link.no-link{
-      cursor:default;
-    }
-
-    .paper-link.no-link:hover{
-      transform:none;
-      box-shadow:none;
-      border-color:var(--line);
-    }
-
-    .paper-year{
-      color:var(--teal);
-      font-weight:900;
-      font-size:.92rem;
-    }
-
-    .paper-title{
-      display:block;
-      color:var(--ink);
-      font-weight:800;
-      line-height:1.25;
-    }
-
-    .paper-journal{
-      display:block;
+    .selected{
+      margin-top:.25rem;
+      padding-top:.65rem;
+      border-top:1px solid var(--line);
       color:var(--muted);
       font-size:.86rem;
-      margin-top:.1rem;
+      line-height:1.45;
     }
 
-    .pub-year{
-      margin:1rem 0 .5rem;
-      font-size:1.18rem;
-      font-weight:900;
-      color:#071527;
+    .selected strong{
+      color:var(--ink);
     }
+
+    .selected a{
+      color:var(--teal);
+      font-weight:800;
+      text-decoration:none;
+    }
+
+    .selected a:hover{text-decoration:underline}
 
     .pub-grid{
       display:grid;
@@ -418,6 +381,7 @@
     }
 
     details.year-block summary::-webkit-details-marker{display:none}
+
     details.year-block .year-content{
       padding:0 1rem 1rem;
     }
@@ -490,6 +454,7 @@
     }
 
     .timeline-item strong{display:block}
+
     .timeline-item span{
       color:var(--muted);
       font-size:.88rem;
@@ -560,7 +525,7 @@
     @media(max-width:560px){
       .hero-card{padding:1.35rem}
       .profile-top{align-items:flex-start;flex-direction:column}
-      .paper-link{grid-template-columns:3.6rem 1fr}
+      .research-card img{height:175px}
     }
   </style>
 </head>
@@ -605,132 +570,103 @@
       <div class="section-head">
         <div class="kicker">Research</div>
         <h2>Research areas</h2>
-        <p class="sub">Clean overview of the main research directions, with representative figures and selected publications.</p>
+        <p class="sub">Main research directions, representative figures, and selected publications.</p>
       </div>
 
-      <div class="research-list">
-        <article class="research-item">
-          <figure class="research-figure">
+      <div class="research-grid">
+        <article class="research-card">
+          <figure>
             <img src="assets/figures/contour-mechanics-workflow.png" alt="Patient-specific Contour deployment mechanics workflow">
           </figure>
           <div class="research-body">
-            <div class="research-index">01 · Endovascular devices</div>
-            <h3>Mechanical deployment of braided aneurysm implants</h3>
-            <p>Patient-specific simulations of the Contour device resolve braided wires, catheter-style release, frictional contact, deformable aneurysm walls, and neck-level deployment metrics.</p>
-            <div class="selected-papers">
-              <div class="paper-link no-link"><span class="paper-year">Current</span><span><span class="paper-title">Mechanical modeling and <em>in silico</em> deployment of the Contour device in patient-specific intracranial aneurysms</span><span class="paper-journal">Manuscript in preparation</span></span></div>
-              <a class="paper-link" href="https://www.unibw.de/imcs-en/publications/posters/2025_pramanik_idir_kiel.pdf/view" target="_blank" rel="noreferrer"><span class="paper-year">2025</span><span><span class="paper-title">High-fidelity mechanical modeling and FEM placement of the Contour device for intracranial aneurysms</span><span class="paper-journal">IDIR Kiel research retreat · Poster</span></span></a>
-            </div>
+            <div class="research-index">01 · Endovascular</div>
+            <h3>Braided aneurysm implants</h3>
+            <p>Mechanics-resolved Contour deployment with braid contact, wall apposition, release history, and neck-level metrics.</p>
+            <div class="selected"><strong>Selected work:</strong> (i) Mechanics-resolved <em>in silico</em> deployment of the Contour device in patient-specific intracranial aneurysms; (ii) A review of contact-driven deployment and flow modeling of braided endovascular implants for intracranial aneurysms.</div>
           </div>
         </article>
 
-        <article class="research-item">
-          <figure class="research-figure">
+        <article class="research-card">
+          <figure>
             <img src="assets/figures/msrs-performance-map.jpg" alt="Performance maps for magnetic soft robotic swimmers">
           </figure>
           <div class="research-body">
             <div class="research-index">02 · Magnetic swimmers</div>
-            <h3>Low-Re magnetic soft robotic swimmers</h3>
-            <p>Miniaturized magnetic swimmers are studied through experiments, CFD-informed modeling, and design maps linking geometry, magnetization, elasticity, and viscous drag.</p>
-            <div class="selected-papers">
-              <a class="paper-link" href="https://doi.org/10.1016/j.eml.2025.102358" target="_blank" rel="noreferrer"><span class="paper-year">2025</span><span><span class="paper-title">Computational and experimental design of fast and versatile magnetic soft robotic low Re swimmers</span><span class="paper-journal">Extreme Mechanics Letters</span></span></a>
-              <a class="paper-link" href="https://doi.org/10.1063/5.0189185" target="_blank" rel="noreferrer"><span class="paper-year">2024</span><span><span class="paper-title">Nature-inspired miniaturized magnetic soft robotic swimmers</span><span class="paper-journal">Applied Physics Reviews</span></span></a>
-              <a class="paper-link" href="https://doi.org/10.1145/3478586.3478591" target="_blank" rel="noreferrer"><span class="paper-year">2021</span><span><span class="paper-title">Bi-directional locomotion of a magnetically-actuated jellyfish-inspired soft robot</span><span class="paper-journal">Advances in Robotics</span></span></a>
-            </div>
+            <h3>Low-Re soft robotic swimmers</h3>
+            <p>Experiments and CFD-informed design maps for miniaturized magnetic swimmers.</p>
+            <div class="selected"><strong>Selected publications:</strong> (i) <a href="https://doi.org/10.1016/j.eml.2025.102358" target="_blank" rel="noreferrer">Extreme Mechanics Letters, 2025</a>; (ii) <a href="https://doi.org/10.1063/5.0189185" target="_blank" rel="noreferrer">Applied Physics Reviews, 2024</a>; (iii) <a href="https://doi.org/10.1145/3478586.3478591" target="_blank" rel="noreferrer">Advances in Robotics, 2021</a>.</div>
           </div>
         </article>
 
-        <article class="research-item">
-          <figure class="research-figure">
+        <article class="research-card">
+          <figure>
             <img src="assets/figures/swarm-trajectories.jpg" alt="Trajectories of magnetic soft robotic swarms">
           </figure>
           <div class="research-body">
-            <div class="research-index">03 · Collective behavior</div>
-            <h3>Soft robotic swarms and spatiotemporal patterns</h3>
-            <p>Hydrodynamic interaction between deformable magnetic swimmers produces attraction, repulsion, lateral drift, and three-dimensional collective trajectories.</p>
-            <div class="selected-papers">
-              <a class="paper-link" href="https://doi.org/10.1007/s11071-025-11353-3" target="_blank" rel="noreferrer"><span class="paper-year">2025</span><span><span class="paper-title">Emerging spatiotemporal patterns and collective swimming of magnetically actuated soft robots</span><span class="paper-journal">Nonlinear Dynamics</span></span></a>
-              <a class="paper-link" href="https://doi.org/10.1063/5.0226743" target="_blank" rel="noreferrer"><span class="paper-year">2024</span><span><span class="paper-title">Computational fluid-structure interaction in biology and soft robots: A review</span><span class="paper-journal">Physics of Fluids</span></span></a>
-            </div>
+            <div class="research-index">03 · Swarms</div>
+            <h3>Collective soft robotic motion</h3>
+            <p>Hydrodynamic interaction, attraction, repulsion, lateral drift, and spatiotemporal organization in swimmer groups.</p>
+            <div class="selected"><strong>Selected publications:</strong> (i) <a href="https://doi.org/10.1007/s11071-025-11353-3" target="_blank" rel="noreferrer">Nonlinear Dynamics, 2025</a>; (ii) <a href="https://doi.org/10.1063/5.0226743" target="_blank" rel="noreferrer">Physics of Fluids, 2024</a>.</div>
           </div>
         </article>
 
-        <article class="research-item">
-          <figure class="research-figure">
+        <article class="research-card">
+          <figure>
             <img src="assets/figures/jellyfishbot-vortex.jpg" alt="Velocity and vortex fields around a jellyfish-inspired soft robot">
           </figure>
           <div class="research-body">
-            <div class="research-index">04 · Bio-inspired FSI</div>
-            <h3>Fluid-structure interaction in soft locomotion</h3>
-            <p>Large-deformation FSI models resolve soft robotic propulsion, vortex-mediated swimming, and time-dependent deformation in biological and bio-inspired locomotion.</p>
-            <div class="selected-papers">
-              <a class="paper-link" href="https://doi.org/10.1063/5.0226743" target="_blank" rel="noreferrer"><span class="paper-year">2024</span><span><span class="paper-title">Computational fluid-structure interaction in biology and soft robots: A review</span><span class="paper-journal">Physics of Fluids</span></span></a>
-              <a class="paper-link" href="https://doi.org/10.1103/PhysRevE.107.014607" target="_blank" rel="noreferrer"><span class="paper-year">2023</span><span><span class="paper-title">Magnetic-field-induced propulsion of jellyfish-inspired soft robotic swimmers</span><span class="paper-journal">Physical Review E</span></span></a>
-            </div>
+            <div class="research-index">04 · FSI</div>
+            <h3>Bio-inspired fluid-structure interaction</h3>
+            <p>Large-deformation FSI, vortex-mediated propulsion, and time-dependent soft locomotion.</p>
+            <div class="selected"><strong>Selected publications:</strong> (i) <a href="https://doi.org/10.1063/5.0226743" target="_blank" rel="noreferrer">Physics of Fluids, 2024</a>; (ii) <a href="https://doi.org/10.1103/PhysRevE.107.014607" target="_blank" rel="noreferrer">Physical Review E, 2023</a>.</div>
           </div>
         </article>
 
-        <article class="research-item">
-          <figure class="research-figure">
+        <article class="research-card">
+          <figure>
             <img src="assets/figures/hmsm-micromechanical-network.jpg" alt="Micromechanical model for hard-magnetic soft materials">
           </figure>
           <div class="research-body">
             <div class="research-index">05 · Smart materials</div>
-            <h3>Hard-magnetic soft materials and multifunctional composites</h3>
-            <p>Micromechanics and constitutive models connect magnetic inclusions, soft matrix response, instabilities, and architecture-dependent behavior.</p>
-            <div class="selected-papers">
-              <a class="paper-link" href="https://doi.org/10.1002/adem.202500125" target="_blank" rel="noreferrer"><span class="paper-year">2025</span><span><span class="paper-title">Leveraging instabilities in multifunctional soft materials: A cutting edge review</span><span class="paper-journal">Advanced Engineering Materials</span></span></a>
-              <a class="paper-link" href="https://doi.org/10.1088/1361-665X/ad2bd8" target="_blank" rel="noreferrer"><span class="paper-year">2024</span><span><span class="paper-title">Hard magnetics and soft materials — a synergy</span><span class="paper-journal">Smart Materials and Structures</span></span></a>
-              <a class="paper-link" href="https://doi.org/10.1016/j.mechmat.2023.104722" target="_blank" rel="noreferrer"><span class="paper-year">2023</span><span><span class="paper-title">Micromechanics-based constitutive modeling of hard-magnetic soft materials</span><span class="paper-journal">Mechanics of Materials</span></span></a>
-            </div>
+            <h3>Hard-magnetic soft materials</h3>
+            <p>Micromechanics, constitutive modeling, instabilities, and magneto-mechanical coupling in soft composites.</p>
+            <div class="selected"><strong>Selected publications:</strong> (i) <a href="https://doi.org/10.1002/adem.202500125" target="_blank" rel="noreferrer">Advanced Engineering Materials, 2025</a>; (ii) <a href="https://doi.org/10.1088/1361-665X/ad2bd8" target="_blank" rel="noreferrer">Smart Materials and Structures, 2024</a>; (iii) <a href="https://doi.org/10.1016/j.mechmat.2023.104722" target="_blank" rel="noreferrer">Mechanics of Materials, 2023</a>.</div>
           </div>
         </article>
 
-        <article class="research-item">
-          <figure class="research-figure">
+        <article class="research-card">
+          <figure>
             <img src="assets/figures/nanocellulose-pva-xerogels.jpg" alt="Nanocellulose PVA xerogel graphical abstract">
           </figure>
           <div class="research-body">
             <div class="research-index">06 · Biomedical materials</div>
-            <h3>Hydrogels, xerogels, and soft polymeric materials</h3>
-            <p>Experimental and theoretical work on polymeric soft materials connects morphology, anisotropy, reinforcement, and biomedical material response.</p>
-            <div class="selected-papers">
-              <a class="paper-link" href="https://doi.org/10.1088/1748-605X/ada840" target="_blank" rel="noreferrer"><span class="paper-year">2025</span><span><span class="paper-title">Harnessing machine learning algorithms for PLA in biomedical use: a comprehensive review</span><span class="paper-journal">Biomedical Materials</span></span></a>
-              <a class="paper-link" href="https://doi.org/10.1016/j.matlet.2022.131871" target="_blank" rel="noreferrer"><span class="paper-year">2022</span><span><span class="paper-title">Mechanical and morphological characterization of a novel silk/cellulose-based soft composite</span><span class="paper-journal">Materials Letters</span></span></a>
-              <a class="paper-link" href="https://doi.org/10.1016/j.jmbbm.2018.10.024" target="_blank" rel="noreferrer"><span class="paper-year">2019</span><span><span class="paper-title">Influence of nanocellulose on mechanics and morphology of polyvinyl alcohol xerogels</span><span class="paper-journal">Journal of the Mechanical Behavior of Biomedical Materials</span></span></a>
-            </div>
+            <h3>Hydrogels, xerogels, and polymers</h3>
+            <p>Soft polymeric materials, nanocellulose reinforcement, morphology, anisotropy, and biomedical response.</p>
+            <div class="selected"><strong>Selected publications:</strong> (i) <a href="https://doi.org/10.1088/1748-605X/ada840" target="_blank" rel="noreferrer">Biomedical Materials, 2025</a>; (ii) <a href="https://doi.org/10.1016/j.matlet.2022.131871" target="_blank" rel="noreferrer">Materials Letters, 2022</a>; (iii) <a href="https://doi.org/10.1016/j.jmbbm.2018.10.024" target="_blank" rel="noreferrer">JMBBM, 2019</a>.</div>
           </div>
         </article>
 
-        <article class="research-item">
-          <figure class="research-figure">
+        <article class="research-card">
+          <figure>
             <img src="assets/figures/fractal-viscoelastic-soft-materials.jpg" alt="Fractal viscoelastic model for soft biological matter">
           </figure>
           <div class="research-body">
-            <div class="research-index">07 · Soft matter rheology</div>
-            <h3>Fractal and viscoelastic modeling of soft matter</h3>
-            <p>Compact constitutive models describe creep, relaxation, rate dependence, damage, and soft biological matter response.</p>
-            <div class="selected-papers">
-              <a class="paper-link" href="https://doi.org/10.1016/j.matdes.2025.114572" target="_blank" rel="noreferrer"><span class="paper-year">2025</span><span><span class="paper-title">Unified rheological modeling using fractal calculus for soft biological matter</span><span class="paper-journal">Materials &amp; Design</span></span></a>
-              <a class="paper-link" href="https://doi.org/10.1016/j.euromechsol.2022.104874" target="_blank" rel="noreferrer"><span class="paper-year">2023</span><span><span class="paper-title">A hyperelastic viscoplastic damage model for large deformation mechanics of rate-dependent soft materials</span><span class="paper-journal">European Journal of Mechanics A/Solids</span></span></a>
-              <a class="paper-link" href="https://doi.org/10.1007/s11043-021-09486-0" target="_blank" rel="noreferrer"><span class="paper-year">2022</span><span><span class="paper-title">Mechanics of soft polymeric materials using a fractal viscoelastic model</span><span class="paper-journal">Mechanics of Time-Dependent Materials</span></span></a>
-            </div>
+            <div class="research-index">07 · Rheology</div>
+            <h3>Fractal and viscoelastic soft matter</h3>
+            <p>Compact models for creep, relaxation, rate dependence, damage, and soft biological matter.</p>
+            <div class="selected"><strong>Selected publications:</strong> (i) <a href="https://doi.org/10.1016/j.matdes.2025.114572" target="_blank" rel="noreferrer">Materials &amp; Design, 2025</a>; (ii) <a href="https://doi.org/10.1016/j.euromechsol.2022.104874" target="_blank" rel="noreferrer">EJMS, 2023</a>; (iii) <a href="https://doi.org/10.1007/s11043-021-09486-0" target="_blank" rel="noreferrer">MTDM, 2022</a>.</div>
           </div>
         </article>
 
-        <article class="research-item">
-          <figure class="research-figure">
+        <article class="research-card">
+          <figure>
             <img src="assets/figures/piezocomposite-creep-fatigue-setup.png" alt="Experimental setup for piezocomposite creep-fatigue work">
           </figure>
           <div class="research-body">
             <div class="research-index">08 · Piezoceramics</div>
-            <h3>Piezocomposites, piezoceramics, and electro-mechanical creep</h3>
-            <p>Early work on piezoceramics and piezocomposites addressed creep-fatigue loading, electro-mechanical coupling, grain-size effects, and effective-property modeling.</p>
-            <div class="selected-papers">
-              <a class="paper-link" href="https://doi.org/10.1007/s11012-019-01035-x" target="_blank" rel="noreferrer"><span class="paper-year">2019</span><span><span class="paper-title">Mechanics of 1-3 piezocomposites subjected to creep-fatigue loads</span><span class="paper-journal">Meccanica</span></span></a>
-              <a class="paper-link" href="https://doi.org/10.1007/s00707-018-2209-0" target="_blank" rel="noreferrer"><span class="paper-year">2018</span><span><span class="paper-title">Experimental and theoretical studies on mechanical creep of 1-3 piezocomposites</span><span class="paper-journal">Acta Mechanica</span></span></a>
-              <a class="paper-link" href="https://doi.org/10.1016/j.ceramint.2018.04.242" target="_blank" rel="noreferrer"><span class="paper-year">2018</span><span><span class="paper-title">Electro-mechanical creep of 1-3 piezocomposites</span><span class="paper-journal">Ceramics International</span></span></a>
-            </div>
+            <h3>Piezocomposites and electro-mechanical creep</h3>
+            <p>Creep-fatigue, electro-mechanical coupling, grain-size effects, and effective-property modeling.</p>
+            <div class="selected"><strong>Selected publications:</strong> (i) <a href="https://doi.org/10.1007/s11012-019-01035-x" target="_blank" rel="noreferrer">Meccanica, 2019</a>; (ii) <a href="https://doi.org/10.1007/s00707-018-2209-0" target="_blank" rel="noreferrer">Acta Mechanica, 2018</a>; (iii) <a href="https://doi.org/10.1016/j.ceramint.2018.04.242" target="_blank" rel="noreferrer">Ceramics International, 2018</a>.</div>
           </div>
         </article>
       </div>
@@ -899,7 +835,6 @@
       <div class="card contact-card">
         <div class="kicker">Contact</div>
         <h2>Collaborations, invited talks, and supervision.</h2>
-        <p style="text-align:center;color:var(--muted);margin:.45rem 0 1rem">For research discussions in computational mechanics, soft robotics, biomedical devices, and soft materials.</p>
         <a class="btn primary" href="mailto:ratnadeep.pramanik@unibw.de" title="ratnadeep.pramanik@unibw.de">Email me</a>
       </div>
     </div>
