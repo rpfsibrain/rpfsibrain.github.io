@@ -175,22 +175,13 @@
       line-height:1.35;
     }
 
-    h1{
-      margin:.85rem 0 .7rem;
-      max-width:1050px;
-      font-size:clamp(2rem,4vw,3.45rem);
-      line-height:1.06;
-      letter-spacing:-.065em;
-      color:#071527;
-    }
-
     .lead{
       max-width:1000px;
       color:var(--text);
       font-size:1.04rem;
       text-align:justify;
       text-justify:inter-word;
-      margin:0;
+      margin:1rem 0 0;
     }
 
     section{
@@ -200,15 +191,6 @@
 
     .section-head{
       margin-bottom:1.35rem;
-    }
-
-    .kicker{
-      text-transform:uppercase;
-      letter-spacing:.17em;
-      color:var(--teal);
-      font-weight:900;
-      font-size:.78rem;
-      margin-bottom:.35rem;
     }
 
     h2{
@@ -465,17 +447,6 @@
       text-align:left;
     }
 
-    .list-clean{
-      list-style:none;
-      padding:0;
-      margin:.6rem 0 0;
-    }
-
-    .list-clean li{
-      margin:.35rem 0;
-      color:var(--text);
-    }
-
     .compact-list{
       display:grid;
       grid-template-columns:1fr;
@@ -502,6 +473,13 @@
     .compact-list strong{
       color:#071527;
       font-weight:850;
+    }
+
+    .compact-list .path{
+      color:var(--muted);
+      font-size:.82rem;
+      display:block;
+      margin-top:.1rem;
     }
 
     .timeline{
@@ -641,7 +619,6 @@
     <div class="container">
       <div class="hero-card">
         <div class="eyebrow">Computational mechanics · Soft robotics · Biomedical devices</div>
-        <h1>Research</h1>
         <p class="lead">We study deformable structures across soft materials, magnetic soft robots, and endovascular implants. Our work combines finite-element modeling, contact mechanics, fluid-structure interaction, nonlinear material models, experiments, and design analysis.</p>
       </div>
     </div>
@@ -650,8 +627,7 @@
   <section id="research">
     <div class="container">
       <div class="section-head">
-        <div class="kicker">Research</div>
-        <h2>Research areas</h2>
+        <h2>Research</h2>
       </div>
 
       <div class="research-grid">
@@ -749,8 +725,7 @@
   <section id="publications">
     <div class="container">
       <div class="section-head">
-        <div class="kicker">Publications</div>
-        <h2>Journal articles and conference papers</h2>
+        <h2>Publications</h2>
       </div>
 
       <details class="year-block" open>
@@ -818,8 +793,7 @@
   <section id="academic">
     <div class="container">
       <div class="section-head">
-        <div class="kicker">Academic</div>
-        <h2>Academic profile</h2>
+        <h2>Academic</h2>
       </div>
 
       <div class="profile-grid">
@@ -854,14 +828,14 @@
           <div class="card-body">
             <h3>Supervision and mentoring</h3>
             <ul class="compact-list two-col">
-              <li><strong>Aakila Rajan</strong> — BE, IIT Madras; later Caltech.</li>
-              <li><strong>Anantha N. S. Babu</strong> — BE, IIT Madras; later MIT.</li>
-              <li><strong>Prathik Narayanan</strong> — BE, IIT Madras; later Brown.</li>
-              <li><strong>JM Chandra Hasa</strong> — BE, IIT Madras.</li>
-              <li><strong>Tina Fazeli</strong> — BS, Groningen; later TU Delft.</li>
-              <li><strong>Tamer van Teeffelen</strong> — BS, Groningen; later ETH Zürich.</li>
-              <li><strong>Matias Santa Cruz</strong> — BS, Groningen; later TU Delft.</li>
-              <li><strong>Vignesh K. Gopalakrishnan</strong> — BE-MS, IIT Madras; later EPFL.</li>
+              <li><strong>Aakila Rajan</strong><span class="path">IIT Madras BE &rarr; Caltech Ph.D.</span></li>
+              <li><strong>Anantha N. S. Babu</strong><span class="path">IIT Madras BE &rarr; MIT M.S.-Ph.D.</span></li>
+              <li><strong>Prathik Narayanan</strong><span class="path">IIT Madras BE &rarr; Brown Ph.D.</span></li>
+              <li><strong>JM Chandra Hasa</strong><span class="path">IIT Madras BE</span></li>
+              <li><strong>Tina Fazeli</strong><span class="path">Groningen BS &rarr; TU Delft M.S.</span></li>
+              <li><strong>Tamer van Teeffelen</strong><span class="path">Groningen BS &rarr; ETH Zürich M.S.</span></li>
+              <li><strong>Matias Santa Cruz</strong><span class="path">Groningen BS &rarr; TU Delft M.S.</span></li>
+              <li><strong>Vignesh K. Gopalakrishnan</strong><span class="path">IIT Madras BE-MS &rarr; EPFL Ph.D.</span></li>
             </ul>
           </div>
         </article>
@@ -917,8 +891,7 @@
   <section id="contact">
     <div class="container">
       <div class="card contact-card">
-        <div class="kicker">Contact</div>
-        <h2>Collaborations, invited talks, and supervision.</h2>
+        <h2>Contact</h2>
         <a class="btn primary" href="mailto:ratnadeep.pramanik@unibw.de" title="ratnadeep.pramanik@unibw.de">Email me</a>
       </div>
     </div>
