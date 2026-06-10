@@ -163,6 +163,7 @@
     .eyebrow{
       display:inline-flex;
       align-items:center;
+      max-width:100%;
       padding:.38rem .7rem;
       border-radius:999px;
       background:linear-gradient(135deg,var(--soft-teal),var(--soft-blue));
@@ -171,6 +172,7 @@
       font-weight:900;
       font-size:.84rem;
       letter-spacing:.02em;
+      line-height:1.35;
     }
 
     h1{
@@ -180,12 +182,6 @@
       line-height:1.06;
       letter-spacing:-.065em;
       color:#071527;
-    }
-
-    .hero-title{white-space:nowrap}
-
-    @media(max-width:980px){
-      .hero-title{white-space:normal}
     }
 
     .lead{
@@ -480,6 +476,34 @@
       color:var(--text);
     }
 
+    .compact-list{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:.42rem;
+      list-style:none;
+      padding:0;
+      margin:.65rem 0 0;
+    }
+
+    @media(min-width:760px){
+      .compact-list.two-col{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+
+    .compact-list li{
+      border:1px solid var(--line);
+      border-radius:13px;
+      background:linear-gradient(180deg,#ffffff,#f8fafc);
+      padding:.56rem .68rem;
+      color:var(--text);
+      font-size:.88rem;
+      line-height:1.35;
+    }
+
+    .compact-list strong{
+      color:#071527;
+      font-weight:850;
+    }
+
     .timeline{
       display:grid;
       gap:.7rem;
@@ -616,8 +640,8 @@
   <section class="hero">
     <div class="container">
       <div class="hero-card">
-        <div class="eyebrow">Research website</div>
-        <h1 class="hero-title">Computational mechanics · Soft robotics · Biomedical devices</h1>
+        <div class="eyebrow">Computational mechanics · Soft robotics · Biomedical devices</div>
+        <h1>Research</h1>
         <p class="lead">We study deformable structures across soft materials, magnetic soft robots, and endovascular implants. Our work combines finite-element modeling, contact mechanics, fluid-structure interaction, nonlinear material models, experiments, and design analysis.</p>
       </div>
     </div>
@@ -829,15 +853,15 @@
         <article class="card">
           <div class="card-body">
             <h3>Supervision and mentoring</h3>
-            <ul class="list-clean">
-              <li><strong>Aakila Rajan</strong> — BE, IIT Madras; later Ph.D., Caltech.</li>
-              <li><strong>Anantha Narayanan Suresh Babu</strong> — BE, IIT Madras; later M.S.-Ph.D., MIT.</li>
-              <li><strong>Prathik Narayanan</strong> — BE, IIT Madras; later Ph.D., Brown University.</li>
+            <ul class="compact-list two-col">
+              <li><strong>Aakila Rajan</strong> — BE, IIT Madras; later Caltech.</li>
+              <li><strong>Anantha N. S. Babu</strong> — BE, IIT Madras; later MIT.</li>
+              <li><strong>Prathik Narayanan</strong> — BE, IIT Madras; later Brown.</li>
               <li><strong>JM Chandra Hasa</strong> — BE, IIT Madras.</li>
-              <li><strong>Tina Fazeli</strong> — BS, University of Groningen; later M.S., TU Delft.</li>
-              <li><strong>Tamer van Teeffelen</strong> — BS, University of Groningen; later M.S., ETH Zürich.</li>
-              <li><strong>Matias Santa Cruz</strong> — BS, University of Groningen; later M.S., TU Delft.</li>
-              <li><strong>Vignesh Kumar Gopalakrishnan</strong> — BE-MS, IIT Madras; later Ph.D., EPFL.</li>
+              <li><strong>Tina Fazeli</strong> — BS, Groningen; later TU Delft.</li>
+              <li><strong>Tamer van Teeffelen</strong> — BS, Groningen; later ETH Zürich.</li>
+              <li><strong>Matias Santa Cruz</strong> — BS, Groningen; later TU Delft.</li>
+              <li><strong>Vignesh K. Gopalakrishnan</strong> — BE-MS, IIT Madras; later EPFL.</li>
             </ul>
           </div>
         </article>
@@ -845,17 +869,17 @@
         <article class="card">
           <div class="card-body">
             <h3>Selected conferences</h3>
-            <ul class="list-clean">
-              <li><strong>2026</strong> — Biomechanik Kongress / DGfB, Hamburg: Computational design and placement of braided endovascular Contour devices for treating brain aneurysms.</li>
-              <li><strong>2025</strong> — International Conference on Biomedical Technology, Hannover: Endovascular Devices for Aneurysm Treatment.</li>
-              <li><strong>2025</strong> — IDIR Research Retreat, Kiel: High-Fidelity Mechanical Modeling and FEM placement of the Contour Device for Intracranial Aneurysms.</li>
-              <li><strong>2025</strong> — Interdisciplinary Aneurysm Science Workshop, Raitenhaslach: High-Fidelity Mechanical Modeling of the Contour Device for Brain Aneurysms.</li>
-              <li><strong>2024</strong> — ECCOMAS, Lisbon: Computational Modelling of Nature-Inspired Magnetic Soft Robots.</li>
-              <li><strong>2023</strong> — Dutch Soft Robotics Symposium, Enschede: Swimming strategies of bio-inspired magnetic soft robots.</li>
-              <li><strong>2022</strong> — Burgers Symposium, Lunteren: Symmetry-breaking mechanisms in a jellyfish-inspired magnetically-controlled soft robotic swimmer.</li>
-              <li><strong>2021</strong> — Advances in Robotics, Kanpur: Bi-directional locomotion of a magnetically-actuated jellyfish-inspired soft robot.</li>
-              <li><strong>2018</strong> — International Conference on Sonar System and Sensors, DRDO, Kochi: Studies on mechanical and creep behavior of piezoelectric ceramics.</li>
-              <li><strong>2016</strong> — 61st Congress of Indian Society of Theoretical and Applied Mechanics, Vellore: Stability analysis of a precessing and nutating beam with angular acceleration.</li>
+            <ul class="compact-list">
+              <li><strong>2026</strong> — Biomechanik Kongress / DGfB, Hamburg.</li>
+              <li><strong>2025</strong> — International Conference on Biomedical Technology, Hannover.</li>
+              <li><strong>2025</strong> — IDIR Research Retreat, Kiel.</li>
+              <li><strong>2025</strong> — Aneurysm Science Workshop, Raitenhaslach.</li>
+              <li><strong>2024</strong> — ECCOMAS, Lisbon.</li>
+              <li><strong>2023</strong> — Dutch Soft Robotics Symposium, Enschede.</li>
+              <li><strong>2022</strong> — Burgers Symposium, Lunteren.</li>
+              <li><strong>2021</strong> — Advances in Robotics, Kanpur.</li>
+              <li><strong>2018</strong> — Sonar System and Sensors, DRDO, Kochi.</li>
+              <li><strong>2016</strong> — ISTAM 61st Congress, Vellore.</li>
             </ul>
           </div>
         </article>
