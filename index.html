@@ -161,9 +161,13 @@
     }
 
     .eyebrow{
-      display:inline-flex;
+      display:flex;
       align-items:center;
+      justify-content:center;
+      width:max-content;
       max-width:100%;
+      margin-inline:auto;
+      text-align:center;
       padding:.38rem .7rem;
       border-radius:999px;
       background:linear-gradient(135deg,var(--soft-teal),var(--soft-blue));
@@ -549,6 +553,12 @@
         radial-gradient(circle at 90% 0%,rgba(15,118,110,.09),transparent 18rem);
     }
 
+    .contact-card p{
+      margin:.55rem 0 .95rem;
+      color:var(--muted);
+      font-weight:650;
+    }
+
     .btn{
       display:inline-flex;
       align-items:center;
@@ -892,6 +902,7 @@
     <div class="container">
       <div class="card contact-card">
         <h2>Contact</h2>
+        <p>Collaborations, invited talks, and supervision.</p>
         <a class="btn primary" href="mailto:ratnadeep.pramanik@unibw.de" title="ratnadeep.pramanik@unibw.de">Email me</a>
       </div>
     </div>
