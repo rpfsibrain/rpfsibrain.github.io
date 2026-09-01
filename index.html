@@ -136,7 +136,7 @@
     }
 
     .hero{
-      padding:4.8rem 0 2.5rem;
+      padding:1.35rem 0 .85rem;
     }
 
     .hero-card{
@@ -149,7 +149,7 @@
         radial-gradient(circle at 96% 8%,rgba(29,78,216,.11),transparent 21rem),
         radial-gradient(circle at 4% 100%,rgba(15,118,110,.10),transparent 24rem);
       box-shadow:var(--shadow);
-      padding:2.35rem;
+      padding:1.1rem 1.35rem;
     }
 
     .hero-card::before{
@@ -168,15 +168,15 @@
       max-width:100%;
       margin-inline:auto;
       text-align:center;
-      padding:.38rem .7rem;
+      padding:.68rem 1.25rem;
       border-radius:999px;
       background:linear-gradient(135deg,var(--soft-teal),var(--soft-blue));
       border:1px solid rgba(15,118,110,.20);
       color:#115e59;
       font-weight:900;
-      font-size:.84rem;
-      letter-spacing:.02em;
-      line-height:1.35;
+      font-size:clamp(1.05rem,2.15vw,1.45rem);
+      letter-spacing:-.015em;
+      line-height:1.25;
     }
 
     .lead{
@@ -593,7 +593,9 @@
     }
 
     @media(max-width:560px){
-      .hero-card{padding:1.35rem}
+      .hero{padding:.85rem 0 .55rem}
+      .hero-card{padding:.8rem .75rem}
+      .eyebrow{padding:.58rem .75rem;font-size:clamp(.92rem,4vw,1.08rem)}
       .profile-top{align-items:flex-start;flex-direction:column}
       .research-card img{height:175px}
     }
