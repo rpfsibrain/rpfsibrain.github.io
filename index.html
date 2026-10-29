@@ -1,3919 +1,4276 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <meta
-    name="description"
-    content="Research website of Dr. Ratnadeep Pramanik: microrobotic swarms, magnetic soft robotic swimmers, biomedical devices, soft materials, multifunctional materials, and computational mechanics."
-  />
-
-  <meta
-    name="keywords"
-    content="Ratnadeep Pramanik, microrobotic swarms, microswimmers, magnetic soft robotic swimmers, soft robotics, fluid-structure interaction, endovascular devices, intracranial aneurysms, hard-magnetic soft materials, hydrogels, xerogels, piezocomposites, biomedical materials, computational mechanics"
-  />
-
-  <title>Dr. Ratnadeep Pramanik | Research</title>
-
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap');
-
-    :root{
-      --paper:#ffffff;
-      --ink:#102033;
-      --text:#334155;
-      --muted:#64748b;
-      --line:#dbe6ee;
-
-      --teal:#0f766e;
-      --blue:#1d4ed8;
-      --amber:#b45309;
-      --rose:#be123c;
-      --violet:#6d28d9;
-      --cyan:#0891b2;
-      --green:#15803d;
-
-      --soft-teal:#e6fffb;
-      --soft-blue:#eff6ff;
-      --soft-amber:#fffbeb;
-      --soft-rose:#fff1f2;
-      --soft-violet:#f5f3ff;
-      --soft-cyan:#ecfeff;
-
-      --shadow:0 14px 36px rgba(15,23,42,.09);
-      --shadow-soft:0 8px 22px rgba(15,23,42,.065);
-      --max:1120px;
-    }
-
-    *{
-      box-sizing:border-box;
-    }
-
-    html{
-      scroll-behavior:smooth;
-    }
-
-    body{
-      margin:0;
-      color:var(--ink);
-      font:15.5px/1.62 "Manrope","Aptos","Segoe UI Variable",
-           "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-
-      background:
-        radial-gradient(
-          ellipse at 8% 4%,
-          rgba(8,145,178,.20),
-          transparent 34rem
-        ),
-        radial-gradient(
-          ellipse at 92% 10%,
-          rgba(109,40,217,.16),
-          transparent 32rem
-        ),
-        radial-gradient(
-          ellipse at 72% 58%,
-          rgba(15,118,110,.13),
-          transparent 38rem
-        ),
-        radial-gradient(
-          ellipse at 18% 88%,
-          rgba(29,78,216,.11),
-          transparent 36rem
-        ),
-        linear-gradient(
-          145deg,
-          #f8fcff 0%,
-          #eef8f7 36%,
-          #f7f4ff 70%,
-          #fffaf3 100%
-        );
-
-      background-attachment:fixed;
-    }
-
-    a{
-      color:inherit;
-    }
-
-    img{
-      display:block;
-      max-width:100%;
-    }
-
-    .container{
-      width:min(var(--max),calc(100% - 2rem));
-      margin-inline:auto;
-    }
-
-    /* =========================================================
-       HEADER
-       ========================================================= */
 
-    header{
-      position:sticky;
-      top:0;
-      z-index:50;
-
-      background:rgba(255,255,255,.88);
-      backdrop-filter:blur(16px) saturate(160%);
-      -webkit-backdrop-filter:blur(16px) saturate(160%);
-
-      border-bottom:1px solid rgba(219,230,238,.92);
-      box-shadow:0 6px 22px rgba(15,23,42,.045);
-    }
-
-    nav{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:1rem;
-      min-height:66px;
-    }
-
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:.65rem;
-
-      text-decoration:none;
-      font-weight:900;
-      white-space:nowrap;
-      letter-spacing:-.035em;
-    }
-
-    .brand-mark{
-      width:39px;
-      height:39px;
-
-      border-radius:14px;
-
-      display:grid;
-      place-items:center;
-
-      color:#fff;
-
-      background:
-        linear-gradient(
-          135deg,
-          var(--teal),
-          var(--blue),
-          var(--violet)
-        );
-
-      box-shadow:0 10px 24px rgba(15,118,110,.22);
-
-      font-size:.86rem;
-    }
-
-    .navlinks,
-    .toplinks{
-      display:none;
-    }
-
-    .navlinks{
-      gap:.95rem;
-      font-size:.93rem;
-      color:var(--text);
-      font-weight:650;
-    }
-
-    .navlinks a{
-      text-decoration:none;
-    }
-
-    .navlinks a:hover{
-      color:var(--teal);
-    }
-
-    .toplinks{
-      gap:.42rem;
-      align-items:center;
-    }
-
-    .toplink{
-      text-decoration:none;
-
-      border:1px solid var(--line);
-      background:linear-gradient(180deg,#ffffff,#f8fafc);
-
-      border-radius:999px;
-
-      padding:.35rem .58rem;
-
-      color:var(--text);
-
-      font-size:.82rem;
-      font-weight:800;
-
-      box-shadow:0 4px 12px rgba(15,23,42,.035);
-    }
-
-    .toplink:hover{
-      border-color:rgba(15,118,110,.38);
-      color:var(--teal);
-      background:#fff;
-    }
-
-    @media(min-width:980px){
-      .navlinks,
-      .toplinks{
-        display:flex;
-      }
-    }
-
-    /* =========================================================
-       HERO
-       ========================================================= */
+<meta charset="utf-8">
 
-    .hero{
-      padding:1.35rem 0 .65rem;
-    }
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    .hero-card{
-      position:relative;
-      overflow:hidden;
+<meta
+  name="description"
+  content="Research website of Dr. Ratnadeep Pramanik — microrobotic swarms, magnetic soft robotic swimmers, biomedical devices, soft materials and multifunctional materials."
+>
 
-      border:1px solid rgba(219,230,238,.95);
-      border-radius:30px;
+<meta
+  name="keywords"
+  content="Ratnadeep Pramanik, microrobotic swarms, microswimmers, magnetic soft robots, active matter, fluid structure interaction, biomedical devices, soft materials, multifunctional materials"
+>
 
-      background:
-        linear-gradient(
-          135deg,
-          rgba(255,255,255,.95),
-          rgba(248,252,252,.84)
-        ),
-        radial-gradient(
-          circle at 96% 8%,
-          rgba(29,78,216,.11),
-          transparent 21rem
-        ),
-        radial-gradient(
-          circle at 4% 100%,
-          rgba(15,118,110,.10),
-          transparent 24rem
-        );
+<title>Dr. Ratnadeep Pramanik | Research</title>
 
-      box-shadow:var(--shadow);
 
-      padding:1.1rem 1.35rem;
-    }
+<style>
 
-    .hero-card::before{
-      content:"";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap');
 
-      position:absolute;
-      inset:0 0 auto 0;
 
-      height:6px;
+/* ============================================================
+   GLOBAL
+   ============================================================ */
 
-      background:
-        linear-gradient(
-          90deg,
-          var(--teal),
-          var(--blue),
-          var(--violet),
-          var(--amber)
-        );
-    }
+:root{
 
-    .eyebrow{
-      display:flex;
-      align-items:center;
-      justify-content:center;
+  --navy:#07111f;
+  --navy2:#0a1728;
 
-      width:max-content;
-      max-width:100%;
+  --ink:#102033;
+  --text:#334155;
+  --muted:#64748b;
 
-      margin-inline:auto;
+  --white:#ffffff;
+  --paper:rgba(255,255,255,.96);
 
-      text-align:center;
+  --line:rgba(148,163,184,.27);
 
-      padding:.68rem 1.25rem;
-
-      border-radius:999px;
+  --cyan:#06b6d4;
+  --teal:#0d9488;
+  --blue:#2563eb;
+  --violet:#7c3aed;
+  --rose:#e11d48;
+  --amber:#d97706;
 
-      background:
-        linear-gradient(
-          135deg,
-          var(--soft-teal),
-          var(--soft-blue)
-        );
+  --max:1160px;
 
-      border:1px solid rgba(15,118,110,.20);
+  --shadow:
+    0 20px 55px rgba(2,8,23,.18);
 
-      color:#115e59;
+  --soft-shadow:
+    0 12px 30px rgba(2,8,23,.10);
+}
 
-      font-weight:900;
 
-      font-size:clamp(1.05rem,2.15vw,1.45rem);
+*{
+  box-sizing:border-box;
+}
 
-      letter-spacing:-.015em;
-      line-height:1.25;
-    }
 
-    /* =========================================================
-       CAROUSEL
-       ========================================================= */
+html{
+  scroll-behavior:smooth;
+}
 
-    .carousel-section{
-      padding:.75rem 0 2.4rem;
-    }
 
-    .carousel{
-      position:relative;
+body{
 
-      overflow:hidden;
+  margin:0;
 
-      border-radius:28px;
+  color:var(--ink);
 
-      border:1px solid rgba(219,230,238,.96);
+  font:
+    15.5px/1.62
+    "Manrope",
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
 
-      background:rgba(255,255,255,.88);
+  background:
 
-      box-shadow:
-        0 22px 50px rgba(15,23,42,.12);
+    radial-gradient(
+      circle at 7% 8%,
+      rgba(6,182,212,.23),
+      transparent 25rem
+    ),
 
-      outline:none;
-    }
+    radial-gradient(
+      circle at 91% 14%,
+      rgba(124,58,237,.20),
+      transparent 29rem
+    ),
 
-    .carousel::before{
-      content:"";
+    radial-gradient(
+      circle at 75% 52%,
+      rgba(13,148,136,.14),
+      transparent 32rem
+    ),
 
-      position:absolute;
-      z-index:5;
+    radial-gradient(
+      circle at 13% 78%,
+      rgba(37,99,235,.14),
+      transparent 34rem
+    ),
 
-      inset:0 0 auto 0;
+    linear-gradient(
+      145deg,
+      #07111f 0%,
+      #0b1d2c 20%,
+      #eef7f8 20%,
+      #f7f9ff 55%,
+      #f1f7f5 100%
+    );
 
-      height:5px;
+  background-attachment:fixed;
+}
 
-      background:
-        linear-gradient(
-          90deg,
-          var(--teal),
-          var(--cyan),
-          var(--blue),
-          var(--violet)
-        );
-    }
 
-    .carousel-track{
-      display:flex;
+a{
+  color:inherit;
+}
 
-      transition:
-        transform .72s cubic-bezier(.22,.61,.36,1);
 
-      will-change:transform;
-    }
+img{
+  display:block;
+  max-width:100%;
+}
 
-    .slide{
-      flex:0 0 100%;
 
-      min-width:100%;
+.container{
 
-      position:relative;
+  width:min(
+    var(--max),
+    calc(100% - 2rem)
+  );
 
-      background:
-        radial-gradient(
-          circle at 90% 5%,
-          rgba(29,78,216,.10),
-          transparent 24rem
-        ),
-        radial-gradient(
-          circle at 5% 95%,
-          rgba(15,118,110,.10),
-          transparent 25rem
-        ),
-        linear-gradient(
-          145deg,
-          rgba(255,255,255,.98),
-          rgba(245,250,252,.95)
-        );
-    }
+  margin-inline:auto;
+}
 
-    .slide-inner{
-      min-height:480px;
 
-      display:grid;
-      grid-template-columns:1fr;
 
-      align-items:center;
+/* ============================================================
+   HEADER
+   ============================================================ */
 
-      gap:1.25rem;
+header{
 
-      padding:1.35rem 1.35rem 4.3rem;
-    }
+  position:sticky;
 
-    @media(min-width:820px){
-      .slide-inner{
-        grid-template-columns:1.35fr .65fr;
-        min-height:470px;
-        padding:1.7rem 4.8rem 4.4rem;
-      }
-    }
+  top:0;
 
-    .slide-visual{
-      min-height:340px;
+  z-index:100;
 
-      display:flex;
-      align-items:center;
-      justify-content:center;
+  background:
+    rgba(7,17,31,.92);
 
-      border-radius:22px;
+  backdrop-filter:
+    blur(18px)
+    saturate(160%);
 
-      overflow:hidden;
+  -webkit-backdrop-filter:
+    blur(18px)
+    saturate(160%);
 
-      border:1px solid rgba(219,230,238,.95);
+  border-bottom:
+    1px solid rgba(255,255,255,.09);
 
-      background:
-        radial-gradient(
-          circle at 80% 10%,
-          rgba(8,145,178,.08),
-          transparent 18rem
-        ),
-        #fff;
-    }
+  box-shadow:
+    0 7px 30px rgba(2,8,23,.18);
+}
 
-    .slide-visual img{
-      width:100%;
-      height:390px;
 
-      object-fit:contain;
+nav{
 
-      padding:1rem;
-    }
+  min-height:68px;
 
-    .slide-copy{
-      padding:.3rem .2rem;
-    }
+  display:flex;
 
-    .slide-number{
-      display:inline-flex;
+  align-items:center;
 
-      padding:.28rem .62rem;
+  justify-content:space-between;
 
-      margin-bottom:.7rem;
+  gap:1rem;
+}
 
-      border-radius:999px;
 
-      background:var(--soft-teal);
+.brand{
 
-      border:1px solid rgba(15,118,110,.16);
+  display:flex;
 
-      color:#115e59;
+  align-items:center;
 
-      font-size:.72rem;
-      font-weight:900;
+  gap:.7rem;
 
-      letter-spacing:.08em;
-      text-transform:uppercase;
-    }
+  color:#fff;
 
-    .slide-copy h2{
-      margin:0;
+  text-decoration:none;
 
-      font-size:clamp(1.55rem,3vw,2.5rem);
+  font-weight:900;
 
-      line-height:1.08;
+  letter-spacing:-.035em;
 
-      letter-spacing:-.045em;
+  white-space:nowrap;
+}
 
-      color:#071527;
-    }
 
-    .slide-copy p{
-      margin:.8rem 0 0;
+.brand-mark{
 
-      color:var(--text);
+  width:40px;
 
-      font-size:.96rem;
-      line-height:1.6;
-    }
+  height:40px;
 
-    .carousel-arrow{
-      position:absolute;
+  display:grid;
 
-      z-index:10;
+  place-items:center;
 
-      top:50%;
+  border-radius:13px;
 
-      transform:translateY(-50%);
+  color:#fff;
 
-      width:44px;
-      height:44px;
+  font-size:.85rem;
 
-      border:1px solid rgba(15,23,42,.12);
+  background:
+    linear-gradient(
+      135deg,
+      var(--cyan),
+      var(--blue),
+      var(--violet)
+    );
 
-      border-radius:50%;
+  box-shadow:
+    0 8px 25px rgba(6,182,212,.28);
+}
 
-      background:rgba(255,255,255,.92);
 
-      backdrop-filter:blur(8px);
+.navlinks,
+.toplinks{
+  display:none;
+}
 
-      color:var(--ink);
 
-      cursor:pointer;
+.navlinks{
 
-      display:grid;
-      place-items:center;
+  gap:1.1rem;
 
-      font-size:1.45rem;
+  color:#d8e5ed;
 
-      box-shadow:0 8px 22px rgba(15,23,42,.12);
+  font-size:.91rem;
 
-      transition:
-        transform .15s ease,
-        background .15s ease;
-    }
+  font-weight:700;
+}
 
-    .carousel-arrow:hover{
-      background:#fff;
-    }
 
-    .carousel-arrow.prev{
-      left:14px;
-    }
+.navlinks a{
+  text-decoration:none;
+}
 
-    .carousel-arrow.next{
-      right:14px;
-    }
 
-    .carousel-arrow.prev:hover{
-      transform:translateY(-50%) translateX(-2px);
-    }
+.navlinks a:hover{
+  color:#67e8f9;
+}
 
-    .carousel-arrow.next:hover{
-      transform:translateY(-50%) translateX(2px);
-    }
 
-    .carousel-dots{
-      position:absolute;
+.toplinks{
 
-      z-index:10;
+  gap:.4rem;
 
-      bottom:17px;
-      left:50%;
+  align-items:center;
+}
 
-      transform:translateX(-50%);
 
-      display:flex;
+.toplink{
 
-      align-items:center;
+  padding:.35rem .57rem;
 
-      gap:.5rem;
+  border-radius:999px;
 
-      padding:.45rem .65rem;
+  border:
+    1px solid rgba(255,255,255,.16);
 
-      border-radius:999px;
+  background:
+    rgba(255,255,255,.07);
 
-      background:rgba(255,255,255,.88);
+  color:#e6f2f6;
 
-      border:1px solid rgba(219,230,238,.95);
+  text-decoration:none;
 
-      box-shadow:0 6px 18px rgba(15,23,42,.08);
-    }
+  font-size:.77rem;
 
-    .carousel-dot{
-      width:9px;
-      height:9px;
+  font-weight:800;
+}
 
-      padding:0;
 
-      border:0;
+.toplink:hover{
 
-      border-radius:50%;
+  background:
+    rgba(255,255,255,.14);
 
-      background:#cbd5e1;
+  border-color:
+    rgba(103,232,249,.45);
+}
 
-      cursor:pointer;
 
-      transition:
-        width .2s ease,
-        border-radius .2s ease,
-        background .2s ease;
-    }
+@media(min-width:980px){
 
-    .carousel-dot.active{
-      width:27px;
+  .navlinks,
+  .toplinks{
+    display:flex;
+  }
 
-      border-radius:999px;
+}
 
-      background:
-        linear-gradient(
-          90deg,
-          var(--teal),
-          var(--blue)
-        );
-    }
 
-    .dual-visual{
-      display:grid;
 
-      grid-template-columns:1fr 1fr;
+/* ============================================================
+   HERO
+   ============================================================ */
 
-      gap:.65rem;
+.hero{
 
-      padding:.7rem;
-    }
+  padding:
+    2rem 0
+    .85rem;
 
-    .dual-visual img{
-      width:100%;
-      height:330px;
+  color:#fff;
+}
 
-      object-fit:contain;
 
-      padding:.55rem;
+.hero-card{
 
-      border-radius:16px;
+  position:relative;
 
-      background:#fff;
-    }
+  overflow:hidden;
 
-    @media(max-width:819px){
+  min-height:125px;
 
-      .slide-inner{
-        min-height:auto;
+  display:flex;
 
-        padding:
-          1.2rem
-          3.8rem
-          4.2rem;
-      }
+  align-items:center;
 
-      .slide-visual{
-        min-height:260px;
-      }
+  justify-content:center;
 
-      .slide-visual img{
-        height:280px;
-      }
+  padding:
+    1.5rem
+    2rem;
 
-      .dual-visual img{
-        height:230px;
-      }
+  border-radius:28px;
 
-      .carousel-arrow{
-        width:38px;
-        height:38px;
+  border:
+    1px solid rgba(255,255,255,.13);
 
-        font-size:1.2rem;
-      }
+  background:
 
-      .carousel-arrow.prev{
-        left:8px;
-      }
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(124,58,237,.31),
+      transparent 22rem
+    ),
 
-      .carousel-arrow.next{
-        right:8px;
-      }
-    }
+    radial-gradient(
+      circle at 10% 80%,
+      rgba(6,182,212,.25),
+      transparent 23rem
+    ),
 
-    @media(max-width:560px){
+    linear-gradient(
+      135deg,
+      rgba(9,27,45,.96),
+      rgba(10,23,40,.91)
+    );
 
-      .slide-inner{
-        padding:
-          .8rem
-          3rem
-          4rem;
-      }
+  box-shadow:
+    0 24px 60px rgba(0,0,0,.28);
+}
 
-      .slide-visual{
-        min-height:220px;
-      }
 
-      .slide-visual img{
-        height:235px;
-        padding:.55rem;
-      }
+.hero-card::before{
 
-      .dual-visual{
-        grid-template-columns:1fr;
-      }
+  content:"";
 
-      .dual-visual img{
-        height:145px;
-      }
+  position:absolute;
 
-      .slide-copy h2{
-        font-size:1.35rem;
-      }
+  inset:0 0 auto 0;
 
-      .slide-copy p{
-        font-size:.87rem;
-      }
-    }
+  height:4px;
 
-    /* =========================================================
-       GENERAL SECTIONS
-       ========================================================= */
+  background:
+    linear-gradient(
+      90deg,
+      var(--cyan),
+      var(--teal),
+      var(--blue),
+      var(--violet)
+    );
+}
 
-    section{
-      padding:3.15rem 0;
-      scroll-margin-top:82px;
-    }
 
-    .section-head{
-      margin-bottom:1.35rem;
-    }
+.hero-title{
 
-    h2{
-      margin:0;
+  position:relative;
 
-      font-size:clamp(1.7rem,3vw,2.45rem);
+  z-index:2;
 
-      line-height:1.12;
+  text-align:center;
 
-      letter-spacing:-.045em;
+  font-size:
+    clamp(
+      1.15rem,
+      2.2vw,
+      1.65rem
+    );
 
-      color:#071527;
-    }
+  line-height:1.3;
 
-    /* =========================================================
-       RESEARCH
-       ========================================================= */
+  font-weight:850;
 
-    .research-grid{
-      display:grid;
+  letter-spacing:-.025em;
+}
 
-      grid-template-columns:1fr;
 
-      gap:1rem;
-    }
+.hero-title span{
 
-    @media(min-width:700px){
-      .research-grid{
-        grid-template-columns:
-          repeat(2,minmax(0,1fr));
-      }
-    }
+  color:#67e8f9;
+}
 
-    .research-card{
-      position:relative;
 
-      border:1px solid rgba(219,230,238,.95);
 
-      border-radius:23px;
+/* ============================================================
+   SLIDESHOW
+   ============================================================ */
 
-      background:rgba(255,255,255,.96);
+.showcase{
 
-      box-shadow:var(--shadow-soft);
+  padding:
+    .75rem 0
+    2.3rem;
+}
 
-      overflow:hidden;
 
-      display:flex;
+.carousel{
 
-      flex-direction:column;
+  position:relative;
 
-      min-height:100%;
+  overflow:hidden;
 
-      transition:
-        transform .16s ease,
-        box-shadow .16s ease,
-        border-color .16s ease;
-    }
+  border-radius:29px;
 
-    .research-card:hover{
-      transform:translateY(-3px);
+  background:#07111f;
 
-      box-shadow:
-        0 18px 38px rgba(15,23,42,.12);
+  border:
+    1px solid rgba(255,255,255,.13);
 
-      border-color:rgba(15,118,110,.28);
-    }
+  box-shadow:
+    0 30px 70px rgba(2,8,23,.30);
 
-    .research-card::before{
-      content:"";
+  outline:none;
+}
 
-      position:absolute;
 
-      inset:0 0 auto 0;
+.carousel-track{
 
-      height:5px;
+  display:flex;
 
-      background:
-        linear-gradient(
-          90deg,
-          var(--teal),
-          var(--blue)
-        );
+  transition:
+    transform
+    .72s
+    cubic-bezier(.22,.61,.36,1);
+}
 
-      z-index:2;
-    }
 
-    .research-card:nth-child(2)::before{
-      background:
-        linear-gradient(
-          90deg,
-          var(--blue),
-          var(--cyan)
-        );
-    }
+.slide{
 
-    .research-card:nth-child(3)::before{
-      background:
-        linear-gradient(
-          90deg,
-          var(--violet),
-          var(--blue)
-        );
-    }
+  position:relative;
 
-    .research-card:nth-child(4)::before{
-      background:
-        linear-gradient(
-          90deg,
-          var(--rose),
-          var(--amber)
-        );
-    }
+  min-width:100%;
 
-    .research-card figure{
-      margin:0;
+  flex:0 0 100%;
 
-      background:
-        radial-gradient(
-          circle at 85% 8%,
-          rgba(29,78,216,.07),
-          transparent 10rem
-        ),
-        linear-gradient(
-          180deg,
-          #ffffff,
-          #f8fafc
-        );
+  min-height:525px;
 
-      border-bottom:1px solid var(--line);
-    }
+  overflow:hidden;
 
-    .research-card img{
-      width:100%;
-      height:225px;
+  background:#07111f;
+}
 
-      object-fit:contain;
 
-      padding:.85rem;
+.slide-image{
 
-      background:transparent;
-    }
+  position:absolute;
 
-    .research-body{
-      padding:1rem;
+  inset:0;
 
-      display:flex;
+  width:100%;
 
-      flex-direction:column;
+  height:100%;
 
-      gap:.45rem;
+  object-fit:cover;
 
-      flex:1;
-    }
+  object-position:center;
+}
 
-    .research-index{
-      align-self:flex-start;
 
-      border-radius:999px;
+.slide::after{
 
-      padding:.25rem .55rem;
+  content:"";
 
-      font-size:.72rem;
-      font-weight:900;
+  position:absolute;
 
-      letter-spacing:.07em;
+  inset:0;
 
-      text-transform:uppercase;
+  background:
 
-      background:var(--soft-teal);
+    linear-gradient(
+      90deg,
+      rgba(2,8,23,.88) 0%,
+      rgba(2,8,23,.65) 37%,
+      rgba(2,8,23,.14) 72%,
+      rgba(2,8,23,.07) 100%
+    ),
 
-      color:#115e59;
+    linear-gradient(
+      0deg,
+      rgba(2,8,23,.60),
+      transparent 45%
+    );
+}
 
-      border:1px solid rgba(15,118,110,.15);
-    }
 
-    .research-card:nth-child(2) .research-index{
-      background:var(--soft-blue);
-      color:#1e3a8a;
-    }
+.slide-content{
 
-    .research-card:nth-child(3) .research-index{
-      background:var(--soft-violet);
-      color:#4c1d95;
-    }
+  position:relative;
 
-    .research-card:nth-child(4) .research-index{
-      background:var(--soft-rose);
-      color:#881337;
-    }
+  z-index:3;
 
-    .research-body h3{
-      margin:.1rem 0 0;
+  min-height:525px;
 
-      font-size:1.12rem;
+  display:flex;
 
-      line-height:1.18;
+  flex-direction:column;
 
-      letter-spacing:-.025em;
+  justify-content:flex-end;
 
-      color:#071527;
-    }
+  align-items:flex-start;
 
-    .selected{
-      margin-top:.25rem;
+  max-width:650px;
 
-      padding-top:.65rem;
+  padding:
+    3rem
+    5.6rem
+    4.5rem;
+}
 
-      border-top:1px solid var(--line);
 
-      color:var(--muted);
+.slide-tag{
 
-      font-size:.86rem;
+  display:inline-flex;
 
-      line-height:1.5;
-    }
+  padding:
+    .32rem
+    .65rem;
 
-    .selected strong{
-      color:var(--ink);
-    }
+  margin-bottom:.75rem;
 
-    .selected a{
-      color:var(--teal);
+  border-radius:999px;
 
-      font-weight:850;
+  border:
+    1px solid rgba(103,232,249,.34);
 
-      text-decoration:none;
-    }
+  background:
+    rgba(6,182,212,.14);
 
-    .selected a:hover{
-      text-decoration:underline;
-    }
+  color:#a5f3fc;
 
-    /* =========================================================
-       PUBLICATIONS
-       ========================================================= */
+  font-size:.72rem;
 
-    .pub-grid{
-      display:grid;
+  font-weight:900;
 
-      grid-template-columns:1fr;
+  letter-spacing:.08em;
 
-      gap:.7rem;
-    }
+  text-transform:uppercase;
+}
 
-    @media(min-width:760px){
-      .pub-grid{
-        grid-template-columns:
-          repeat(2,minmax(0,1fr));
-      }
-    }
 
-    .pub-card{
-      padding:.86rem .96rem;
+.slide h2{
 
-      border:1px solid var(--line);
+  margin:0;
 
-      border-left:4px solid var(--teal);
+  color:#fff;
 
-      border-radius:17px;
+  font-size:
+    clamp(
+      2rem,
+      5vw,
+      4rem
+    );
 
-      background:rgba(255,255,255,.96);
+  line-height:1;
 
-      box-shadow:
-        0 6px 18px rgba(15,23,42,.05);
-    }
+  letter-spacing:-.055em;
 
-    .pub-card.blue{
-      border-left-color:var(--blue);
-    }
+  text-shadow:
+    0 3px 18px rgba(0,0,0,.25);
+}
 
-    .pub-card.amber{
-      border-left-color:var(--amber);
-    }
 
-    .pub-card.rose{
-      border-left-color:var(--rose);
-    }
+.slide p{
 
-    .pub-card.violet{
-      border-left-color:var(--violet);
-    }
+  max-width:580px;
 
-    .pub-card h3{
-      margin:0 0 .22rem;
+  margin:
+    .85rem 0
+    0;
 
-      font-size:.96rem;
+  color:#d8e7ed;
 
-      line-height:1.25;
+  font-size:
+    clamp(
+      .9rem,
+      1.5vw,
+      1.03rem
+    );
 
-      color:#071527;
+  line-height:1.55;
+}
 
-      letter-spacing:-.01em;
-    }
 
-    .pub-card p{
-      margin:.15rem 0;
+.carousel-arrow{
 
-      color:var(--text);
+  position:absolute;
 
-      font-size:.88rem;
+  z-index:20;
 
-      text-align:left;
-    }
+  top:50%;
 
-    .journal{
-      color:var(--muted)!important;
-    }
+  transform:
+    translateY(-50%);
 
-    .doi{
-      display:inline-flex;
+  width:45px;
 
-      margin-top:.45rem;
+  height:45px;
 
-      text-decoration:none;
+  border-radius:50%;
 
-      color:var(--teal);
+  border:
+    1px solid rgba(255,255,255,.22);
 
-      font-weight:850;
+  background:
+    rgba(7,17,31,.70);
 
-      font-size:.84rem;
-    }
+  backdrop-filter:
+    blur(8px);
 
-    .doi:hover{
-      text-decoration:underline;
-    }
+  color:#fff;
 
-    details.year-block{
-      border:1px solid var(--line);
+  font-size:1.45rem;
 
-      border-radius:19px;
+  cursor:pointer;
 
-      background:rgba(255,255,255,.88);
+  display:grid;
 
-      box-shadow:
-        0 8px 24px rgba(15,23,42,.055);
+  place-items:center;
 
-      margin-top:.9rem;
+  transition:.18s ease;
+}
 
-      overflow:hidden;
-    }
 
-    details.year-block summary{
-      cursor:pointer;
+.carousel-arrow:hover{
 
-      list-style:none;
+  background:
+    rgba(6,182,212,.75);
 
-      padding:.92rem 1rem;
+  transform:
+    translateY(-50%)
+    scale(1.06);
+}
 
-      font-weight:900;
 
-      color:#071527;
+.carousel-arrow.prev{
+  left:18px;
+}
 
-      background:
-        linear-gradient(
-          90deg,
-          rgba(230,255,251,.8),
-          rgba(239,246,255,.9),
-          rgba(255,255,255,.9)
-        );
-    }
 
-    details.year-block summary::-webkit-details-marker{
-      display:none;
-    }
+.carousel-arrow.next{
+  right:18px;
+}
 
-    details.year-block .year-content{
-      padding:0 1rem 1rem;
-    }
 
-    /* =========================================================
-       ACADEMIC
-       ========================================================= */
+.carousel-dots{
 
-    .profile-grid{
-      display:grid;
+  position:absolute;
 
-      grid-template-columns:1fr;
+  z-index:20;
 
-      gap:1rem;
-    }
+  bottom:20px;
 
-    @media(min-width:900px){
-      .profile-grid{
-        grid-template-columns:.8fr 1.2fr;
-      }
-    }
+  left:50%;
 
-    .card{
-      border:1px solid var(--line);
+  transform:
+    translateX(-50%);
 
-      border-radius:21px;
+  display:flex;
 
-      background:rgba(255,255,255,.94);
+  gap:.48rem;
 
-      box-shadow:var(--shadow-soft);
+  align-items:center;
 
-      overflow:hidden;
-    }
+  padding:
+    .4rem
+    .6rem;
 
-    .card-body{
-      padding:1rem;
-    }
+  border-radius:999px;
 
-    .profile-top{
-      display:flex;
+  background:
+    rgba(7,17,31,.65);
 
-      align-items:center;
+  backdrop-filter:
+    blur(8px);
 
-      gap:.9rem;
-    }
+  border:
+    1px solid rgba(255,255,255,.12);
+}
 
-    .portrait{
-      width:140px;
-      height:168px;
 
-      object-fit:cover;
+.carousel-dot{
 
-      border-radius:21px;
+  width:8px;
 
-      border:1px solid var(--line);
+  height:8px;
 
-      box-shadow:
-        0 8px 20px rgba(15,23,42,.08);
-    }
+  border:0;
 
-    .profile-top h3{
-      margin:.1rem 0 .25rem;
+  padding:0;
 
-      font-size:1.25rem;
+  border-radius:50%;
 
-      letter-spacing:-.02em;
-    }
+  background:
+    rgba(255,255,255,.42);
 
-    .profile-top p{
-      margin:.2rem 0;
+  cursor:pointer;
 
-      color:var(--text);
+  transition:.2s ease;
+}
 
-      text-align:left;
-    }
 
-    .compact-list{
-      display:grid;
+.carousel-dot.active{
 
-      grid-template-columns:1fr;
+  width:28px;
 
-      gap:.42rem;
+  border-radius:999px;
 
-      list-style:none;
+  background:
+    linear-gradient(
+      90deg,
+      #22d3ee,
+      #818cf8
+    );
+}
 
-      padding:0;
 
-      margin:.65rem 0 0;
-    }
+@media(max-width:700px){
 
-    @media(min-width:760px){
-      .compact-list.two-col{
-        grid-template-columns:
-          repeat(2,minmax(0,1fr));
-      }
-    }
+  .slide,
+  .slide-content{
+    min-height:450px;
+  }
 
-    .compact-list li{
-      border:1px solid var(--line);
+  .slide-content{
 
-      border-radius:13px;
+    padding:
+      2rem
+      3.5rem
+      4rem;
+  }
 
-      background:
-        linear-gradient(
-          180deg,
-          #ffffff,
-          #f8fafc
-        );
+  .slide::after{
 
-      padding:.56rem .68rem;
+    background:
+      linear-gradient(
+        0deg,
+        rgba(2,8,23,.94) 0%,
+        rgba(2,8,23,.67) 58%,
+        rgba(2,8,23,.18) 100%
+      );
+  }
 
-      color:var(--text);
+}
 
-      font-size:.88rem;
 
-      line-height:1.35;
-    }
 
-    .compact-list strong{
-      color:#071527;
+/* ============================================================
+   MAIN CONTENT
+   ============================================================ */
 
-      font-weight:850;
-    }
+.content-shell{
 
-    .compact-list .path{
-      color:var(--muted);
+  position:relative;
 
-      font-size:.82rem;
+  background:
 
-      display:block;
+    radial-gradient(
+      circle at 90% 8%,
+      rgba(6,182,212,.09),
+      transparent 25rem
+    ),
 
-      margin-top:.1rem;
-    }
+    radial-gradient(
+      circle at 5% 38%,
+      rgba(124,58,237,.07),
+      transparent 30rem
+    ),
 
-    .timeline{
-      display:grid;
+    linear-gradient(
+      180deg,
+      rgba(246,250,252,.97),
+      rgba(255,255,255,.99)
+    );
 
-      gap:.7rem;
+  border-radius:
+    38px
+    38px
+    0
+    0;
 
-      margin-top:.7rem;
-    }
+  box-shadow:
+    0 -10px 50px rgba(2,8,23,.09);
+}
 
-    .timeline-item{
-      border-left:3px solid var(--teal);
 
-      padding-left:.75rem;
-    }
+section{
 
-    .timeline-item strong{
-      display:block;
-    }
+  padding:
+    3.2rem 0;
 
-    .timeline-item span{
-      color:var(--muted);
+  scroll-margin-top:82px;
+}
 
-      font-size:.88rem;
-    }
 
-    .service-section{
-      margin-top:.85rem;
-    }
+.section-head{
 
-    .service-section:first-of-type{
-      margin-top:.6rem;
-    }
+  margin-bottom:1.35rem;
+}
 
-    .service-section h4{
-      margin:0 0 .5rem;
 
-      font-size:.94rem;
+.section-head h2{
 
-      color:#071527;
+  margin:0;
 
-      letter-spacing:-.01em;
-    }
+  color:#071527;
 
-    .service-grid{
-      display:grid;
+  font-size:
+    clamp(
+      1.8rem,
+      3vw,
+      2.5rem
+    );
 
-      grid-template-columns:1fr;
+  line-height:1.1;
 
-      gap:.6rem;
-    }
+  letter-spacing:-.05em;
+}
 
-    @media(min-width:760px){
-      .service-grid{
-        grid-template-columns:
-          repeat(2,minmax(0,1fr));
-      }
-    }
 
-    .service-item{
-      text-decoration:none;
 
-      border:1px solid var(--line);
+/* ============================================================
+   RESEARCH CARDS
+   ============================================================ */
 
-      border-radius:15px;
+.research-grid{
 
-      padding:.7rem .8rem;
+  display:grid;
 
-      background:
-        linear-gradient(
-          180deg,
-          #ffffff,
-          #f8fafc
-        );
+  grid-template-columns:1fr;
 
-      color:var(--text);
+  gap:1.15rem;
+}
 
-      font-weight:650;
-    }
 
-    .service-item:hover{
-      border-color:rgba(15,118,110,.32);
+@media(min-width:760px){
 
-      color:var(--teal);
+  .research-grid{
 
-      background:#fff;
-    }
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0,1fr)
+      );
+  }
 
-    /* =========================================================
-       FOOTER
-       ========================================================= */
+}
 
-    footer{
-      border-top:1px solid var(--line);
 
-      background:rgba(255,255,255,.82);
+.research-card{
 
-      color:var(--muted);
+  position:relative;
 
-      font-size:.88rem;
+  overflow:hidden;
 
-      padding:1.6rem 0;
-    }
+  border-radius:23px;
 
-    @media(max-width:560px){
+  border:
+    1px solid var(--line);
 
-      .hero{
-        padding:.85rem 0 .45rem;
-      }
+  background:
+    rgba(255,255,255,.95);
 
-      .hero-card{
-        padding:.8rem .75rem;
-      }
+  box-shadow:
+    var(--soft-shadow);
 
-      .eyebrow{
-        padding:.58rem .75rem;
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease;
+}
 
-        font-size:
-          clamp(.92rem,4vw,1.08rem);
-      }
 
-      .profile-top{
-        align-items:flex-start;
+.research-card:hover{
 
-        flex-direction:column;
-      }
+  transform:
+    translateY(-4px);
 
-      .research-card img{
-        height:190px;
-      }
-    }
+  box-shadow:
+    0 20px 45px rgba(2,8,23,.14);
+}
 
-  </style>
+
+.research-image{
+
+  position:relative;
+
+  height:235px;
+
+  overflow:hidden;
+
+  background:#07111f;
+}
+
+
+.research-image img{
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:cover;
+
+  transition:
+    transform .45s ease;
+}
+
+
+.research-card:hover
+.research-image img{
+
+  transform:
+    scale(1.025);
+}
+
+
+.research-image::after{
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+    linear-gradient(
+      0deg,
+      rgba(7,17,31,.24),
+      transparent 45%
+    );
+}
+
+
+.research-body{
+
+  padding:
+    1.05rem
+    1.1rem
+    1.15rem;
+}
+
+
+.research-index{
+
+  display:inline-flex;
+
+  padding:
+    .25rem
+    .58rem;
+
+  border-radius:999px;
+
+  margin-bottom:.45rem;
+
+  color:#0f766e;
+
+  background:#e6fffb;
+
+  border:
+    1px solid rgba(15,118,110,.14);
+
+  font-size:.69rem;
+
+  font-weight:900;
+
+  letter-spacing:.07em;
+
+  text-transform:uppercase;
+}
+
+
+.research-card:nth-child(2)
+.research-index{
+
+  color:#1d4ed8;
+
+  background:#eff6ff;
+}
+
+
+.research-card:nth-child(3)
+.research-index{
+
+  color:#6d28d9;
+
+  background:#f5f3ff;
+}
+
+
+.research-card:nth-child(4)
+.research-index{
+
+  color:#9f1239;
+
+  background:#fff1f2;
+}
+
+
+.research-body h3{
+
+  margin:
+    .05rem 0
+    .55rem;
+
+  color:#071527;
+
+  font-size:1.18rem;
+
+  line-height:1.2;
+
+  letter-spacing:-.025em;
+}
+
+
+.selected{
+
+  padding-top:.65rem;
+
+  border-top:
+    1px solid #e5edf2;
+
+  color:var(--muted);
+
+  font-size:.84rem;
+
+  line-height:1.5;
+}
+
+
+.selected strong{
+  color:var(--ink);
+}
+
+
+.selected a{
+
+  color:#0f766e;
+
+  font-weight:800;
+
+  text-decoration:none;
+}
+
+
+.selected a:hover{
+  text-decoration:underline;
+}
+
+
+
+/* ============================================================
+   PUBLICATIONS
+   ============================================================ */
+
+details.year-block{
+
+  overflow:hidden;
+
+  margin-top:.8rem;
+
+  border:
+    1px solid var(--line);
+
+  border-radius:18px;
+
+  background:
+    rgba(255,255,255,.93);
+
+  box-shadow:
+    0 7px 22px rgba(2,8,23,.055);
+}
+
+
+details.year-block summary{
+
+  cursor:pointer;
+
+  list-style:none;
+
+  padding:
+    .82rem
+    1rem;
+
+  color:#071527;
+
+  font-weight:900;
+
+  background:
+
+    linear-gradient(
+      90deg,
+      rgba(207,250,254,.50),
+      rgba(238,242,255,.60),
+      rgba(255,255,255,.80)
+    );
+}
+
+
+details.year-block summary::-webkit-details-marker{
+  display:none;
+}
+
+
+.year-content{
+
+  padding:
+    0
+    .9rem
+    .9rem;
+}
+
+
+.pub-grid{
+
+  display:grid;
+
+  grid-template-columns:1fr;
+
+  gap:.65rem;
+}
+
+
+@media(min-width:760px){
+
+  .pub-grid{
+
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0,1fr)
+      );
+  }
+
+}
+
+
+.pub-card{
+
+  padding:
+    .8rem
+    .9rem;
+
+  border:
+    1px solid #e1e8ed;
+
+  border-left:
+    4px solid var(--teal);
+
+  border-radius:14px;
+
+  background:#fff;
+}
+
+
+.pub-card.blue{
+  border-left-color:var(--blue);
+}
+
+
+.pub-card.amber{
+  border-left-color:var(--amber);
+}
+
+
+.pub-card.rose{
+  border-left-color:var(--rose);
+}
+
+
+.pub-card.violet{
+  border-left-color:var(--violet);
+}
+
+
+.pub-card h3{
+
+  margin:
+    0 0
+    .2rem;
+
+  color:#071527;
+
+  font-size:.91rem;
+
+  line-height:1.3;
+
+  letter-spacing:-.01em;
+}
+
+
+.pub-card p{
+
+  margin:.12rem 0;
+
+  color:var(--text);
+
+  font-size:.83rem;
+
+  line-height:1.4;
+}
+
+
+.pub-card .journal{
+  color:var(--muted);
+}
+
+
+.doi{
+
+  display:inline-flex;
+
+  margin-top:.35rem;
+
+  color:#0f766e;
+
+  text-decoration:none;
+
+  font-size:.79rem;
+
+  font-weight:850;
+}
+
+
+
+/* ============================================================
+   ACADEMIC
+   ============================================================ */
+
+.academic-top{
+
+  display:grid;
+
+  grid-template-columns:1fr;
+
+  gap:1rem;
+}
+
+
+@media(min-width:900px){
+
+  .academic-top{
+
+    grid-template-columns:
+      .72fr
+      1.28fr;
+  }
+
+}
+
+
+.card{
+
+  border:
+    1px solid var(--line);
+
+  border-radius:20px;
+
+  background:
+    rgba(255,255,255,.95);
+
+  box-shadow:
+    var(--soft-shadow);
+}
+
+
+.card-body{
+  padding:1rem;
+}
+
+
+.profile-top{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:.9rem;
+}
+
+
+.portrait{
+
+  width:125px;
+
+  height:150px;
+
+  object-fit:cover;
+
+  border-radius:18px;
+
+  border:
+    1px solid #dce5ea;
+}
+
+
+.profile-top h3{
+
+  margin:
+    0 0
+    .2rem;
+
+  color:#071527;
+
+  font-size:1.15rem;
+}
+
+
+.profile-top p{
+
+  margin:.16rem 0;
+
+  color:var(--text);
+
+  font-size:.88rem;
+}
+
+
+.timeline{
+
+  display:grid;
+
+  gap:.55rem;
+}
+
+
+.timeline-item{
+
+  padding-left:.7rem;
+
+  border-left:
+    3px solid var(--teal);
+}
+
+
+.timeline-item strong{
+
+  display:block;
+
+  color:#071527;
+
+  font-size:.88rem;
+}
+
+
+.timeline-item span{
+
+  color:var(--muted);
+
+  font-size:.8rem;
+}
+
+
+
+/* ============================================================
+   COMPACT ACADEMIC META
+   ============================================================ */
+
+.academic-meta{
+
+  display:grid;
+
+  grid-template-columns:1fr;
+
+  gap:1rem;
+
+  margin-top:1rem;
+}
+
+
+@media(min-width:850px){
+
+  .academic-meta{
+
+    grid-template-columns:
+      .85fr
+      1.15fr;
+  }
+
+}
+
+
+.compact-card{
+
+  padding:
+    1rem
+    1.05rem;
+}
+
+
+.compact-card h3{
+
+  margin:
+    0 0
+    .7rem;
+
+  color:#071527;
+
+  font-size:1rem;
+
+  letter-spacing:-.02em;
+}
+
+
+.conference-lines{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:.42rem;
+}
+
+
+.conference-chip{
+
+  display:inline-flex;
+
+  gap:.3rem;
+
+  align-items:center;
+
+  padding:
+    .36rem
+    .55rem;
+
+  border-radius:10px;
+
+  background:#f7fafc;
+
+  border:
+    1px solid #e1e8ed;
+
+  color:#475569;
+
+  font-size:.76rem;
+
+  line-height:1.25;
+}
+
+
+.conference-chip strong{
+
+  color:#0f766e;
+
+  font-weight:900;
+}
+
+
+.service-row{
+
+  margin-top:.65rem;
+}
+
+
+.service-row:first-of-type{
+  margin-top:0;
+}
+
+
+.service-label{
+
+  display:block;
+
+  margin-bottom:.35rem;
+
+  color:#64748b;
+
+  font-size:.7rem;
+
+  font-weight:900;
+
+  letter-spacing:.07em;
+
+  text-transform:uppercase;
+}
+
+
+.service-tags{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:.35rem;
+}
+
+
+.service-tag{
+
+  display:inline-flex;
+
+  padding:
+    .3rem
+    .5rem;
+
+  border-radius:9px;
+
+  border:
+    1px solid #e0e7ec;
+
+  background:#f8fafc;
+
+  color:#334155;
+
+  text-decoration:none;
+
+  font-size:.72rem;
+
+  font-weight:700;
+
+  line-height:1.2;
+}
+
+
+.service-tag:hover{
+
+  color:#0f766e;
+
+  border-color:
+    rgba(15,118,110,.30);
+
+  background:#f0fdfa;
+}
+
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+footer{
+
+  padding:
+    1.5rem 0;
+
+  border-top:
+    1px solid rgba(255,255,255,.10);
+
+  background:#07111f;
+
+  color:#94a3b8;
+
+  font-size:.82rem;
+}
+
+
+.footer-inner{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  flex-wrap:wrap;
+
+  gap:1rem;
+}
+
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media(max-width:560px){
+
+  .container{
+
+    width:
+      min(
+        var(--max),
+        calc(100% - 1.15rem)
+      );
+  }
+
+
+  .hero{
+
+    padding:
+      1rem 0
+      .5rem;
+  }
+
+
+  .hero-card{
+
+    min-height:95px;
+
+    padding:1rem;
+  }
+
+
+  .research-image{
+    height:190px;
+  }
+
+
+  .profile-top{
+
+    align-items:flex-start;
+
+    flex-direction:column;
+  }
+
+}
+
+</style>
+
 </head>
 
 
 <body>
 
-<!-- =========================================================
-     HEADER
-     ========================================================= -->
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
 
 <header>
-  <div class="container">
 
-    <nav aria-label="Primary navigation">
+<div class="container">
 
-      <a href="#top" class="brand">
-        <span class="brand-mark">RP</span>
-        <span>Dr. Ratnadeep Pramanik</span>
-      </a>
+<nav aria-label="Primary navigation">
 
-      <div class="navlinks">
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#academic">Academic</a>
-      </div>
 
-      <div
-        class="toplinks"
-        aria-label="External profile links"
-      >
+<a
+  href="#top"
+  class="brand"
+>
 
-        <a
-          class="toplink"
-          href="https://scholar.google.com/citations?hl=en&user=YFYCU00AAAAJ&view_op=list_works&sortby=pubdate"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Scholar
-        </a>
+<span class="brand-mark">
+RP
+</span>
 
-        <a
-          class="toplink"
-          href="https://www.researchgate.net/profile/Ratnadeep-Pramanik-2?ev=hdr_xprf"
-          target="_blank"
-          rel="noreferrer"
-        >
-          ResearchGate
-        </a>
+<span>
+Dr. Ratnadeep Pramanik
+</span>
 
-        <a
-          class="toplink"
-          href="https://www.linkedin.com/in/ratnadeep-pramanik-14a311364/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          LinkedIn
-        </a>
+</a>
 
-        <a
-          class="toplink"
-          href="https://github.com/rpfsibrain"
-          target="_blank"
-          rel="noreferrer"
-        >
-          GitHub
-        </a>
 
-        <a
-          class="toplink"
-          href="https://orcid.org/0000-0002-3310-2172"
-          target="_blank"
-          rel="noreferrer"
-        >
-          ORCID
-        </a>
+<div class="navlinks">
 
-      </div>
+<a href="#research">
+Research
+</a>
 
-    </nav>
+<a href="#publications">
+Publications
+</a>
 
-  </div>
+<a href="#academic">
+Academic
+</a>
+
+</div>
+
+
+<div
+  class="toplinks"
+  aria-label="External profile links"
+>
+
+
+<a
+  class="toplink"
+  href="https://scholar.google.com/citations?hl=en&user=YFYCU00AAAAJ&view_op=list_works&sortby=pubdate"
+  target="_blank"
+  rel="noreferrer"
+>
+Scholar
+</a>
+
+
+<a
+  class="toplink"
+  href="https://www.researchgate.net/profile/Ratnadeep-Pramanik-2?ev=hdr_xprf"
+  target="_blank"
+  rel="noreferrer"
+>
+ResearchGate
+</a>
+
+
+<a
+  class="toplink"
+  href="https://www.linkedin.com/in/ratnadeep-pramanik-14a311364/"
+  target="_blank"
+  rel="noreferrer"
+>
+LinkedIn
+</a>
+
+
+<a
+  class="toplink"
+  href="https://github.com/rpfsibrain"
+  target="_blank"
+  rel="noreferrer"
+>
+GitHub
+</a>
+
+
+<a
+  class="toplink"
+  href="https://orcid.org/0000-0002-3310-2172"
+  target="_blank"
+  rel="noreferrer"
+>
+ORCID
+</a>
+
+
+</div>
+
+</nav>
+
+</div>
+
 </header>
+
 
 
 <main id="top">
 
 
-<!-- =========================================================
+<!-- ============================================================
      HERO
-     ========================================================= -->
+     ============================================================ -->
 
 <section class="hero">
 
-  <div class="container">
+<div class="container">
 
-    <div class="hero-card">
+<div class="hero-card">
 
-      <div class="eyebrow">
-        Microrobotic swarms · Soft robotics · Biomedical devices
-      </div>
+<div class="hero-title">
 
-    </div>
+Microrobotic swarms
+<span>·</span>
+Soft robotics
+<span>·</span>
+Biomedical devices
 
-  </div>
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
-<!-- =========================================================
-     RESEARCH IMAGE CAROUSEL
-     ========================================================= -->
 
-<div class="carousel-section">
+<!-- ============================================================
+     SLIDESHOW
+     ============================================================ -->
 
-  <div class="container">
+<div class="showcase">
 
-    <div
-      class="carousel"
-      id="researchCarousel"
-      tabindex="0"
-      aria-label="Selected research visualizations"
-    >
+<div class="container">
 
-      <div class="carousel-track">
 
+<div
+  class="carousel"
+  id="researchCarousel"
+  tabindex="0"
+  aria-label="Selected research"
+>
 
-        <!-- SLIDE 1 -->
 
-        <div class="slide">
+<div class="carousel-track">
 
-          <div class="slide-inner">
 
-            <div class="slide-visual">
+<!-- SLIDE 1 -->
 
-              <img
-                src="assets/figures/swarm-trajectories.jpg"
-                alt="Trajectories and collective dynamics of microrobotic swarms"
-              >
+<article class="slide">
 
-            </div>
+<img
+  class="slide-image"
+  src="assets/figures/swarm-viscoelastic.jpg"
+  alt="Microrobotic swarms in Newtonian and viscoelastic environments"
+>
 
-            <div class="slide-copy">
+<div class="slide-content">
 
-              <span class="slide-number">
-                01 · Collective dynamics
-              </span>
+<div class="slide-tag">
+01 · Active matter
+</div>
 
-              <h2>
-                Microrobotic swarms
-              </h2>
+<h2>
+Microrobotic swarms
+</h2>
 
-              <p>
-                Emergent collective motion, spatiotemporal
-                organization, and swarm dynamics of
-                magnetically actuated microswimmers.
-              </p>
+<p>
+Collective transport and emergent organization
+of microscale robotic agents in Newtonian,
+non-Newtonian and viscoelastic environments.
+</p>
 
-            </div>
+</div>
 
-          </div>
+</article>
 
-        </div>
 
 
-        <!-- SLIDE 2 -->
+<!-- SLIDE 2 -->
 
-        <div class="slide">
+<article class="slide">
 
-          <div class="slide-inner">
+<img
+  class="slide-image"
+  src="assets/figures/collective-swimmers.jpg"
+  alt="Collective swimming of magnetically actuated soft robotic swimmers"
+>
 
-            <div class="slide-visual">
+<div class="slide-content">
 
-              <img
-                src="assets/figures/msrs-performance-map.jpg"
-                alt="Performance maps for magnetic soft robotic swimmers"
-              >
+<div class="slide-tag">
+02 · Collective swimming
+</div>
 
-            </div>
+<h2>
+Emergent dynamics
+</h2>
 
-            <div class="slide-copy">
+<p>
+Hydrodynamic interactions generate attraction,
+repulsion, orbiting and nontrivial spatiotemporal
+patterns among magnetically actuated soft swimmers.
+</p>
 
-              <span class="slide-number">
-                02 · Soft robotics
-              </span>
+</div>
 
-              <h2>
-                Magnetic soft robotic swimmers
-              </h2>
+</article>
 
-              <p>
-                Computational and experimental design of
-                miniaturized magnetic soft robots for
-                efficient locomotion at low Reynolds number.
-              </p>
 
-            </div>
 
-          </div>
+<!-- SLIDE 3 -->
 
-        </div>
+<article class="slide">
 
+<img
+  class="slide-image"
+  src="assets/figures/magnetic-swimmer-design.jpg"
+  alt="Design of magnetic soft robotic low Reynolds number swimmers"
+>
 
-        <!-- SLIDE 3 -->
+<div class="slide-content">
 
-        <div class="slide">
+<div class="slide-tag">
+03 · Soft robotics
+</div>
 
-          <div class="slide-inner">
+<h2>
+Magnetic microswimmers
+</h2>
 
-            <div class="slide-visual">
+<p>
+Computational and experimental design of
+fast, versatile and controllable magnetic
+soft robotic swimmers at low Reynolds number.
+</p>
 
-              <img
-                src="assets/figures/jellyfishbot-vortex.jpg"
-                alt="Velocity and vortex fields around a jellyfish-inspired magnetic soft robotic swimmer"
-              >
+</div>
 
-            </div>
+</article>
 
-            <div class="slide-copy">
 
-              <span class="slide-number">
-                03 · Fluid–structure interaction
-              </span>
 
-              <h2>
-                Bio-inspired swimming
-              </h2>
+<!-- SLIDE 4 -->
 
-              <p>
-                Fluid–structure interaction, magnetic
-                actuation, and flow-mediated propulsion
-                of jellyfish-inspired soft robotic swimmers.
-              </p>
+<article class="slide">
 
-            </div>
+<img
+  class="slide-image"
+  src="assets/figures/swimmer-trajectories.jpg"
+  alt="Swimming trajectories of interacting soft robotic swimmers"
+>
 
-          </div>
+<div class="slide-content">
 
-        </div>
+<div class="slide-tag">
+04 · Fluid–structure interaction
+</div>
 
+<h2>
+From swimmers to swarms
+</h2>
 
-        <!-- SLIDE 4 -->
+<p>
+Connecting magnetic actuation, nonlinear
+deformation, fluid–structure interaction and
+collective mechanics across scales.
+</p>
 
-        <div class="slide">
+</div>
 
-          <div class="slide-inner">
+</article>
 
-            <div class="slide-visual dual-visual">
-
-              <img
-                src="assets/figures/swarm-trajectories.jpg"
-                alt="Collective trajectories of microrobotic swimmers"
-              >
-
-              <img
-                src="assets/figures/msrs-performance-map.jpg"
-                alt="Design and performance of magnetic soft robotic swimmers"
-              >
-
-            </div>
-
-            <div class="slide-copy">
-
-              <span class="slide-number">
-                04 · From individuals to collectives
-              </span>
-
-              <h2>
-                Microswimmers to swarms
-              </h2>
-
-              <p>
-                Connecting mechanics, actuation, fluid
-                interactions, and environmental rheology
-                across individual swimmers and collective
-                active systems.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-      </div>
-
-
-      <!-- LEFT ARROW -->
-
-      <button
-        class="carousel-arrow prev"
-        type="button"
-        aria-label="Previous image"
-      >
-        &#8249;
-      </button>
-
-
-      <!-- RIGHT ARROW -->
-
-      <button
-        class="carousel-arrow next"
-        type="button"
-        aria-label="Next image"
-      >
-        &#8250;
-      </button>
-
-
-      <!-- DOTS -->
-
-      <div
-        class="carousel-dots"
-        aria-label="Carousel navigation"
-      >
-
-        <button
-          class="carousel-dot active"
-          type="button"
-          aria-label="Show slide 1"
-        ></button>
-
-        <button
-          class="carousel-dot"
-          type="button"
-          aria-label="Show slide 2"
-        ></button>
-
-        <button
-          class="carousel-dot"
-          type="button"
-          aria-label="Show slide 3"
-        ></button>
-
-        <button
-          class="carousel-dot"
-          type="button"
-          aria-label="Show slide 4"
-        ></button>
-
-      </div>
-
-    </div>
-
-  </div>
 
 </div>
 
 
-<!-- =========================================================
+
+<button
+  class="carousel-arrow prev"
+  type="button"
+  aria-label="Previous slide"
+>
+&#8249;
+</button>
+
+
+<button
+  class="carousel-arrow next"
+  type="button"
+  aria-label="Next slide"
+>
+&#8250;
+</button>
+
+
+
+<div
+  class="carousel-dots"
+  aria-label="Slide navigation"
+>
+
+<button
+  class="carousel-dot active"
+  type="button"
+  aria-label="Slide 1"
+></button>
+
+<button
+  class="carousel-dot"
+  type="button"
+  aria-label="Slide 2"
+></button>
+
+<button
+  class="carousel-dot"
+  type="button"
+  aria-label="Slide 3"
+></button>
+
+<button
+  class="carousel-dot"
+  type="button"
+  aria-label="Slide 4"
+></button>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- ============================================================
+     WHITE CONTENT AREA
+     ============================================================ -->
+
+<div class="content-shell">
+
+
+
+<!-- ============================================================
      RESEARCH
-     ========================================================= -->
+     ============================================================ -->
 
 <section id="research">
 
-  <div class="container">
-
-    <div class="section-head">
-      <h2>Research</h2>
-    </div>
-
-
-    <div class="research-grid">
-
-
-      <!-- =====================================================
-           01 MICROSWIMMERS AND SWARMS
-           ===================================================== -->
-
-      <article class="research-card">
-
-        <figure>
-
-          <img
-            src="assets/figures/swarm-trajectories.jpg"
-            alt="Microswimmers and microrobotic swarms"
-          >
-
-        </figure>
-
-        <div class="research-body">
-
-          <div class="research-index">
-            01 · Microswimmers &amp; swarms
-          </div>
-
-          <h3>
-            Active and soft robotic systems
-          </h3>
-
-          <div class="selected">
-
-            <strong>Selected publications:</strong>
-
-            (i)
-            <a
-              href="https://doi.org/10.1140/epje/s10189-026-00617-4"
-              target="_blank"
-              rel="noreferrer"
-            >
-              The European Physical Journal E, 2026
-            </a>;
-
-            (ii)
-            <a
-              href="https://www.degruyterbrill.com/document/doi/10.1515/ot-2026-0031/html"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Open Transport, 2026
-            </a>;
-
-            (iii)
-            <a
-              href="https://doi.org/10.1016/j.nxmate.2026.102735"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Next Materials, 2026
-            </a>;
-
-            (iv)
-            <a
-              href="https://doi.org/10.1016/j.eml.2025.102358"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Extreme Mechanics Letters, 2025
-            </a>;
+<div class="container">
 
-            (v)
-            <a
-              href="https://doi.org/10.1007/s11071-025-11353-3"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Nonlinear Dynamics, 2025
-            </a>;
 
-            (vi)
-            <a
-              href="https://doi.org/10.1063/5.0226743"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Physics of Fluids, 2024
-            </a>;
+<div class="section-head">
 
-            (vii)
-            <a
-              href="https://doi.org/10.1063/5.0189185"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Applied Physics Reviews, 2024
-            </a>;
+<h2>
+Research
+</h2>
 
-            (viii)
-            <a
-              href="https://doi.org/10.1103/PhysRevE.107.014607"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Physical Review E, 2023
-            </a>;
+</div>
 
-            (ix)
-            <a
-              href="https://doi.org/10.1145/3478586.3478591"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Advances in Robotics, 2021
-            </a>.
 
-          </div>
 
-        </div>
+<div class="research-grid">
 
-      </article>
 
 
-      <!-- =====================================================
-           02 ENDOVASCULAR IMPLANTS
-           ===================================================== -->
+<!-- 01 -->
 
-      <article class="research-card">
+<article class="research-card">
 
-        <figure>
 
-          <img
-            src="assets/figures/contour-mechanics-workflow.png"
-            alt="Patient-specific mechanics of endovascular implants"
-          >
+<div class="research-image">
 
-        </figure>
+<img
+  src="assets/figures/collective-swimmers.jpg"
+  alt="Magnetic soft robotic swimmers and swarms"
+>
 
-        <div class="research-body">
+</div>
 
-          <div class="research-index">
-            02 · Endovascular implants
-          </div>
 
-          <h3>
-            Patient-specific device mechanics
-          </h3>
+<div class="research-body">
 
-          <div class="selected">
-
-            <strong>Current work:</strong>
 
-            (i) Contact-resolved deployment of the
-            Contour Neurovascular System in patient-specific
-            intracranial aneurysms;
-
-            (ii) Braided endovascular implants for
-            intracranial aneurysms: mechanics, hemodynamics,
-            and clinical translation.
-
-          </div>
-
-        </div>
-
-      </article>
-
-
-      <!-- =====================================================
-           03 SOFT MATERIALS
-           ===================================================== -->
-
-      <article class="research-card">
-
-        <figure>
-
-          <img
-            src="assets/figures/fractal-viscoelastic-soft-materials.jpg"
-            alt="Mechanics and rheology of soft materials"
-          >
-
-        </figure>
-
-        <div class="research-body">
-
-          <div class="research-index">
-            03 · Soft materials
-          </div>
-
-          <h3>
-            Rheology, hydrogels and biomedical materials
-          </h3>
-
-          <div class="selected">
-
-            <strong>Selected publications:</strong>
-
-            (i)
-            <a
-              href="https://doi.org/10.1016/j.matdes.2025.114572"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Materials &amp; Design, 2025
-            </a>;
-
-            (ii)
-            <a
-              href="https://doi.org/10.1088/1748-605X/ada840"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Biomedical Materials, 2025
-            </a>;
-
-            (iii)
-            <a
-              href="https://doi.org/10.1016/j.euromechsol.2022.104874"
-              target="_blank"
-              rel="noreferrer"
-            >
-              European Journal of Mechanics A/Solids, 2023
-            </a>;
+<div class="research-index">
 
-            (iv)
-            <a
-              href="https://doi.org/10.1007/s11043-021-09486-0"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Mechanics of Time-Dependent Materials, 2022
-            </a>;
-
-            (v)
-            <a
-              href="https://doi.org/10.1016/j.matlet.2022.131871"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Materials Letters, 2022
-            </a>;
-
-            (vi)
-            <a
-              href="https://doi.org/10.1016/j.ijengsci.2019.103144"
-              target="_blank"
-              rel="noreferrer"
-            >
-              International Journal of Engineering Science, 2019
-            </a>;
-
-            (vii)
-            <a
-              href="https://doi.org/10.1088/2053-1591/ab2a49"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Materials Research Express, 2019
-            </a>;
-
-            (viii)
-            <a
-              href="https://doi.org/10.1088/2053-1591/ab0691"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Materials Research Express, 2019
-            </a>;
-
-            (ix)
-            <a
-              href="https://doi.org/10.1016/j.jmbbm.2018.10.024"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Journal of the Mechanical Behavior of Biomedical Materials, 2019
-            </a>;
-
-            (x)
-            <a
-              href="https://doi.org/10.1016/j.matlet.2018.10.073"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Materials Letters, 2019
-            </a>.
-
-          </div>
-
-        </div>
-
-      </article>
-
-
-      <!-- =====================================================
-           04 MULTIFUNCTIONAL MATERIALS
-           ===================================================== -->
-
-      <article class="research-card">
-
-        <figure>
-
-          <img
-            src="assets/figures/hmsm-micromechanical-network.jpg"
-            alt="Multifunctional and hard-magnetic soft materials"
-          >
-
-        </figure>
-
-        <div class="research-body">
-
-          <div class="research-index">
-            04 · Multifunctional materials
-          </div>
-
-          <h3>
-            Magneto-active materials and piezocomposites
-          </h3>
-
-          <div class="selected">
-
-            <strong>Selected publications:</strong>
-
-            (i)
-            <a
-              href="https://doi.org/10.1002/adem.202500125"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Advanced Engineering Materials, 2026
-            </a>;
-
-            (ii)
-            <a
-              href="https://doi.org/10.1088/1361-665X/ad2bd8"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Smart Materials and Structures, 2024
-            </a>;
-
-            (iii)
-            <a
-              href="https://doi.org/10.1016/j.mechmat.2023.104722"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Mechanics of Materials, 2023
-            </a>;
-
-            (iv)
-            <a
-              href="https://doi.org/10.1016/j.jallcom.2020.153701"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Journal of Alloys and Compounds, 2020
-            </a>;
-
-            (v)
-            <a
-              href="https://doi.org/10.1088/1361-665X/ab350a"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Smart Materials and Structures, 2019
-            </a>;
-
-            (vi)
-            <a
-              href="https://doi.org/10.1007/s11012-019-01035-x"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Meccanica, 2019
-            </a>;
-
-            (vii)
-            <a
-              href="https://doi.org/10.1016/j.ceramint.2019.03.153"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Ceramics International, 2019
-            </a>;
-
-            (viii)
-            <a
-              href="https://doi.org/10.1016/j.ceramint.2018.12.039"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Ceramics International, 2019
-            </a>;
-
-            (ix)
-            <a
-              href="https://doi.org/10.1080/14786435.2018.1526417"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Philosophical Magazine, 2019
-            </a>;
-
-            (x)
-            <a
-              href="https://doi.org/10.1007/s00707-018-2209-0"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Acta Mechanica, 2018
-            </a>;
-
-            (xi)
-            <a
-              href="https://doi.org/10.1016/j.ceramint.2018.04.242"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Ceramics International, 2018
-            </a>;
-
-            (xii)
-            <a
-              href="https://doi.org/10.1002/mawe.201600739"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Materialwissenschaft und Werkstofftechnik, 2017
-            </a>.
-
-          </div>
-
-        </div>
-
-      </article>
-
-
-    </div>
-
-  </div>
+01 · Microswimmers &amp; swarms
+
+</div>
+
+
+<h3>
+Active and soft robotic systems
+</h3>
+
+
+<div class="selected">
+
+<strong>
+Selected publications:
+</strong>
+
+<a
+  href="https://doi.org/10.1140/epje/s10189-026-00617-4"
+  target="_blank"
+  rel="noreferrer"
+>
+EPJE, 2026
+</a>;
+
+<a
+  href="https://www.degruyterbrill.com/document/doi/10.1515/ot-2026-0031/html"
+  target="_blank"
+  rel="noreferrer"
+>
+Open Transport, 2026
+</a>;
+
+<a
+  href="https://doi.org/10.1016/j.nxmate.2026.102735"
+  target="_blank"
+  rel="noreferrer"
+>
+Next Materials, 2026
+</a>;
+
+<a
+  href="https://doi.org/10.1016/j.eml.2025.102358"
+  target="_blank"
+  rel="noreferrer"
+>
+Extreme Mechanics Letters, 2025
+</a>;
+
+<a
+  href="https://doi.org/10.1007/s11071-025-11353-3"
+  target="_blank"
+  rel="noreferrer"
+>
+Nonlinear Dynamics, 2025
+</a>;
+
+<a
+  href="https://doi.org/10.1063/5.0226743"
+  target="_blank"
+  rel="noreferrer"
+>
+Physics of Fluids, 2024
+</a>;
+
+<a
+  href="https://doi.org/10.1063/5.0189185"
+  target="_blank"
+  rel="noreferrer"
+>
+Applied Physics Reviews, 2024
+</a>;
+
+<a
+  href="https://doi.org/10.1103/PhysRevE.107.014607"
+  target="_blank"
+  rel="noreferrer"
+>
+Physical Review E, 2023
+</a>.
+
+</div>
+
+
+</div>
+
+</article>
+
+
+
+<!-- 02 -->
+
+<article class="research-card">
+
+
+<div class="research-image">
+
+<img
+  src="assets/figures/swimmer-trajectories.jpg"
+  alt="Computational mechanics and biomedical device research"
+>
+
+</div>
+
+
+<div class="research-body">
+
+
+<div class="research-index">
+
+02 · Endovascular implants
+
+</div>
+
+
+<h3>
+Patient-specific device mechanics
+</h3>
+
+
+<div class="selected">
+
+<strong>
+Current research:
+</strong>
+
+contact-resolved deployment mechanics of
+braided intrasaccular devices in patient-specific
+intracranial aneurysms, coupled with
+device–artery interaction and hemodynamic analysis.
+
+</div>
+
+
+</div>
+
+</article>
+
+
+
+<!-- 03 -->
+
+<article class="research-card">
+
+
+<div class="research-image">
+
+<img
+  src="assets/figures/fractal-viscoelastic-soft-materials.jpg"
+  alt="Soft material mechanics and rheology"
+>
+
+</div>
+
+
+<div class="research-body">
+
+
+<div class="research-index">
+
+03 · Soft materials
+
+</div>
+
+
+<h3>
+Rheology and biomedical materials
+</h3>
+
+
+<div class="selected">
+
+<strong>
+Selected publications:
+</strong>
+
+<a
+  href="https://doi.org/10.1016/j.matdes.2025.114572"
+  target="_blank"
+  rel="noreferrer"
+>
+Materials &amp; Design, 2025
+</a>;
+
+<a
+  href="https://doi.org/10.1088/1748-605X/ada840"
+  target="_blank"
+  rel="noreferrer"
+>
+Biomedical Materials, 2025
+</a>;
+
+<a
+  href="https://doi.org/10.1016/j.euromechsol.2022.104874"
+  target="_blank"
+  rel="noreferrer"
+>
+EJMS, 2023
+</a>;
+
+<a
+  href="https://doi.org/10.1007/s11043-021-09486-0"
+  target="_blank"
+  rel="noreferrer"
+>
+MTDM, 2022
+</a>;
+
+<a
+  href="https://doi.org/10.1016/j.matlet.2022.131871"
+  target="_blank"
+  rel="noreferrer"
+>
+Materials Letters, 2022
+</a>;
+
+<a
+  href="https://doi.org/10.1016/j.ijengsci.2019.103144"
+  target="_blank"
+  rel="noreferrer"
+>
+IJES, 2019
+</a>;
+
+<a
+  href="https://doi.org/10.1016/j.jmbbm.2018.10.024"
+  target="_blank"
+  rel="noreferrer"
+>
+JMBBM, 2019
+</a>.
+
+</div>
+
+
+</div>
+
+</article>
+
+
+
+<!-- 04 -->
+
+<article class="research-card">
+
+
+<div class="research-image">
+
+<img
+  src="assets/figures/hmsm-micromechanical-network.jpg"
+  alt="Multifunctional and hard magnetic soft materials"
+>
+
+</div>
+
+
+<div class="research-body">
+
+
+<div class="research-index">
+
+04 · Multifunctional materials
+
+</div>
+
+
+<h3>
+Magneto-active materials &amp; piezocomposites
+</h3>
+
+
+<div class="selected">
+
+<strong>
+Selected publications:
+</strong>
+
+<a
+  href="https://doi.org/10.1002/adem.202500125"
+  target="_blank"
+  rel="noreferrer"
+>
+Advanced Engineering Materials, 2026
+</a>;
+
+<a
+  href="https://doi.org/10.1088/1361-665X/ad2bd8"
+  target="_blank"
+  rel="noreferrer"
+>
+Smart Materials and Structures, 2024
+</a>;
+
+<a
+  href="https://doi.org/10.1016/j.mechmat.2023.104722"
+  target="_blank"
+  rel="noreferrer"
+>
+Mechanics of Materials, 2023
+</a>;
+
+<a
+  href="https://doi.org/10.1016/j.jallcom.2020.153701"
+  target="_blank"
+  rel="noreferrer"
+>
+Journal of Alloys and Compounds, 2020
+</a>;
+
+<a
+  href="https://doi.org/10.1088/1361-665X/ab350a"
+  target="_blank"
+  rel="noreferrer"
+>
+Smart Materials and Structures, 2019
+</a>;
+
+<a
+  href="https://doi.org/10.1007/s11012-019-01035-x"
+  target="_blank"
+  rel="noreferrer"
+>
+Meccanica, 2019
+</a>;
+
+<a
+  href="https://doi.org/10.1007/s00707-018-2209-0"
+  target="_blank"
+  rel="noreferrer"
+>
+Acta Mechanica, 2018
+</a>.
+
+</div>
+
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
 
 </section>
 
 
-<!-- =========================================================
+
+<!-- ============================================================
      PUBLICATIONS
-     ========================================================= -->
+     ============================================================ -->
 
 <section id="publications">
 
-  <div class="container">
+<div class="container">
 
-    <div class="section-head">
-      <h2>Publications</h2>
-    </div>
 
+<div class="section-head">
 
-    <!-- 2026 -->
+<h2>
+Publications
+</h2>
 
-    <details class="year-block" open>
+</div>
 
-      <summary>2026</summary>
 
-      <div class="year-content">
 
-        <div class="pub-grid">
+<!-- 2026 -->
 
-          <article class="pub-card amber">
+<details
+  class="year-block"
+  open
+>
 
-            <h3>
-              Emergent collective dynamics of microrobotic
-              swarms in viscoelastic media:
-              a computational perspective
-            </h3>
+<summary>
+2026
+</summary>
 
-            <p>
-              <strong>R. Pramanik</strong>
-            </p>
 
-            <p class="journal">
-              The European Physical Journal E
-            </p>
+<div class="year-content">
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1140/epje/s10189-026-00617-4"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
+<div class="pub-grid">
 
-          </article>
 
+<article class="pub-card blue">
 
-          <article class="pub-card blue">
+<h3>
+Emergent collective dynamics of microrobotic swarms
+in viscoelastic media: a computational perspective
+</h3>
 
-            <h3>
-              Collective behavior of microswimmers
-              in non-Newtonian fluids
-            </h3>
+<p>
+<strong>R. Pramanik</strong>
+</p>
 
-            <p>
-              <strong>R. Pramanik</strong>
-            </p>
+<p class="journal">
+The European Physical Journal E
+</p>
 
-            <p class="journal">
-              Open Transport
-            </p>
+<a
+  class="doi"
+  href="https://doi.org/10.1140/epje/s10189-026-00617-4"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
-            <a
-              class="doi"
-              href="https://www.degruyterbrill.com/document/doi/10.1515/ot-2026-0031/html"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
+</article>
 
-          </article>
 
 
-          <article class="pub-card violet">
+<article class="pub-card blue">
 
-            <h3>
-              Gel mechanics as a design basis
-              for magnetic soft robotic swimmers
-            </h3>
+<h3>
+Collective behavior of microswimmers
+in non-Newtonian fluids
+</h3>
 
-            <p>
-              <strong>R. Pramanik</strong>
-            </p>
+<p>
+<strong>R. Pramanik</strong>
+</p>
 
-            <p class="journal">
-              Next Materials
-            </p>
+<p class="journal">
+Open Transport
+</p>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1016/j.nxmate.2026.102735"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
+<a
+  class="doi"
+  href="https://www.degruyterbrill.com/document/doi/10.1515/ot-2026-0031/html"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
-          </article>
+</article>
 
 
-          <article class="pub-card rose">
 
-            <h3>
-              Leveraging Instabilities in Multifunctional
-              Soft Materials: A Cutting-Edge Review
-            </h3>
+<article class="pub-card violet">
 
-            <p>
-              P. Narayanan,
-              <strong>R. Pramanik</strong>,
-              A. Arockiarajan
-            </p>
+<h3>
+Gel mechanics as a design basis
+for magnetic soft robotic swimmers
+</h3>
 
-            <p class="journal">
-              Advanced Engineering Materials
-            </p>
+<p>
+<strong>R. Pramanik</strong>
+</p>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1002/adem.202500125"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
+<p class="journal">
+Next Materials
+</p>
 
-          </article>
+<a
+  class="doi"
+  href="https://doi.org/10.1016/j.nxmate.2026.102735"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
-        </div>
+</article>
 
-      </div>
 
-    </details>
 
+<article class="pub-card rose">
 
-    <!-- 2025 -->
+<h3>
+Leveraging Instabilities in Multifunctional
+Soft Materials: A Cutting-Edge Review
+</h3>
 
-    <details class="year-block">
+<p>
+P. Narayanan,
+<strong>R. Pramanik</strong>,
+A. Arockiarajan
+</p>
 
-      <summary>2025</summary>
+<p class="journal">
+Advanced Engineering Materials
+</p>
 
-      <div class="year-content">
+<a
+  class="doi"
+  href="https://doi.org/10.1002/adem.202500125"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
-        <div class="pub-grid">
+</article>
 
 
-          <article class="pub-card amber">
+</div>
 
-            <h3>
-              Unified rheological modeling using fractal
-              calculus for soft biological matter
-            </h3>
+</div>
 
-            <p>
-              V.K. Gopalakrishnan,
-              <strong>R. Pramanik</strong>,
-              A. Arockiarajan
-            </p>
+</details>
 
-            <p class="journal">
-              Materials &amp; Design 258, 114572
-            </p>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1016/j.matdes.2025.114572"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
 
-          </article>
+<!-- 2025 -->
 
+<details class="year-block">
 
-          <article class="pub-card blue">
+<summary>
+2025
+</summary>
 
-            <h3>
-              Computational and experimental design
-              of fast and versatile magnetic soft robotic
-              low Re swimmers
-            </h3>
 
-            <p>
-              <strong>R. Pramanik</strong>,
-              M. Park,
-              Z. Ren,
-              M. Sitti,
-              R. Verstappen,
-              P.R. Onck
-            </p>
+<div class="year-content">
 
-            <p class="journal">
-              Extreme Mechanics Letters 78, 102358
-            </p>
+<div class="pub-grid">
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1016/j.eml.2025.102358"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
 
-          </article>
+<article class="pub-card amber">
 
+<h3>
+Unified rheological modeling using fractal calculus
+for soft biological matter
+</h3>
 
-          <article class="pub-card violet">
+<p>
+V.K. Gopalakrishnan,
+<strong>R. Pramanik</strong>,
+A. Arockiarajan
+</p>
 
-            <h3>
-              Emerging spatiotemporal patterns and
-              collective swimming of magnetically
-              actuated soft robots
-            </h3>
+<p class="journal">
+Materials &amp; Design 258, 114572
+</p>
 
-            <p>
-              <strong>R. Pramanik</strong>,
-              R.W.C.P. Verstappen,
-              P.R. Onck
-            </p>
+<a
+  class="doi"
+  href="https://doi.org/10.1016/j.matdes.2025.114572"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
-            <p class="journal">
-              Nonlinear Dynamics
-            </p>
+</article>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1007/s11071-025-11353-3"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
 
-          </article>
 
+<article class="pub-card blue">
 
-          <article class="pub-card rose">
+<h3>
+Computational and experimental design of fast
+and versatile magnetic soft robotic low Re swimmers
+</h3>
 
-            <h3>
-              Harnessing machine learning algorithms
-              for the prediction and optimization of
-              various properties of polylactic acid
-              in biomedical use: a comprehensive review
-            </h3>
+<p>
+<strong>R. Pramanik</strong>,
+M. Park,
+Z. Ren,
+M. Sitti,
+R. Verstappen,
+P.R. Onck
+</p>
 
-            <p>
-              J.M. Chandra Hasa,
-              P. Narayanan,
-              <strong>R. Pramanik</strong>,
-              A. Arockiarajan
-            </p>
+<p class="journal">
+Extreme Mechanics Letters 78, 102358
+</p>
 
-            <p class="journal">
-              Biomedical Materials
-            </p>
+<a
+  class="doi"
+  href="https://doi.org/10.1016/j.eml.2025.102358"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1088/1748-605X/ada840"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
+</article>
 
-          </article>
 
 
-        </div>
+<article class="pub-card violet">
 
-      </div>
+<h3>
+Emerging spatiotemporal patterns and collective
+swimming of magnetically actuated soft robots
+</h3>
 
-    </details>
+<p>
+<strong>R. Pramanik</strong>,
+R.W.C.P. Verstappen,
+P.R. Onck
+</p>
 
+<p class="journal">
+Nonlinear Dynamics
+</p>
 
-    <!-- 2024 -->
+<a
+  class="doi"
+  href="https://doi.org/10.1007/s11071-025-11353-3"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
-    <details class="year-block">
+</article>
 
-      <summary>2024</summary>
 
-      <div class="year-content">
 
-        <div class="pub-grid">
+<article class="pub-card rose">
 
+<h3>
+Harnessing machine learning algorithms for the
+prediction and optimization of various properties
+of polylactic acid in biomedical use:
+a comprehensive review
+</h3>
 
-          <article class="pub-card rose">
+<p>
+J.M. Chandra Hasa,
+P. Narayanan,
+<strong>R. Pramanik</strong>,
+A. Arockiarajan
+</p>
 
-            <h3>
-              Computational fluid-structure interaction
-              in biology and soft robots: A review
-            </h3>
+<p class="journal">
+Biomedical Materials
+</p>
 
-            <p>
-              <strong>R. Pramanik</strong>,
-              R.W.C.P. Verstappen,
-              P.R. Onck
-            </p>
+<a
+  class="doi"
+  href="https://doi.org/10.1088/1748-605X/ada840"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
-            <p class="journal">
-              Physics of Fluids 36(10), 101302
-            </p>
+</article>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1063/5.0226743"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
 
-          </article>
+</div>
 
+</div>
 
-          <article class="pub-card blue">
+</details>
 
-            <h3>
-              Nature-inspired miniaturized magnetic
-              soft robotic swimmers
-            </h3>
 
-            <p>
-              <strong>R. Pramanik</strong>,
-              R.W.C.P. Verstappen,
-              P.R. Onck
-            </p>
 
-            <p class="journal">
-              Applied Physics Reviews 11(2), 021312
-            </p>
+<!-- 2024 -->
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1063/5.0189185"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
+<details class="year-block">
 
-          </article>
+<summary>
+2024
+</summary>
 
 
-          <article class="pub-card amber">
+<div class="year-content">
 
-            <h3>
-              Hard magnetics and soft materials — a synergy
-            </h3>
+<div class="pub-grid">
 
-            <p>
-              P. Narayanan,
-              <strong>R. Pramanik</strong>,
-              A. Arockiarajan
-            </p>
 
-            <p class="journal">
-              Smart Materials and Structures 33, 043001
-            </p>
+<article class="pub-card rose">
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1088/1361-665X/ad2bd8"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
+<h3>
+Computational fluid-structure interaction
+in biology and soft robots: A review
+</h3>
 
-          </article>
+<p>
+<strong>R. Pramanik</strong>,
+R.W.C.P. Verstappen,
+P.R. Onck
+</p>
 
+<p class="journal">
+Physics of Fluids 36(10), 101302
+</p>
 
-        </div>
+<a
+  class="doi"
+  href="https://doi.org/10.1063/5.0226743"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
-      </div>
+</article>
 
-    </details>
 
 
-    <!-- 2023 -->
+<article class="pub-card blue">
 
-    <details class="year-block">
+<h3>
+Nature-inspired miniaturized magnetic
+soft robotic swimmers
+</h3>
 
-      <summary>2023</summary>
+<p>
+<strong>R. Pramanik</strong>,
+R.W.C.P. Verstappen,
+P.R. Onck
+</p>
 
-      <div class="year-content">
+<p class="journal">
+Applied Physics Reviews 11(2), 021312
+</p>
 
-        <div class="pub-grid">
+<a
+  class="doi"
+  href="https://doi.org/10.1063/5.0189185"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
+</article>
 
-          <article class="pub-card amber">
 
-            <h3>
-              Micromechanics-based constitutive modeling
-              of hard-magnetic soft materials
-            </h3>
 
-            <p>
-              P. Narayanan,
-              <strong>R. Pramanik</strong>,
-              A. Arockiarajan
-            </p>
+<article class="pub-card amber">
 
-            <p class="journal">
-              Mechanics of Materials 184, 104722
-            </p>
+<h3>
+Hard magnetics and soft materials — a synergy
+</h3>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1016/j.mechmat.2023.104722"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
+<p>
+P. Narayanan,
+<strong>R. Pramanik</strong>,
+A. Arockiarajan
+</p>
 
-          </article>
+<p class="journal">
+Smart Materials and Structures 33, 043001
+</p>
 
+<a
+  class="doi"
+  href="https://doi.org/10.1088/1361-665X/ad2bd8"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
-          <article class="pub-card amber">
+</article>
 
-            <h3>
-              A hyperelastic viscoplastic damage model
-              for large deformation mechanics of
-              rate-dependent soft materials
-            </h3>
 
-            <p>
-              P. Narayanan,
-              <strong>R. Pramanik</strong>,
-              A. Arockiarajan
-            </p>
+</div>
 
-            <p class="journal">
-              European Journal of Mechanics A/Solids
-              98, 104874
-            </p>
+</div>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1016/j.euromechsol.2022.104874"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
+</details>
 
-          </article>
 
 
-          <article class="pub-card blue">
+<!-- 2023 -->
 
-            <h3>
-              Magnetic-field-induced propulsion
-              of jellyfish-inspired soft robotic swimmers
-            </h3>
+<details class="year-block">
 
-            <p>
-              <strong>R. Pramanik</strong>,
-              R. Verstappen,
-              P.R. Onck
-            </p>
+<summary>
+2023
+</summary>
 
-            <p class="journal">
-              Physical Review E 107(1), 014607
-            </p>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1103/PhysRevE.107.014607"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
+<div class="year-content">
 
-          </article>
+<div class="pub-grid">
 
 
-        </div>
+<article class="pub-card amber">
 
-      </div>
+<h3>
+Micromechanics-based constitutive modeling
+of hard-magnetic soft materials
+</h3>
 
-    </details>
+<p>
+P. Narayanan,
+<strong>R. Pramanik</strong>,
+A. Arockiarajan
+</p>
 
+<p class="journal">
+Mechanics of Materials 184, 104722
+</p>
 
-    <!-- 2022–2017 -->
+<a
+  class="doi"
+  href="https://doi.org/10.1016/j.mechmat.2023.104722"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
-    <details class="year-block">
+</article>
 
-      <summary>2022–2017</summary>
 
-      <div class="year-content">
 
-        <div class="pub-grid">
+<article class="pub-card amber">
 
+<h3>
+A hyperelastic viscoplastic damage model
+for large deformation mechanics of
+rate-dependent soft materials
+</h3>
 
-          <article class="pub-card amber">
+<p>
+P. Narayanan,
+<strong>R. Pramanik</strong>,
+A. Arockiarajan
+</p>
 
-            <h3>
-              Mechanics of soft polymeric materials
-              using a fractal viscoelastic model
-            </h3>
+<p class="journal">
+European Journal of Mechanics A/Solids
+98, 104874
+</p>
 
-            <p>
-              <strong>R. Pramanik</strong>,
-              F. Soni,
-              K. Shanmuganathan,
-              A. Arockiarajan
-            </p>
+<a
+  class="doi"
+  href="https://doi.org/10.1016/j.euromechsol.2022.104874"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
-            <p class="journal">
-              Mechanics of Time-Dependent Materials
-              26, 257–270, 2022
-            </p>
+</article>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1007/s11043-021-09486-0"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
 
-          </article>
 
+<article class="pub-card blue">
 
-          <article class="pub-card rose">
+<h3>
+Magnetic-field-induced propulsion
+of jellyfish-inspired soft robotic swimmers
+</h3>
 
-            <h3>
-              Mechanical and morphological characterization
-              of a novel silk/cellulose-based soft composite
-            </h3>
+<p>
+<strong>R. Pramanik</strong>,
+R. Verstappen,
+P.R. Onck
+</p>
 
-            <p>
-              <strong>R. Pramanik</strong>,
-              A. Arockiarajan
-            </p>
+<p class="journal">
+Physical Review E 107(1), 014607
+</p>
 
-            <p class="journal">
-              Materials Letters 314, 131871, 2022
-            </p>
+<a
+  class="doi"
+  href="https://doi.org/10.1103/PhysRevE.107.014607"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1016/j.matlet.2022.131871"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
+</article>
 
-          </article>
 
+</div>
 
-          <article class="pub-card blue">
+</div>
 
-            <h3>
-              Bi-directional locomotion of a
-              magnetically-actuated jellyfish-inspired
-              soft robot
-            </h3>
+</details>
 
-            <p>
-              <strong>R. Pramanik</strong>,
-              P.R. Onck,
-              R.W.C.P. Verstappen
-            </p>
 
-            <p class="journal">
-              Advances in Robotics, ACM-TRS 2021
-            </p>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1145/3478586.3478591"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
+<!-- 2022–2017 -->
 
-          </article>
+<details class="year-block">
 
+<summary>
+2022–2017
+</summary>
 
-          <article class="pub-card amber">
 
-            <h3>
-              PVDF/BaTiO<sub>3</sub> films with nanocellulose
-              impregnation: Investigation of structural,
-              morphological and mechanical properties
-            </h3>
+<div class="year-content">
 
-            <p>
-              F. Ram,
-              P. Kaviraj,
-              <strong>R. Pramanik</strong>,
-              A. Krishnan,
-              K. Shanmuganathan,
-              A. Arockiarajan
-            </p>
+<div class="pub-grid">
 
-            <p class="journal">
-              Journal of Alloys and Compounds
-              823, 153701, 2020
-            </p>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1016/j.jallcom.2020.153701"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
+<article class="pub-card amber">
 
-          </article>
+<h3>
+Mechanics of soft polymeric materials
+using a fractal viscoelastic model
+</h3>
 
+<p>
+<strong>R. Pramanik</strong>,
+F. Soni,
+K. Shanmuganathan,
+A. Arockiarajan
+</p>
 
-          <article class="pub-card rose">
+<p class="journal">
+Mechanics of Time-Dependent Materials
+26, 257–270, 2022
+</p>
 
-            <h3>
-              Transversely isotropic freeze-dried PVA
-              hydrogels: Theoretical modelling and
-              experimental characterization
-            </h3>
+<a
+  class="doi"
+  href="https://doi.org/10.1007/s11043-021-09486-0"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
-            <p>
-              <strong>R. Pramanik</strong>,
-              A. Narayanan,
-              A. Rajan,
-              S. Konar,
-              A. Arockiarajan
-            </p>
+</article>
 
-            <p class="journal">
-              International Journal of Engineering Science
-              144, 103144, 2019
-            </p>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1016/j.ijengsci.2019.103144"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
 
-          </article>
+<article class="pub-card rose">
 
+<h3>
+Mechanical and morphological characterization
+of a novel silk/cellulose-based soft composite
+</h3>
 
-          <article class="pub-card amber">
+<p>
+<strong>R. Pramanik</strong>,
+A. Arockiarajan
+</p>
 
-            <h3>
-              Effective properties and nonlinearities
-              in 1–3 piezocomposites:
-              a comprehensive review
-            </h3>
+<p class="journal">
+Materials Letters 314, 131871, 2022
+</p>
 
-            <p>
-              <strong>R. Pramanik</strong>,
-              A. Arockiarajan
-            </p>
+<a
+  class="doi"
+  href="https://doi.org/10.1016/j.matlet.2022.131871"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
-            <p class="journal">
-              Smart Materials and Structures
-              28(10), 103001, 2019
-            </p>
+</article>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1088/1361-665X/ab350a"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
 
-          </article>
 
+<article class="pub-card blue">
 
-          <article class="pub-card amber">
+<h3>
+Bi-directional locomotion of a magnetically-actuated
+jellyfish-inspired soft robot
+</h3>
 
-            <h3>
-              Mechanics of 1–3 piezocomposites
-              subjected to creep-fatigue loads
-            </h3>
+<p>
+<strong>R. Pramanik</strong>,
+P.R. Onck,
+R.W.C.P. Verstappen
+</p>
 
-            <p>
-              <strong>R. Pramanik</strong>,
-              L. Santhosh,
-              A. Arockiarajan
-            </p>
+<p class="journal">
+Advances in Robotics, ACM-TRS 2021
+</p>
 
-            <p class="journal">
-              Meccanica 54, 1611–1622, 2019
-            </p>
+<a
+  class="doi"
+  href="https://doi.org/10.1145/3478586.3478591"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1007/s11012-019-01035-x"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
+</article>
 
-          </article>
 
 
-          <article class="pub-card rose">
+<article class="pub-card amber">
 
-            <h3>
-              A thermodynamically-consistent
-              phenomenological viscoplastic model
-              for hydrogels
-            </h3>
+<h3>
+PVDF/BaTiO<sub>3</sub> films with nanocellulose
+impregnation: Investigation of structural,
+morphological and mechanical properties
+</h3>
 
-            <p>
-              A. Narayanan,
-              A. Rajan,
-              <strong>R. Pramanik</strong>,
-              A. Arockiarajan
-            </p>
+<p>
+F. Ram,
+P. Kaviraj,
+<strong>R. Pramanik</strong>,
+A. Krishnan,
+K. Shanmuganathan,
+A. Arockiarajan
+</p>
 
-            <p class="journal">
-              Materials Research Express
-              6(8), 085418, 2019
-            </p>
+<p class="journal">
+Journal of Alloys and Compounds
+823, 153701, 2020
+</p>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1088/2053-1591/ab2a49"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
+<a
+  class="doi"
+  href="https://doi.org/10.1016/j.jallcom.2020.153701"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
-          </article>
+</article>
 
 
-          <article class="pub-card rose">
 
-            <h3>
-              Mechanics of viscoelastic buckling
-              in slender hydrogels
-            </h3>
+<article class="pub-card rose">
 
-            <p>
-              A. Rajan,
-              A. Narayanan,
-              <strong>R. Pramanik</strong>,
-              A. Arockiarajan
-            </p>
+<h3>
+Transversely isotropic freeze-dried PVA hydrogels:
+Theoretical modelling and experimental characterization
+</h3>
 
-            <p class="journal">
-              Materials Research Express
-              6(5), 055320, 2019
-            </p>
+<p>
+<strong>R. Pramanik</strong>,
+A. Narayanan,
+A. Rajan,
+S. Konar,
+A. Arockiarajan
+</p>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1088/2053-1591/ab0691"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
+<p class="journal">
+International Journal of Engineering Science
+144, 103144, 2019
+</p>
 
-          </article>
+<a
+  class="doi"
+  href="https://doi.org/10.1016/j.ijengsci.2019.103144"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
+</article>
 
-          <article class="pub-card rose">
 
-            <h3>
-              Influence of nanocellulose on mechanics
-              and morphology of polyvinyl alcohol xerogels
-            </h3>
 
-            <p>
-              <strong>R. Pramanik</strong>,
-              A. Arockiarajan
-            </p>
+<article class="pub-card amber">
 
-            <p class="journal">
-              Journal of the Mechanical Behavior of
-              Biomedical Materials 90, 275–283, 2019
-            </p>
+<h3>
+Effective properties and nonlinearities
+in 1–3 piezocomposites:
+a comprehensive review
+</h3>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1016/j.jmbbm.2018.10.024"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
+<p>
+<strong>R. Pramanik</strong>,
+A. Arockiarajan
+</p>
 
-          </article>
+<p class="journal">
+Smart Materials and Structures
+28(10), 103001, 2019
+</p>
 
+<a
+  class="doi"
+  href="https://doi.org/10.1088/1361-665X/ab350a"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
-          <article class="pub-card rose">
+</article>
 
-            <h3>
-              Influence of mechanical compressive loads
-              on microstructurally aligned PVA xerogels
-            </h3>
 
-            <p>
-              <strong>R. Pramanik</strong>,
-              B. Ganivada,
-              F. Ram,
-              K. Shanmuganathan,
-              A. Arockiarajan
-            </p>
 
-            <p class="journal">
-              Materials Letters 236, 222–224, 2019
-            </p>
+<article class="pub-card amber">
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1016/j.matlet.2018.10.073"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
+<h3>
+Mechanics of 1–3 piezocomposites
+subjected to creep-fatigue loads
+</h3>
 
-          </article>
+<p>
+<strong>R. Pramanik</strong>,
+L. Santhosh,
+A. Arockiarajan
+</p>
 
+<p class="journal">
+Meccanica 54, 1611–1622, 2019
+</p>
 
-          <article class="pub-card amber">
+<a
+  class="doi"
+  href="https://doi.org/10.1007/s11012-019-01035-x"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
-            <h3>
-              Influence of individual phases and temperature
-              on properties of CoFe<sub>2</sub>O<sub>4</sub>-
-              BaTiO<sub>3</sub> magnetoelectric core-shell
-              nanocomposites
-            </h3>
+</article>
 
-            <p>
-              P. Kaviraj,
-              <strong>R. Pramanik</strong>,
-              A. Arockiarajan
-            </p>
 
-            <p class="journal">
-              Ceramics International
-              45(9), 12344–12352, 2019
-            </p>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1016/j.ceramint.2019.03.153"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
+<article class="pub-card rose">
 
-          </article>
+<h3>
+A thermodynamically-consistent phenomenological
+viscoplastic model for hydrogels
+</h3>
 
+<p>
+A. Narayanan,
+A. Rajan,
+<strong>R. Pramanik</strong>,
+A. Arockiarajan
+</p>
 
-          <article class="pub-card amber">
+<p class="journal">
+Materials Research Express
+6(8), 085418, 2019
+</p>
 
-            <h3>
-              Effect of grain size on piezoelectric,
-              ferroelectric and dielectric properties
-              of PMN-PT ceramics
-            </h3>
+<a
+  class="doi"
+  href="https://doi.org/10.1088/2053-1591/ab2a49"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
-            <p>
-              <strong>R. Pramanik</strong>,
-              M.K. Sahukar,
-              Y. Mohan,
-              B. Praveenkumar,
-              S.R. Sangawar,
-              <em>et al.</em>
-            </p>
+</article>
 
-            <p class="journal">
-              Ceramics International
-              45(5), 5731–5742, 2019
-            </p>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1016/j.ceramint.2018.12.039"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
 
-          </article>
+<article class="pub-card rose">
 
+<h3>
+Mechanics of viscoelastic buckling
+in slender hydrogels
+</h3>
 
-          <article class="pub-card amber">
+<p>
+A. Rajan,
+A. Narayanan,
+<strong>R. Pramanik</strong>,
+A. Arockiarajan
+</p>
 
-            <h3>
-              A hybrid phenomenological model for
-              thermo-mechano-electrical creep
-              of 1–3 piezocomposites
-            </h3>
+<p class="journal">
+Materials Research Express
+6(5), 055320, 2019
+</p>
 
-            <p>
-              <strong>R. Pramanik</strong>,
-              A. Arockiarajan
-            </p>
+<a
+  class="doi"
+  href="https://doi.org/10.1088/2053-1591/ab0691"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
-            <p class="journal">
-              Philosophical Magazine
-              99(1), 1–21, 2019
-            </p>
+</article>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1080/14786435.2018.1526417"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
 
-          </article>
 
+<article class="pub-card rose">
 
-          <article class="pub-card amber">
+<h3>
+Influence of nanocellulose on mechanics
+and morphology of polyvinyl alcohol xerogels
+</h3>
 
-            <h3>
-              Experimental and theoretical studies
-              on mechanical creep of 1–3 piezocomposites
-            </h3>
+<p>
+<strong>R. Pramanik</strong>,
+A. Arockiarajan
+</p>
 
-            <p>
-              <strong>R. Pramanik</strong>,
-              A. Arockiarajan
-            </p>
+<p class="journal">
+Journal of the Mechanical Behavior
+of Biomedical Materials 90, 275–283, 2019
+</p>
 
-            <p class="journal">
-              Acta Mechanica
-              229, 4187–4198, 2018
-            </p>
+<a
+  class="doi"
+  href="https://doi.org/10.1016/j.jmbbm.2018.10.024"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1007/s00707-018-2209-0"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
+</article>
 
-          </article>
 
 
-          <article class="pub-card amber">
+<article class="pub-card rose">
 
-            <h3>
-              Electro-mechanical creep of
-              1–3 piezocomposites:
-              Theoretical modeling and experimental approach
-            </h3>
+<h3>
+Influence of mechanical compressive loads
+on microstructurally aligned PVA xerogels
+</h3>
 
-            <p>
-              <strong>R. Pramanik</strong>,
-              A. Arockiarajan
-            </p>
+<p>
+<strong>R. Pramanik</strong>,
+B. Ganivada,
+F. Ram,
+K. Shanmuganathan,
+A. Arockiarajan
+</p>
 
-            <p class="journal">
-              Ceramics International
-              44(12), 13934–13943, 2018
-            </p>
+<p class="journal">
+Materials Letters 236, 222–224, 2019
+</p>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1016/j.ceramint.2018.04.242"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
+<a
+  class="doi"
+  href="https://doi.org/10.1016/j.matlet.2018.10.073"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
-          </article>
+</article>
 
 
-          <article class="pub-card amber">
 
-            <h3>
-              Effect of annealing on the fracture behavior
-              of LSCFO, a potential energy material
-              for oxygen separation
-            </h3>
+<article class="pub-card amber">
 
-            <p>
-              B. Sikder,
-              <strong>R. Pramanik</strong>,
-              A. Chanda
-            </p>
+<h3>
+Influence of individual phases and temperature
+on properties of CoFe<sub>2</sub>O<sub>4</sub>-
+BaTiO<sub>3</sub> magnetoelectric core-shell
+nanocomposites
+</h3>
 
-            <p class="journal">
-              Materialwissenschaft und Werkstofftechnik
-              48, 726–730, 2017
-            </p>
+<p>
+P. Kaviraj,
+<strong>R. Pramanik</strong>,
+A. Arockiarajan
+</p>
 
-            <a
-              class="doi"
-              href="https://doi.org/10.1002/mawe.201600739"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DOI
-            </a>
+<p class="journal">
+Ceramics International
+45(9), 12344–12352, 2019
+</p>
 
-          </article>
+<a
+  class="doi"
+  href="https://doi.org/10.1016/j.ceramint.2019.03.153"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
 
+</article>
 
-        </div>
 
-      </div>
 
-    </details>
+<article class="pub-card amber">
 
+<h3>
+Effect of grain size on piezoelectric,
+ferroelectric and dielectric properties
+of PMN-PT ceramics
+</h3>
 
-  </div>
+<p>
+<strong>R. Pramanik</strong>,
+M.K. Sahukar,
+Y. Mohan,
+B. Praveenkumar,
+S.R. Sangawar,
+<em>et al.</em>
+</p>
+
+<p class="journal">
+Ceramics International
+45(5), 5731–5742, 2019
+</p>
+
+<a
+  class="doi"
+  href="https://doi.org/10.1016/j.ceramint.2018.12.039"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
+
+</article>
+
+
+
+<article class="pub-card amber">
+
+<h3>
+A hybrid phenomenological model for
+thermo-mechano-electrical creep
+of 1–3 piezocomposites
+</h3>
+
+<p>
+<strong>R. Pramanik</strong>,
+A. Arockiarajan
+</p>
+
+<p class="journal">
+Philosophical Magazine
+99(1), 1–21, 2019
+</p>
+
+<a
+  class="doi"
+  href="https://doi.org/10.1080/14786435.2018.1526417"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
+
+</article>
+
+
+
+<article class="pub-card amber">
+
+<h3>
+Experimental and theoretical studies
+on mechanical creep of 1–3 piezocomposites
+</h3>
+
+<p>
+<strong>R. Pramanik</strong>,
+A. Arockiarajan
+</p>
+
+<p class="journal">
+Acta Mechanica
+229, 4187–4198, 2018
+</p>
+
+<a
+  class="doi"
+  href="https://doi.org/10.1007/s00707-018-2209-0"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
+
+</article>
+
+
+
+<article class="pub-card amber">
+
+<h3>
+Electro-mechanical creep of 1–3 piezocomposites:
+Theoretical modeling and experimental approach
+</h3>
+
+<p>
+<strong>R. Pramanik</strong>,
+A. Arockiarajan
+</p>
+
+<p class="journal">
+Ceramics International
+44(12), 13934–13943, 2018
+</p>
+
+<a
+  class="doi"
+  href="https://doi.org/10.1016/j.ceramint.2018.04.242"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
+
+</article>
+
+
+
+<article class="pub-card amber">
+
+<h3>
+Effect of annealing on the fracture behavior
+of LSCFO, a potential energy material
+for oxygen separation
+</h3>
+
+<p>
+B. Sikder,
+<strong>R. Pramanik</strong>,
+A. Chanda
+</p>
+
+<p class="journal">
+Materialwissenschaft und Werkstofftechnik
+48, 726–730, 2017
+</p>
+
+<a
+  class="doi"
+  href="https://doi.org/10.1002/mawe.201600739"
+  target="_blank"
+  rel="noreferrer"
+>
+DOI
+</a>
+
+</article>
+
+
+</div>
+
+</div>
+
+</details>
+
+
+</div>
 
 </section>
 
 
-<!-- =========================================================
+
+<!-- ============================================================
      ACADEMIC
-     ========================================================= -->
+     ============================================================ -->
 
 <section id="academic">
 
-  <div class="container">
+<div class="container">
 
-    <div class="section-head">
-      <h2>Academic</h2>
-    </div>
 
+<div class="section-head">
 
-    <div class="profile-grid">
+<h2>
+Academic
+</h2>
 
+</div>
 
-      <!-- PROFILE -->
 
-      <aside class="card">
 
-        <div class="card-body">
+<div class="academic-top">
 
-          <div class="profile-top">
 
-            <img
-              class="portrait"
-              src="./ratnadeep-pramanik.jpg"
-              alt="Portrait of Dr. Ratnadeep Pramanik"
-            >
+<!-- PROFILE -->
 
-            <div>
+<aside class="card">
 
-              <h3>
-                Dr. Ratnadeep Pramanik
-              </h3>
+<div class="card-body">
 
-              <p>
-                Postdoctoral Researcher
-              </p>
 
-              <p>
-                Institute for Mathematics and
-                Computer-Based Simulation,
-                University of the Bundeswehr Munich · Germany
-              </p>
+<div class="profile-top">
 
-            </div>
 
-          </div>
+<img
+  class="portrait"
+  src="./ratnadeep-pramanik.jpg"
+  alt="Portrait of Dr. Ratnadeep Pramanik"
+>
 
-        </div>
 
-      </aside>
+<div>
 
+<h3>
+Dr. Ratnadeep Pramanik
+</h3>
 
-      <!-- POSITIONS -->
+<p>
+Postdoctoral Researcher
+</p>
 
-      <article class="card">
+<p>
+Institute for Mathematics and Computer-Based Simulation
+</p>
 
-        <div class="card-body">
+<p>
+University of the Bundeswehr Munich · Germany
+</p>
 
-          <h3>
-            Positions and education
-          </h3>
+</div>
 
-          <div class="timeline">
 
-            <div class="timeline-item">
+</div>
 
-              <strong>
-                Postdoc, University of the Bundeswehr
-                Munich, Germany
-              </strong>
+</div>
 
-              <span>
-                2025–present
-              </span>
+</aside>
 
-            </div>
 
 
-            <div class="timeline-item">
+<!-- POSITIONS -->
 
-              <strong>
-                Ph.D., Faculty of Science &amp; Engineering,
-                University of Groningen, Netherlands
-              </strong>
+<article class="card">
 
-              <span>
-                2020–2024 · Nature-inspired magnetic soft
-                robotic swimmers and swarms
-              </span>
+<div class="card-body">
 
-            </div>
 
+<h3 style="margin-top:0">
+Positions and education
+</h3>
 
-            <div class="timeline-item">
 
-              <strong>
-                M.S. Applied Mechanics,
-                IIT Madras, India
-              </strong>
+<div class="timeline">
 
-              <span>
-                2017–2019 · Creep behavior of
-                1–3 piezocomposites
-              </span>
 
-            </div>
+<div class="timeline-item">
 
+<strong>
+Postdoc · University of the Bundeswehr Munich
+</strong>
 
-            <div class="timeline-item">
+<span>
+2025–present · Germany
+</span>
 
-              <strong>
-                B.E. Mechanical Engineering,
-                Jadavpur University, India
-              </strong>
+</div>
 
-              <span>
-                2012–2016 · Viscoelastic structures
-                undergoing complex kinematics
-              </span>
 
-            </div>
 
-          </div>
+<div class="timeline-item">
 
-        </div>
+<strong>
+Ph.D. · University of Groningen
+</strong>
 
-      </article>
+<span>
+2020–2024 · Magnetic soft robotic swimmers and swarms
+</span>
 
-    </div>
+</div>
 
 
-    <!-- SECOND ACADEMIC ROW -->
 
-    <div
-      class="profile-grid"
-      style="margin-top:1rem"
-    >
+<div class="timeline-item">
 
+<strong>
+M.S. Applied Mechanics · IIT Madras
+</strong>
 
-      <!-- SUPERVISION -->
+<span>
+2017–2019 · Mechanics of 1–3 piezocomposites
+</span>
 
-      <article class="card">
+</div>
 
-        <div class="card-body">
 
-          <h3>
-            Supervision and mentoring
-          </h3>
 
-          <ul class="compact-list two-col">
+<div class="timeline-item">
 
-            <li>
-              <strong>Aakila Rajan</strong>
-              <span class="path">
-                IIT Madras BE &rarr; Caltech Ph.D.
-              </span>
-            </li>
+<strong>
+B.E. Mechanical Engineering · Jadavpur University
+</strong>
 
-            <li>
-              <strong>Anantha N. S. Babu</strong>
-              <span class="path">
-                IIT Madras BE &rarr; MIT M.S.-Ph.D.
-              </span>
-            </li>
+<span>
+2012–2016 · Viscoelastic structures
+</span>
 
-            <li>
-              <strong>Prathik Narayanan</strong>
-              <span class="path">
-                IIT Madras BE &rarr; Brown Ph.D.
-              </span>
-            </li>
+</div>
 
-            <li>
-              <strong>JM Chandra Hasa</strong>
-              <span class="path">
-                IIT Madras BE
-              </span>
-            </li>
 
-            <li>
-              <strong>Tina Fazeli</strong>
-              <span class="path">
-                Groningen BS &rarr; TU Delft M.S.
-              </span>
-            </li>
+</div>
 
-            <li>
-              <strong>Tamer van Teeffelen</strong>
-              <span class="path">
-                Groningen BS &rarr; ETH Zürich M.S.
-              </span>
-            </li>
+</div>
 
-            <li>
-              <strong>Matias Santa Cruz</strong>
-              <span class="path">
-                Groningen BS &rarr; TU Delft M.S.
-              </span>
-            </li>
+</article>
 
-            <li>
-              <strong>Vignesh K. Gopalakrishnan</strong>
-              <span class="path">
-                IIT Madras BE-MS &rarr; EPFL Ph.D.
-              </span>
-            </li>
 
-          </ul>
+</div>
 
-        </div>
 
-      </article>
 
+<!-- ============================================================
+     COMPACT CONFERENCES + SERVICE
+     ============================================================ -->
 
-      <!-- CONFERENCES -->
+<div class="academic-meta">
 
-      <article class="card">
 
-        <div class="card-body">
 
-          <h3>
-            Selected conferences
-          </h3>
+<!-- CONFERENCES -->
 
-          <ul class="compact-list">
+<article class="card compact-card">
 
-            <li>
-              <strong>2026</strong>
-              — WCCM-ECCOMAS, München
-            </li>
 
-            <li>
-              <strong>2026</strong>
-              — Biomechanik Kongress / DGfB, Hamburg.
-            </li>
+<h3>
+Selected conferences
+</h3>
 
-            <li>
-              <strong>2025</strong>
-              — International Conference on Biomedical
-              Technology, Hannover.
-            </li>
 
-            <li>
-              <strong>2025</strong>
-              — IDIR Research Retreat, Kiel.
-            </li>
+<div class="conference-lines">
 
-            <li>
-              <strong>2025</strong>
-              — Aneurysm Science Workshop, Raitenhaslach.
-            </li>
 
-            <li>
-              <strong>2024</strong>
-              — ECCOMAS, Lisbon.
-            </li>
+<span class="conference-chip">
+<strong>2026</strong>
+WCCM–ECCOMAS · München
+</span>
 
-            <li>
-              <strong>2023</strong>
-              — Dutch Soft Robotics Symposium, Enschede.
-            </li>
 
-            <li>
-              <strong>2022</strong>
-              — Burgers Symposium, Lunteren.
-            </li>
+<span class="conference-chip">
+<strong>2026</strong>
+DGfB · Hamburg
+</span>
 
-            <li>
-              <strong>2021</strong>
-              — Advances in Robotics, Kanpur.
-            </li>
 
-            <li>
-              <strong>2018</strong>
-              — Sonar System and Sensors, DRDO, Kochi.
-            </li>
+<span class="conference-chip">
+<strong>2025</strong>
+Biomedical Technology · Hannover
+</span>
 
-            <li>
-              <strong>2016</strong>
-              — ISTAM 61st Congress, Vellore.
-            </li>
 
-          </ul>
+<span class="conference-chip">
+<strong>2025</strong>
+IDIR Retreat · Kiel
+</span>
 
-        </div>
 
-      </article>
+<span class="conference-chip">
+<strong>2025</strong>
+Aneurysm Science · Raitenhaslach
+</span>
 
-    </div>
 
+<span class="conference-chip">
+<strong>2024</strong>
+ECCOMAS · Lisbon
+</span>
 
-    <!-- REVIEWING -->
 
-    <article
-      class="card"
-      style="margin-top:1rem"
-    >
+<span class="conference-chip">
+<strong>2023</strong>
+Dutch Soft Robotics · Enschede
+</span>
 
-      <div class="card-body">
 
-        <h3>
-          Reviewing and academic service
-        </h3>
+<span class="conference-chip">
+<strong>2022</strong>
+Burgers Symposium · Lunteren
+</span>
 
-
-        <div class="service-section">
-
-          <h4>
-            Editorial Review Board
-          </h4>
-
-          <div class="service-grid">
-
-            <a
-              class="service-item"
-              target="_blank"
-              rel="noreferrer"
-              href="https://journals.sagepub.com/home/bec"
-            >
-              Biomedical Engineering and Computational Biology
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <div class="service-section">
-
-          <h4>
-            Reviewer
-          </h4>
-
-          <div class="service-grid">
-
-            <a
-              class="service-item"
-              target="_blank"
-              rel="noreferrer"
-              href="https://iopscience.iop.org/journal/1748-6041"
-            >
-              Biomedical Materials
-            </a>
-
-            <a
-              class="service-item"
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.cell.com/cell-reports-physical-science/home"
-            >
-              Cell Reports Physical Science
-            </a>
-
-            <a
-              class="service-item"
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.sciencedirect.com/journal/international-journal-of-mechanical-sciences"
-            >
-              International Journal of Mechanical Sciences
-            </a>
-
-            <a
-              class="service-item"
-              target="_blank"
-              rel="noreferrer"
-              href="https://journals.sagepub.com/home/ijr"
-            >
-              The International Journal of Robotics Research
-            </a>
-
-            <a
-              class="service-item"
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.sciencedirect.com/journal/journal-of-controlled-release"
-            >
-              Journal of Controlled Release
-            </a>
-
-            <a
-              class="service-item"
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros"
-            >
-              IEEE/RSJ IROS
-            </a>
-
-            <a
-              class="service-item"
-              target="_blank"
-              rel="noreferrer"
-              href="https://iopscience.iop.org/journal/0953-8984"
-            >
-              Journal of Physics: Condensed Matter
-            </a>
-
-            <a
-              class="service-item"
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.mdpi.com/journal/micromachines"
-            >
-              Micromachines
-            </a>
-
-            <a
-              class="service-item"
-              target="_blank"
-              rel="noreferrer"
-              href="https://link.springer.com/journal/707"
-            >
-              Acta Mechanica
-            </a>
-
-            <a
-              class="service-item"
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.sciencedirect.com/journal/results-in-engineering"
-            >
-              Results in Engineering
-            </a>
-
-            <a
-              class="service-item"
-              target="_blank"
-              rel="noreferrer"
-              href="https://onlinelibrary.wiley.com/journal/15564967"
-            >
-              Journal of Field Robotics
-            </a>
-
-            <a
-              class="service-item"
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.sciencedirect.com/journal/materials-today-communications"
-            >
-              Materials Today Communications
-            </a>
-
-            <a
-              class="service-item"
-              target="_blank"
-              rel="noreferrer"
-              href="https://advanced.onlinelibrary.wiley.com/journal/26404567"
-            >
-              Advanced Intelligent Systems
-            </a>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </article>
-
-
-  </div>
+
+<span class="conference-chip">
+<strong>2021</strong>
+Advances in Robotics · Kanpur
+</span>
+
+
+<span class="conference-chip">
+<strong>2018</strong>
+DRDO · Kochi
+</span>
+
+
+<span class="conference-chip">
+<strong>2016</strong>
+ISTAM · Vellore
+</span>
+
+
+</div>
+
+</article>
+
+
+
+<!-- SERVICE -->
+
+<article class="card compact-card">
+
+
+<h3>
+Reviewing &amp; academic service
+</h3>
+
+
+
+<div class="service-row">
+
+
+<span class="service-label">
+Editorial Review Board
+</span>
+
+
+<div class="service-tags">
+
+
+<a
+  class="service-tag"
+  href="https://journals.sagepub.com/home/bec"
+  target="_blank"
+  rel="noreferrer"
+>
+Biomedical Engineering &amp; Computational Biology
+</a>
+
+
+</div>
+
+</div>
+
+
+
+<div class="service-row">
+
+
+<span class="service-label">
+Reviewer
+</span>
+
+
+<div class="service-tags">
+
+
+<a
+  class="service-tag"
+  href="https://iopscience.iop.org/journal/1748-6041"
+  target="_blank"
+  rel="noreferrer"
+>
+Biomedical Materials
+</a>
+
+
+<a
+  class="service-tag"
+  href="https://www.cell.com/cell-reports-physical-science/home"
+  target="_blank"
+  rel="noreferrer"
+>
+Cell Reports Physical Science
+</a>
+
+
+<a
+  class="service-tag"
+  href="https://www.sciencedirect.com/journal/international-journal-of-mechanical-sciences"
+  target="_blank"
+  rel="noreferrer"
+>
+IJMS
+</a>
+
+
+<a
+  class="service-tag"
+  href="https://journals.sagepub.com/home/ijr"
+  target="_blank"
+  rel="noreferrer"
+>
+IJRR
+</a>
+
+
+<a
+  class="service-tag"
+  href="https://www.sciencedirect.com/journal/journal-of-controlled-release"
+  target="_blank"
+  rel="noreferrer"
+>
+Journal of Controlled Release
+</a>
+
+
+<a
+  class="service-tag"
+  href="https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros"
+  target="_blank"
+  rel="noreferrer"
+>
+IEEE/RSJ IROS
+</a>
+
+
+<a
+  class="service-tag"
+  href="https://iopscience.iop.org/journal/0953-8984"
+  target="_blank"
+  rel="noreferrer"
+>
+J. Phys.: Condens. Matter
+</a>
+
+
+<a
+  class="service-tag"
+  href="https://www.mdpi.com/journal/micromachines"
+  target="_blank"
+  rel="noreferrer"
+>
+Micromachines
+</a>
+
+
+<a
+  class="service-tag"
+  href="https://link.springer.com/journal/707"
+  target="_blank"
+  rel="noreferrer"
+>
+Acta Mechanica
+</a>
+
+
+<a
+  class="service-tag"
+  href="https://www.sciencedirect.com/journal/results-in-engineering"
+  target="_blank"
+  rel="noreferrer"
+>
+Results in Engineering
+</a>
+
+
+<a
+  class="service-tag"
+  href="https://onlinelibrary.wiley.com/journal/15564967"
+  target="_blank"
+  rel="noreferrer"
+>
+Journal of Field Robotics
+</a>
+
+
+<a
+  class="service-tag"
+  href="https://www.sciencedirect.com/journal/materials-today-communications"
+  target="_blank"
+  rel="noreferrer"
+>
+Materials Today Communications
+</a>
+
+
+<a
+  class="service-tag"
+  href="https://advanced.onlinelibrary.wiley.com/journal/26404567"
+  target="_blank"
+  rel="noreferrer"
+>
+Advanced Intelligent Systems
+</a>
+
+
+</div>
+
+</div>
+
+
+</article>
+
+
+</div>
+
+
+</div>
 
 </section>
 
+
+</div>
 
 </main>
 
 
-<!-- =========================================================
+
+<!-- ============================================================
      FOOTER
-     ========================================================= -->
+     ============================================================ -->
 
 <footer>
 
-  <div class="container">
+<div class="container">
 
-    <div
-      style="
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        gap:1rem;
-        flex-wrap:wrap
-      "
-    >
+<div class="footer-inner">
 
-      <span>
-        ©
-        <script>
-          document.write(new Date().getFullYear())
-        </script>
-        Ratnadeep Pramanik
-      </span>
 
-      <span>
-        Microrobotic swarms · Soft robotics · Biomedical devices
-      </span>
+<span>
 
-    </div>
+©
 
-  </div>
+<script>
+document.write(
+  new Date().getFullYear()
+);
+</script>
+
+Ratnadeep Pramanik
+
+</span>
+
+
+<span>
+Microrobotic swarms · Soft robotics · Biomedical devices
+</span>
+
+
+</div>
+
+</div>
 
 </footer>
 
 
-<!-- =========================================================
-     CAROUSEL JAVASCRIPT
-     ========================================================= -->
+
+<!-- ============================================================
+     SLIDESHOW JAVASCRIPT
+     ============================================================ -->
 
 <script>
 
-  (() => {
-
-    const carousel =
-      document.getElementById('researchCarousel');
-
-    if (!carousel) return;
+(() => {
 
 
-    const track =
-      carousel.querySelector('.carousel-track');
-
-    const slides =
-      Array.from(
-        carousel.querySelectorAll('.slide')
-      );
-
-    const dots =
-      Array.from(
-        carousel.querySelectorAll('.carousel-dot')
-      );
-
-    const prev =
-      carousel.querySelector('.prev');
-
-    const next =
-      carousel.querySelector('.next');
+  const carousel =
+    document.getElementById(
+      "researchCarousel"
+    );
 
 
-    let index = 0;
-    let timer = null;
+  if(!carousel){
+    return;
+  }
 
 
-    /* -----------------------------------------
-       SHOW SPECIFIC SLIDE
-       ----------------------------------------- */
+  const track =
+    carousel.querySelector(
+      ".carousel-track"
+    );
 
-    const show = (i) => {
 
-      index =
-        (i + slides.length) % slides.length;
+  const slides =
+    Array.from(
+      carousel.querySelectorAll(
+        ".slide"
+      )
+    );
 
-      track.style.transform =
-        `translateX(-${index * 100}%)`;
 
-      dots.forEach((dot,n) => {
+  const dots =
+    Array.from(
+      carousel.querySelectorAll(
+        ".carousel-dot"
+      )
+    );
+
+
+  const previous =
+    carousel.querySelector(
+      ".prev"
+    );
+
+
+  const next =
+    carousel.querySelector(
+      ".next"
+    );
+
+
+  let index = 0;
+
+  let timer = null;
+
+
+
+  function showSlide(i){
+
+
+    index =
+      (
+        i +
+        slides.length
+      )
+      %
+      slides.length;
+
+
+    track.style.transform =
+      `translateX(-${index * 100}%)`;
+
+
+    dots.forEach(
+      (dot,n) => {
 
         dot.classList.toggle(
-          'active',
+          "active",
           n === index
         );
 
-      });
-
-    };
-
-
-    /* -----------------------------------------
-       START AUTOMATIC SLIDESHOW
-       ----------------------------------------- */
-
-    const start = () => {
-
-      stop();
-
-      timer =
-        setInterval(
-          () => show(index + 1),
-          5000
-        );
-
-    };
-
-
-    /* -----------------------------------------
-       STOP / PAUSE SLIDESHOW
-       ----------------------------------------- */
-
-    const stop = () => {
-
-      if (timer){
-        clearInterval(timer);
-      }
-
-      timer = null;
-
-    };
-
-
-    /* -----------------------------------------
-       ARROW CONTROLS
-       ----------------------------------------- */
-
-    prev.addEventListener(
-      'click',
-      () => {
-
-        show(index - 1);
-        start();
-
       }
     );
 
-
-    next.addEventListener(
-      'click',
-      () => {
-
-        show(index + 1);
-        start();
-
-      }
-    );
+  }
 
 
-    /* -----------------------------------------
-       DOT CONTROLS
-       ----------------------------------------- */
 
-    dots.forEach((dot,i) => {
+  function stopAutoPlay(){
 
-      dot.addEventListener(
-        'click',
+
+    if(timer){
+
+      clearInterval(
+        timer
+      );
+
+    }
+
+
+    timer = null;
+
+  }
+
+
+
+  function startAutoPlay(){
+
+
+    stopAutoPlay();
+
+
+    timer =
+      setInterval(
         () => {
 
-          show(i);
-          start();
+          showSlide(
+            index + 1
+          );
+
+        },
+        5200
+      );
+
+  }
+
+
+
+  previous.addEventListener(
+    "click",
+    () => {
+
+      showSlide(
+        index - 1
+      );
+
+      startAutoPlay();
+
+    }
+  );
+
+
+
+  next.addEventListener(
+    "click",
+    () => {
+
+      showSlide(
+        index + 1
+      );
+
+      startAutoPlay();
+
+    }
+  );
+
+
+
+  dots.forEach(
+    (dot,i) => {
+
+      dot.addEventListener(
+        "click",
+        () => {
+
+          showSlide(i);
+
+          startAutoPlay();
 
         }
       );
 
-    });
+    }
+  );
 
 
-    /* -----------------------------------------
-       PAUSE WHEN USER HOVERS
-       ----------------------------------------- */
 
-    carousel.addEventListener(
-      'mouseenter',
-      stop
-    );
+  /*
+     Pause while somebody is
+     looking carefully at a figure.
+  */
 
-
-    carousel.addEventListener(
-      'mouseleave',
-      start
-    );
+  carousel.addEventListener(
+    "mouseenter",
+    stopAutoPlay
+  );
 
 
-    /* -----------------------------------------
-       PAUSE WHEN USER CLICKS / FOCUSES
-       ----------------------------------------- */
-
-    carousel.addEventListener(
-      'focusin',
-      stop
-    );
+  carousel.addEventListener(
+    "mouseleave",
+    startAutoPlay
+  );
 
 
-    carousel.addEventListener(
-      'focusout',
-      start
-    );
+  carousel.addEventListener(
+    "focusin",
+    stopAutoPlay
+  );
 
 
-    /* -----------------------------------------
-       KEYBOARD ARROWS
-       ----------------------------------------- */
-
-    carousel.addEventListener(
-      'keydown',
-      (e) => {
-
-        if (e.key === 'ArrowLeft'){
-          show(index - 1);
-        }
-
-        if (e.key === 'ArrowRight'){
-          show(index + 1);
-        }
-
-      }
-    );
+  carousel.addEventListener(
+    "focusout",
+    startAutoPlay
+  );
 
 
-    /* -----------------------------------------
-       STOP IF BROWSER TAB IS HIDDEN
-       ----------------------------------------- */
 
-    document.addEventListener(
-      'visibilitychange',
-      () => {
+  /*
+     Keyboard navigation
+  */
 
-        if (document.hidden){
-          stop();
-        } else {
-          start();
-        }
+  carousel.addEventListener(
+    "keydown",
+    event => {
+
+
+      if(
+        event.key ===
+        "ArrowLeft"
+      ){
+
+        showSlide(
+          index - 1
+        );
 
       }
-    );
 
 
-    /* -----------------------------------------
-       BEGIN SLIDESHOW
-       ----------------------------------------- */
+      if(
+        event.key ===
+        "ArrowRight"
+      ){
 
-    start();
+        showSlide(
+          index + 1
+        );
 
-  })();
+      }
+
+
+    }
+  );
+
+
+
+  /*
+     Do not keep changing slides
+     when browser tab is hidden.
+  */
+
+  document.addEventListener(
+    "visibilitychange",
+    () => {
+
+
+      if(
+        document.hidden
+      ){
+
+        stopAutoPlay();
+
+      }
+
+      else{
+
+        startAutoPlay();
+
+      }
+
+
+    }
+  );
+
+
+
+  showSlide(0);
+
+  startAutoPlay();
+
+
+})();
 
 </script>
 
 
 </body>
+
 </html>
