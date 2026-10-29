@@ -545,24 +545,6 @@ nav{
   background:
 
     radial-gradient(
-      circle at 90% 12%,
-      rgba(45,212,191,.11),
-      transparent 28rem
-    ),
-
-    linear-gradient(
-      145deg,
-      #f6fdfc,
-      #f1f8ff
-    );
-}
-
-
-.slide:nth-child(4){
-
-  background:
-
-    radial-gradient(
       circle at 92% 12%,
       rgba(96,165,250,.11),
       transparent 28rem
@@ -576,7 +558,7 @@ nav{
 }
 
 
-.slide:nth-child(5){
+.slide:nth-child(4){
 
   background:
 
@@ -600,26 +582,26 @@ nav{
 }
 
 
-.slide:nth-child(6){
+.slide:nth-child(5){
 
   background:
 
     radial-gradient(
       circle at 90% 10%,
-      rgba(139,92,246,.09),
+      rgba(45,212,191,.12),
       transparent 28rem
     ),
 
     radial-gradient(
       circle at 7% 90%,
-      rgba(45,212,191,.10),
+      rgba(139,92,246,.08),
       transparent 25rem
     ),
 
     linear-gradient(
       145deg,
-      #faf9ff,
-      #f4fbf8
+      #f6fcfa,
+      #faf8ff
     );
 }
 
@@ -685,17 +667,17 @@ nav{
 
 .slide-figure.endovascular-figure{
 
-  background:#fff;
-
   padding:.3rem;
+
+  background:#fff;
 }
 
 
-.slide-figure.endovascular-figure img{
+.slide-figure.soft-figure{
+
+  padding:.35rem;
 
   background:#fff;
-
-  object-fit:contain;
 }
 
 
@@ -1198,7 +1180,7 @@ section{
 }
 
 
-/* Endovascular figure stays light */
+/* Endovascular image */
 
 .research-card.endovascular
 .research-image{
@@ -1221,6 +1203,99 @@ section{
 
   background:transparent;
 }
+
+
+
+/* =========================================================
+   TWO-IMAGE SOFT MATERIALS RESEARCH CARD
+   ========================================================= */
+
+.soft-materials-images{
+
+  height:255px;
+
+  display:grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap:.55rem;
+
+  padding:.6rem;
+
+  background:
+
+    radial-gradient(
+      circle at 90% 10%,
+      rgba(124,58,237,.055),
+      transparent 16rem
+    ),
+
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f7fbfa
+    );
+
+  border-bottom:
+    1px solid #e4ebef;
+}
+
+
+.soft-image-panel{
+
+  min-width:0;
+
+  overflow:hidden;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  border-radius:13px;
+
+  background:#fff;
+
+  border:
+    1px solid #e4ebef;
+}
+
+
+.soft-image-panel img{
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:contain;
+
+  background:#fff;
+
+  transition:
+    transform .35s ease;
+}
+
+
+.research-card:hover
+.soft-image-panel img{
+
+  transform:
+    scale(1.018);
+}
+
+
+@media(max-width:560px){
+
+  .soft-materials-images{
+    height:210px;
+    gap:.35rem;
+    padding:.4rem;
+  }
+
+}
+
 
 
 .research-body{
@@ -2063,7 +2138,7 @@ Biomedical devices
 
 
 <!-- =========================================================
-     SIX-SLIDE RESEARCH SHOWCASE
+     FIVE-SLIDE SHOWCASE
      ========================================================= -->
 
 <div class="showcase">
@@ -2185,51 +2260,6 @@ individual actuation.
 <div class="slide-figure">
 
 <img
-  src="assets/figures/magnetic-swimmer-design.png"
-  alt="Design, magnetization and actuation of a magnetic soft robotic swimmer"
->
-
-</div>
-
-
-<div class="slide-copy">
-
-<span class="slide-tag">
-03 · Soft robotics
-</span>
-
-<h2>
-Magnetic microswimmers
-</h2>
-
-<p>
-Mechanics-based design of compliant
-magnetic swimmers coupling material
-properties, geometry, actuation and
-fluid–structure interaction.
-</p>
-
-</div>
-
-
-</div>
-
-</article>
-
-
-
-<!-- =======================================================
-     SLIDE 4
-     ======================================================= -->
-
-<article class="slide">
-
-<div class="slide-layout">
-
-
-<div class="slide-figure">
-
-<img
   src="assets/figures/swimmer-trajectories.png"
   alt="Trajectory maps of interacting magnetic soft robotic swimmers"
 >
@@ -2240,7 +2270,7 @@ fluid–structure interaction.
 <div class="slide-copy">
 
 <span class="slide-tag">
-04 · Interacting swimmers
+03 · Interacting swimmers
 </span>
 
 <h2>
@@ -2264,7 +2294,7 @@ and collective organization.
 
 
 <!-- =======================================================
-     SLIDE 5
+     SLIDE 4
      ======================================================= -->
 
 <article class="slide">
@@ -2285,7 +2315,7 @@ and collective organization.
 <div class="slide-copy">
 
 <span class="slide-tag">
-05 · Biomedical devices
+04 · Biomedical devices
 </span>
 
 <h2>
@@ -2309,7 +2339,7 @@ for intracranial aneurysm treatment.
 
 
 <!-- =======================================================
-     SLIDE 6
+     SLIDE 5
      ======================================================= -->
 
 <article class="slide">
@@ -2317,11 +2347,11 @@ for intracranial aneurysm treatment.
 <div class="slide-layout">
 
 
-<div class="slide-figure">
+<div class="slide-figure soft-figure">
 
 <img
-  src="assets/figures/fractal-viscoelastic-soft-materials.jpg"
-  alt="Fractal viscoelastic modeling of soft biological and polymeric materials"
+  src="assets/figures/cnscnf.jpg"
+  alt="Microstructure, mechanical response and processing of nanocellulose reinforced PVA soft materials"
 >
 
 </div>
@@ -2330,7 +2360,7 @@ for intracranial aneurysm treatment.
 <div class="slide-copy">
 
 <span class="slide-tag">
-06 · Soft materials
+05 · Soft materials
 </span>
 
 <h2>
@@ -2338,10 +2368,10 @@ Rheology &amp; mechanics
 </h2>
 
 <p>
-Constitutive and rheological modeling
-of soft biological and polymeric materials,
-including viscoelasticity, damage,
-hydrogels and complex time dependence.
+Connecting microstructure, processing
+and nonlinear mechanical response in
+hydrogels, xerogels and soft
+biomedical materials.
 </p>
 
 </div>
@@ -2413,13 +2443,6 @@ hydrogels and complex time dependence.
   class="carousel-dot"
   type="button"
   aria-label="Show slide 5"
-></button>
-
-
-<button
-  class="carousel-dot"
-  type="button"
-  aria-label="Show slide 6"
 ></button>
 
 
@@ -2644,12 +2667,28 @@ hemodynamics and treatment outcomes.
 <article class="research-card">
 
 
-<div class="research-image">
+<div class="soft-materials-images">
+
+
+<div class="soft-image-panel">
 
 <img
-  src="assets/figures/fractal-viscoelastic-soft-materials.jpg"
-  alt="Fractal viscoelastic modeling of soft materials"
+  src="assets/figures/ijes.jpg"
+  alt="Directional freezing and compression testing of PVA hydrogel materials"
 >
+
+</div>
+
+
+<div class="soft-image-panel">
+
+<img
+  src="assets/figures/jmbbm.jpg"
+  alt="Nanocellulose PVA hydrogel preparation, sample and mechanical testing"
+>
+
+</div>
+
 
 </div>
 
@@ -4608,8 +4647,8 @@ Microrobotic swarms · Soft robotics · Biomedical devices
 
 
   /*
-    Pause the slideshow when the visitor
-    places the mouse over a figure.
+    Pause when the visitor is looking
+    at one of the scientific figures.
   */
 
   carousel.addEventListener(
@@ -4626,8 +4665,8 @@ Microrobotic swarms · Soft robotics · Biomedical devices
 
 
   /*
-    Pause while the carousel controls
-    have keyboard focus.
+    Pause while controls have
+    keyboard focus.
   */
 
   carousel.addEventListener(
@@ -4682,8 +4721,8 @@ Microrobotic swarms · Soft robotics · Biomedical devices
 
 
   /*
-    Stop changing slides when the
-    browser tab is hidden.
+    Stop changing slides while
+    the browser tab is hidden.
   */
 
   document.addEventListener(
